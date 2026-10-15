@@ -1,0 +1,24 @@
+```tsx
+import { Form } from '@astral/ui/hook-form/Form';
+import { Grid } from '@astral/ui/Grid';
+import { FormMaskField } from '@astral/ui/hook-form/FormMaskField';
+import { FormSubmitButton } from '@astral/ui/hook-form/FormSubmitButton';
+
+() => {
+  const form = useForm<FormValues>({
+    validationSchema
+  });
+  const handleSubmit = form.handleSubmit(values => new Promise<void>(resolve => {
+    setTimeout(() => {
+      window.alert(JSON.stringify(values));
+      resolve();
+    }, 1000);
+  }));
+  return <Form form={form} onSubmit={handleSubmit}>
+      <Grid container spacing={2}>
+        <FormMaskField required label="Ввод ID" name="maskFieldId" mask="aa.0000-000" placeholder="aa.0000-000" control={form.control} />
+        <FormSubmitButton>Отправить</FormSubmitButton>
+      </Grid>
+    </Form>;
+}
+```

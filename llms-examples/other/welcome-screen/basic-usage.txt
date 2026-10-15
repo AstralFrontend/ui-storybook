@@ -1,0 +1,44 @@
+```tsx
+import { WelcomeScreen } from '@astral/ui/WelcomeScreen';
+import { DashboardLayout } from '@astral/ui/DashboardLayout';
+import { Typography } from '@astral/ui/Typography';
+import { Button } from '@astral/ui/Button';
+
+() => {
+  const {
+    data,
+    isLoading,
+    isError,
+    fetch
+  } = useMockFetch(MOCK_DATA);
+  useEffect(() => {
+    fetch();
+  }, []);
+  const handleClearStorage = () => sessionStorage.clear();
+  const Logo = () => data?.logo || null;
+  const isSuccess = !isLoading && !isError && Boolean(data);
+  return <Container>
+      <WelcomeScreen {...data} isSuccess={isSuccess} isLoading={isLoading} isError={isError} onRetry={fetch}>
+        <DashboardLayout>
+          <DashboardLayout.Header product={{
+          name: 'Астрал.ЭДО',
+          logo: () => <Logo />
+        }} />
+          <DashboardLayout.Main>
+            <MainWrapper>
+              <Typography>
+                Приветствие отображается только при первичной загрузки
+                приложения в рамках вкладки. Для повторного просмотра
+                приветствия необходимо очистить sessionStorage
+              </Typography>
+
+              <Button onClick={handleClearStorage}>
+                Очистить sessionStorage
+              </Button>
+            </MainWrapper>
+          </DashboardLayout.Main>
+        </DashboardLayout>
+      </WelcomeScreen>
+    </Container>;
+}
+```

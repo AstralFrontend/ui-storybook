@@ -1,0 +1,9 @@
+```tsx
+import { Iframe } from '@astral/ui/Iframe';
+
+() => {
+  return <ReloadContainer>
+      <Iframe loadingContent="loading..." src="https://www.youtube.com/embed/k85mRPqvMbE" />
+    </ReloadContainer>;
+}
+```

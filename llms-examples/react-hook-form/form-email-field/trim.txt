@@ -1,0 +1,17 @@
+```tsx
+import { FormEmailField } from '@astral/ui/hook-form/FormEmailField';
+import { FormSubmitButton } from '@astral/ui/hook-form/FormSubmitButton';
+
+() => {
+  const form = useForm<FormValues>({
+    defaultValues: {
+      email: 'email@email.com'
+    },
+    validationSchema
+  });
+  return <FormStoryContainer form={form}>
+      <FormEmailField required label="Email" name="email" control={form.control} />
+      <FormSubmitButton>Отправить</FormSubmitButton>
+    </FormStoryContainer>;
+}
+```

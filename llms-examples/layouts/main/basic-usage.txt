@@ -1,0 +1,52 @@
+```tsx
+import { DashboardLayout } from '@astral/ui/DashboardLayout';
+import { PageLayout } from '@astral/ui/PageLayout';
+import { AddOutlineMd } from '@astral/ui/icons/AddOutlineMd';
+import { PageAside } from '@astral/ui/PageAside';
+import { TextField } from '@astral/ui/TextField';
+import { SearchOutlineMd } from '@astral/ui/icons/SearchOutlineMd';
+import { List } from '@astral/ui/List';
+import { ListItem } from '@astral/ui/ListItem';
+
+() => {
+  return <StoryWrapper>
+      <DashboardLayout>
+        <DashboardLayout.Header product={{
+        name: 'Астрал.ЭДО',
+        logo: () => <UikitLogo />
+      }} />
+        <DashboardLayout.Sidebar menu={{
+        items: []
+      }} />
+        <DashboardLayout.Main>
+          <PageLayout header={{
+          title: 'Черновики',
+          breadcrumbs: [<Fragment key="1">Первый текст</Fragment>, <Fragment key="2">Текст с разделителем</Fragment>, <Fragment key="3">Текст с разделителем</Fragment>],
+          actions: {
+            main: [{
+              text: 'Основное действие',
+              startIcon: <AddOutlineMd />
+            }],
+            secondary: [{
+              text: 'Кнопка'
+            }]
+          },
+          filters: <MockFilters />
+        }} content={MockContent} aside={<PageAside>
+                <TextField placeholder="Поиск по отчету" fullWidth InputProps={{
+            startAdornment: <SearchOutlineMd />
+          }} />
+                <List>
+                  <ListItem selected>Титульный лист</ListItem>
+                  <ListItem>Раздел 1</ListItem>
+                  <ListItem>Раздел 2</ListItem>
+                  <ListItem>Раздел 3</ListItem>
+                  <ListItem>Раздел 4</ListItem>
+                  <ListItem>Раздел 5</ListItem>
+                </List>
+              </PageAside>} />
+        </DashboardLayout.Main>
+      </DashboardLayout>
+    </StoryWrapper>;
+}
+```

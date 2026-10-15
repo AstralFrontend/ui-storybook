@@ -1,0 +1,109 @@
+```tsx
+import { ProductSwitcher } from '@astral/ui/ProductSwitcher';
+import { BinOutlineMd } from '@astral/ui/icons/BinOutlineMd';
+import { Menu } from '@astral/ui/Menu';
+import { MenuItem } from '@astral/ui/MenuItem';
+import { ListItemIcon } from '@astral/ui/ListItemIcon';
+import { ProfileOutlineMd } from '@astral/ui/icons/ProfileOutlineMd';
+import { ListItemText } from '@astral/ui/ListItemText';
+import { CompanyOutlineMd } from '@astral/ui/icons/CompanyOutlineMd';
+import { SettingsFillMd } from '@astral/ui/icons/SettingsFillMd';
+import { Divider } from '@astral/ui/Divider';
+import { QuitOutlineMd } from '@astral/ui/icons/QuitOutlineMd';
+import { Typography } from '@astral/ui/Typography';
+import { Product } from '@astral/ui/Product';
+import { Profile } from '@astral/ui/Profile';
+import { CaseOutlineMd } from '@astral/ui/icons/CaseOutlineMd';
+import { EditFillMd } from '@astral/ui/icons/EditFillMd';
+import { DocumentOutlineMd } from '@astral/ui/icons/DocumentOutlineMd';
+
+() => {
+  const header = {
+    productSwitcher: () => <ProductSwitcher getProducts={handleGetProducts} />,
+    product: {
+      name: 'Астрал.Отчет',
+      logo() {
+        return <BinOutlineMd />;
+      }
+    },
+    profile: {
+      displayName: 'Григорьев Виталий',
+      annotation: 'vitatiy_grig@mail.ru',
+      avatar: {
+        alt: 'Григорьев Виталий',
+        children: 'ГВ'
+      },
+      menu(props: MenuProps) {
+        return <Menu {...props}>
+            <MenuItem>
+              <ListItemIcon>
+                <ProfileOutlineMd />
+              </ListItemIcon>
+              <ListItemText>Мой профиль</ListItemText>
+            </MenuItem>
+            <MenuItem>
+              <ListItemIcon>
+                <CompanyOutlineMd />
+              </ListItemIcon>
+              <ListItemText>Мои организации</ListItemText>
+            </MenuItem>
+            <MenuItem>
+              <ListItemIcon>
+                <SettingsFillMd />
+              </ListItemIcon>
+              <ListItemText>Настройки</ListItemText>
+            </MenuItem>
+            <Divider />
+            <MenuItem>
+              <ListItemIcon>
+                <QuitOutlineMd />
+              </ListItemIcon>
+              <ListItemText>Выйти</ListItemText>
+            </MenuItem>
+          </Menu>;
+      }
+    }
+  };
+  return <IndentWrapper>
+      <Typography variant="h6">Header</Typography>
+
+      <PaperHeader>
+        <div>
+          <ProductSwitcher getProducts={handleGetProducts} />
+          <Product {...header.product} />
+        </div>
+
+        <Profile {...header.profile} />
+      </PaperHeader>
+
+      <Typography variant="h6">Выпадающий список (Dropdown)</Typography>
+
+      <PaperMenu>
+        <MenuItem>
+          <ListItemIcon>
+            <CaseOutlineMd />
+          </ListItemIcon>
+          <Typography variant="body1">Список дел</Typography>
+        </MenuItem>
+        <MenuItem>
+          <ListItemIcon>
+            <EditFillMd />
+          </ListItemIcon>
+          <Typography variant="body1">Редактировать</Typography>
+        </MenuItem>
+        <MenuItem>
+          <ListItemIcon>
+            <DocumentOutlineMd />
+          </ListItemIcon>
+          <Typography variant="body1">Новый документ</Typography>
+        </MenuItem>
+        <MenuItem>
+          <ListItemIcon>
+            <BinOutlineMd />
+          </ListItemIcon>
+          <Typography variant="body1">Удалить</Typography>
+        </MenuItem>
+      </PaperMenu>
+    </IndentWrapper>;
+}
+```

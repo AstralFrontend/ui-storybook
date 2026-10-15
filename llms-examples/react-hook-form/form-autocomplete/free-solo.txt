@@ -1,0 +1,14 @@
+```tsx
+import { FormAutocomplete } from '@astral/ui/hook-form/FormAutocomplete';
+import { FormSubmitButton } from '@astral/ui/hook-form/FormSubmitButton';
+
+() => {
+  const form = useForm<FormFreeValues>({
+    validationSchema: validationFreeSchema
+  });
+  return <FormStoryContainer form={form}>
+      <FormAutocomplete<FormFreeValues, IOption, false, boolean, true> control={form.control} name="autocomplete" options={OPTIONS} freeSolo placeholder="Placeholder" label="Form autocomplete with freeSolo" getOptionLabel={params => typeof params === 'string' ? params : params.title} />
+      <FormSubmitButton>Submit</FormSubmitButton>
+    </FormStoryContainer>;
+}
+```

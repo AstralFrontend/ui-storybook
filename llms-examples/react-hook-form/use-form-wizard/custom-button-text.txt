@@ -1,0 +1,67 @@
+```tsx
+import { Grid } from '@astral/ui/Grid';
+import { FormTextField } from '@astral/ui/hook-form/FormTextField';
+import { FormMobilePhoneField } from '@astral/ui/hook-form/FormMobilePhoneField';
+import { FormEmailField } from '@astral/ui/hook-form/FormEmailField';
+import { FormWizard } from '@astral/ui/hook-form/FormWizard';
+
+() => {
+  const validationSchemaStepOne = object<StepOneFormValues>({
+    firstName: string(),
+    lastName: string()
+  });
+  const validationSchemaStepTwo = object<StepTwoFormValues>({
+    phone: string(mobilePhone()),
+    email: optional(string(email()))
+  });
+  const handleSubmit = (values: FormValues) => new Promise<void>(resolve => {
+    setTimeout(() => {
+      window.alert(JSON.stringify(values, null, 2));
+      resolve();
+    }, 1000);
+  });
+  const StepOne = () => {
+    const stepOneForm = useFormContext<StepOneFormValues>();
+    return <>
+        <Grid container rowSpacing={2}>
+          <FormTextField required name="firstName" label="Имя" control={stepOneForm.control} />
+
+          <FormTextField required name="lastName" label="Фамилия" control={stepOneForm.control} />
+        </Grid>
+      </>;
+  };
+  const StepTwo = () => {
+    const stepTwoForm = useFormContext<StepTwoFormValues>();
+    return <Grid container rowSpacing={2}>
+        <FormMobilePhoneField required label="Телефон" name="phone" control={stepTwoForm.control} />
+
+        <FormEmailField label="E-mail" name="email" control={stepTwoForm.control} />
+      </Grid>;
+  };
+  const {
+    form,
+    currentStepId,
+    steps,
+    isFirstStep,
+    isLastStep,
+    onPrevStep,
+    onSubmit
+  } = useFormWizard<FormValues>({
+    steps: [{
+      id: 'stepOne',
+      label: 'Личные данные',
+      nextButtonText: 'Следующий шаг',
+      validationSchema: validationSchemaStepOne,
+      component: StepOne
+    }, {
+      id: 'stepTwo',
+      label: 'Контактные данные',
+      prevButtonText: 'К личным данным',
+      validationSchema: validationSchemaStepTwo,
+      component: StepTwo
+    }],
+    onSubmit: handleSubmit
+  });
+  return <FormWizard<FormValues> form={form} currentStepId={currentStepId} isFirstStep={isFirstStep} isLastStep={isLastStep} steps={steps} submitButtonText="Отправить" onPrevStep={onPrevStep} onSubmit={onSubmit} />;
+}
+```

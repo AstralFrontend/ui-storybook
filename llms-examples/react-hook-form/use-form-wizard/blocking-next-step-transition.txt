@@ -1,0 +1,58 @@
+```tsx
+import { FormWizard } from '@astral/ui/hook-form/FormWizard';
+import { NotificationContainer } from '@astral/ui/LegacyNotification';
+
+() => {
+  const handleSubmit = (values: FormValuesWithTariff) => new Promise<void>(resolve => {
+    setTimeout(() => {
+      window.alert(JSON.stringify(values, null, 2));
+      resolve();
+    }, 1000);
+  });
+  const handleAutosave = () => new Promise<void>(resolve => {
+    setTimeout(() => {
+      resolve();
+    }, 1000);
+  });
+  const {
+    form,
+    currentStepId,
+    steps,
+    isFirstStep,
+    isLastStep,
+    onClickStep,
+    onPrevStep,
+    onSubmit,
+    onSubmitError
+  } = useFormWizard<FormValuesWithTariff>({
+    autoSaveStrategy: 'changeStep',
+    onAutoSave: handleAutosave,
+    onChangeStep: (nextStepId, {
+      reason,
+      autosavePromise
+    }) => {
+      // Если произошел переход вперед на конкретный шаг
+      if (nextStepId === 'stepPersonalData' && reason === 'nextStep') {
+        // То для перехода на следующий шаг дожидаемся выполнения автосохранения
+        return autosavePromise;
+      }
+      return;
+    },
+    steps: [{
+      id: 'stepTariff',
+      label: 'Выбор тарифа',
+      component: StepTariff
+    }, {
+      id: 'stepPersonalData',
+      label: 'Личные данные',
+      component: StepPersonalData
+    }],
+    onSubmit: handleSubmit
+  });
+  return <Container>
+      <FormWizard<FormValuesWithTariff> form={form} currentStepId={currentStepId} isFirstStep={isFirstStep} isLastStep={isLastStep} steps={steps} submitButtonText="Отправить" onClickStep={onClickStep} onPrevStep={onPrevStep} onSubmit={onSubmit} onSubmitError={onSubmitError} />
+
+      <NotificationContainer />
+    </Container>;
+}
+```

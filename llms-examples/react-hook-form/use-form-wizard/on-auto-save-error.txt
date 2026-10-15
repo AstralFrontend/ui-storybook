@@ -1,0 +1,87 @@
+```tsx
+import { Grid } from '@astral/ui/Grid';
+import { FormTextField } from '@astral/ui/hook-form/FormTextField';
+import { FormMobilePhoneField } from '@astral/ui/hook-form/FormMobilePhoneField';
+import { FormEmailField } from '@astral/ui/hook-form/FormEmailField';
+import { FormWizard } from '@astral/ui/hook-form/FormWizard';
+import { NotificationContainer } from '@astral/ui/LegacyNotification';
+
+() => {
+  const validationSchemaStepOne = object<StepOneFormValues>({
+    firstName: string(),
+    lastName: string()
+  });
+  const validationSchemaStepTwo = object<StepTwoFormValues>({
+    phone: string(mobilePhone()),
+    email: optional(string(email()))
+  });
+  const saveWithError = async () => {
+    return Promise.reject('try again');
+  };
+  const onAutoSaveError = () => {
+    notify.error('Ошибка автосохранения', {
+      containerId: 'autosave'
+    });
+  };
+  const handleChangeStep: UseFormWizardParams<FormValues>['onChangeStep'] = async (_, {
+    autosavePromise
+  }) => {
+    await autosavePromise;
+  };
+  const handleSubmit = (values: FormValues) => new Promise<void>(resolve => {
+    setTimeout(() => {
+      window.alert(JSON.stringify(values, null, 2));
+      resolve();
+    }, 1000);
+  });
+  const StepOne = () => {
+    const stepOneForm = useFormContext<StepOneFormValues>();
+    return <>
+        <Grid container rowSpacing={2}>
+          <FormTextField required name="firstName" label="Имя" control={stepOneForm.control} />
+
+          <FormTextField required name="lastName" label="Фамилия" control={stepOneForm.control} />
+        </Grid>
+      </>;
+  };
+  const StepTwo = () => {
+    const stepTwoForm = useFormContext<StepTwoFormValues>();
+    return <Grid container rowSpacing={2}>
+        <FormMobilePhoneField required label="Телефон" name="phone" control={stepTwoForm.control} />
+
+        <FormEmailField label="E-mail" name="email" control={stepTwoForm.control} />
+      </Grid>;
+  };
+  const {
+    form,
+    currentStepId,
+    steps,
+    isFirstStep,
+    isLastStep,
+    onClickStep,
+    onPrevStep,
+    onSubmit
+  } = useFormWizard<FormValues>({
+    steps: [{
+      id: 'stepOne',
+      label: 'Личные данные',
+      validationSchema: validationSchemaStepOne,
+      component: StepOne
+    }, {
+      id: 'stepTwo',
+      label: 'Контактные данные',
+      validationSchema: validationSchemaStepTwo,
+      component: StepTwo
+    }],
+    onChangeStep: handleChangeStep,
+    onAutoSave: saveWithError,
+    autoSaveStrategy: 'changeStep',
+    onAutoSaveError,
+    onSubmit: handleSubmit
+  });
+  return <Container>
+      <FormWizard<FormValues> form={form} currentStepId={currentStepId} isFirstStep={isFirstStep} isLastStep={isLastStep} steps={steps} submitButtonText="Отправить" onClickStep={onClickStep} onPrevStep={onPrevStep} onSubmit={onSubmit} />
+      <NotificationContainer containerId="autosave" />
+    </Container>;
+}
+```

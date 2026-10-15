@@ -1,0 +1,33 @@
+```tsx
+import { FormAddressAutocompleteValue } from '@astral/ui/hook-form/FormAddressAutocomplete';
+import { Form } from '@astral/ui/hook-form/Form';
+import { FormAddressAutocomplete } from '@astral/ui/hook-form/FormAddressAutocomplete';
+import { FormSubmitButton } from '@astral/ui/hook-form/FormSubmitButton';
+
+() => {
+  const form = useForm<FormValues>({
+    validationSchema
+  });
+  const handleSubmit = form.handleSubmit(values => new Promise<void>(resolve => {
+    setTimeout(() => {
+      window.alert(JSON.stringify(values, null, 2));
+      resolve();
+    }, 1000);
+  }));
+  const formatData = (data: DadataAddress[]): FormAddressAutocompleteValue[] => {
+    return data.map(item => ({
+      addressString: item.value
+    }));
+  };
+  const fetchOptions = async (search: string, signal?: AbortSignal): Promise<FormAddressAutocompleteValue[]> => {
+    const res = await fetchAddress(search, signal);
+    return formatData(res);
+  };
+  return <Form form={form} onSubmit={handleSubmit}>
+      <GridContainer container>
+        <FormAddressAutocomplete<FormValues, FormAddressAutocompleteValue> fetchOptions={fetchOptions} control={form.control} name="autocomplete" freeSolo={false} label="Адрес" />
+        <FormSubmitButton>Submit</FormSubmitButton>
+      </GridContainer>
+    </Form>;
+}
+```

@@ -1,0 +1,29 @@
+```tsx
+import { Button } from '@astral/ui/Button';
+import { Dialog } from '@astral/ui/Dialog';
+
+() => {
+  const {
+    isOpened,
+    handleOpen,
+    handleClose
+  } = useBackdropStackToggle();
+  return <>
+      <MotivationPart />
+      <Button onClick={handleOpen}>Открыть модалку</Button>
+      <Dialog open={isOpened} onClose={handleClose} title="Example modal content">
+        <ExampleWrapper>
+          <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta
+            eveniet, ipsum. Deserunt dicta eum facilis nihil perferendis
+            quisquam rerum vero.
+          </div>
+          <SelectExample />
+          <AutocompleteExample />
+          <DatePickerExample />
+          <PopupExample index={0} />
+        </ExampleWrapper>
+      </Dialog>
+    </>;
+}
+```

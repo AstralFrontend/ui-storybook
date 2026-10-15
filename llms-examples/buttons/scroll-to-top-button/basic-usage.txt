@@ -1,0 +1,17 @@
+```tsx
+import { List } from '@astral/ui/List';
+import { ScrollToTopButton } from '@astral/ui/ScrollToTopButton';
+
+() => {
+  const listRef = useRef<HTMLDivElement>(null);
+  const onScrollClick = () => {
+    listRef.current?.scroll({
+      behavior: 'smooth',
+      top: 0
+    });
+  };
+  return <List ref={listRef}>
+      <ScrollToTopButton onClick={onScrollClick} />
+    </List>;
+}
+```

@@ -1,0 +1,12 @@
+```tsx
+import { WelcomeScreen } from '@astral/ui/WelcomeScreen';
+
+() => {
+  const handleRetry = () => alert('Повторить запрос');
+  return <Container>
+      <WelcomeScreen isError isSuccess={false} errorMsg="Ошибка 500" onRetry={handleRetry}>
+        Content
+      </WelcomeScreen>
+    </Container>;
+}
+```

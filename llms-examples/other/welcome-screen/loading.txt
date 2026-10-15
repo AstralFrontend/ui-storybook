@@ -1,0 +1,9 @@
+```tsx
+import { WelcomeScreen } from '@astral/ui/WelcomeScreen';
+
+() => <Container>
+    <WelcomeScreen isLoading isSuccess={false} onRetry={() => undefined}>
+      Content
+    </WelcomeScreen>
+  </Container>
+```

@@ -1,0 +1,23 @@
+```tsx
+import { FormEmailOrPhoneField } from '@astral/ui/hook-form/FormEmailOrPhoneField';
+import { Button } from '@astral/ui/Button';
+
+() => {
+  const form = useForm<FormValues>({
+    reValidateMode: 'onChange',
+    validationSchema
+  });
+  const handleButtonClick = () => {
+    form.setValue('emailOrPhone', {
+      value: '+7 (910) 999-99-99',
+      normalizedValue: '79109999999',
+      type: 'phone'
+    });
+  };
+  return <FormStoryContainer form={form}>
+      <FormEmailOrPhoneField required label="Email или телефон" name="emailOrPhone" control={form.control} />
+
+      <Button onClick={handleButtonClick}>Set text</Button>
+    </FormStoryContainer>;
+}
+```

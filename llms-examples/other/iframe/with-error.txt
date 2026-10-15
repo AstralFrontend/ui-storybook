@@ -1,0 +1,22 @@
+```tsx
+import { Grid } from '@astral/ui/Grid';
+import { Button } from '@astral/ui/Button';
+import { Iframe } from '@astral/ui/Iframe';
+
+() => {
+  const ref = useRef<HTMLIFrameElement>(null);
+  const triggerIframeError = () => {
+    ref.current?.dispatchEvent(new ErrorEvent('error', {
+      message: 'Ошибка при нажатии на кнопку'
+    }));
+  };
+  return <Grid container spacing={2}>
+      <Button fullWidth onClick={triggerIframeError}>
+        Вызвать ошибку
+      </Button>
+      <Container>
+        <Iframe ref={ref} src="https://www.youtube.com/embed/k85mRPqvMbE" />
+      </Container>
+    </Grid>;
+}
+```

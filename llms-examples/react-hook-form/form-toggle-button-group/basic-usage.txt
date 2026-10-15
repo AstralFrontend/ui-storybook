@@ -1,0 +1,34 @@
+```tsx
+import { Form } from '@astral/ui/hook-form/Form';
+import { FormToggleButtonGroup } from '@astral/ui/hook-form/FormToggleButtonGroup';
+import { ToggleButton } from '@astral/ui/ToggleButton';
+import { FormSubmitButton } from '@astral/ui/hook-form/FormSubmitButton';
+
+() => {
+  const form = useForm<FormValues>({
+    validationSchema
+  });
+  const handleSubmit = form.handleSubmit(values => new Promise<void>(resolve => {
+    setTimeout(() => {
+      window.alert(JSON.stringify(values));
+      resolve();
+    }, 1000);
+  }));
+  return <Form form={form} onSubmit={handleSubmit}>
+      <GridContainer container>
+        <FormToggleButtonGroup name="intelligence" control={form.control}>
+          <ToggleButton value={ToggleValues.First}>
+            {ToggleValues.First}
+          </ToggleButton>
+          <ToggleButton value={ToggleValues.Second}>
+            {ToggleValues.Second}
+          </ToggleButton>
+          <ToggleButton value={ToggleValues.Third}>
+            {ToggleValues.Third}
+          </ToggleButton>
+        </FormToggleButtonGroup>
+        <FormSubmitButton>Submit</FormSubmitButton>
+      </GridContainer>
+    </Form>;
+}
+```

@@ -1,0 +1,22 @@
+```tsx
+import { List } from '@astral/ui/List';
+import { ListSubheader } from '@astral/ui/ListSubheader';
+import { ListItem } from '@astral/ui/ListItem';
+import { ListItemAvatar } from '@astral/ui/ListItemAvatar';
+import { Avatar } from '@astral/ui/Avatar';
+import { InfoFillSm } from '@astral/ui/icons/InfoFillSm';
+import { ListItemText } from '@astral/ui/ListItemText';
+
+() => {
+  return <List subheader={<ListSubheader>Subheader</ListSubheader>}>
+      <ListItem>
+        <ListItemAvatar>
+          <Avatar>
+            <InfoFillSm />
+          </Avatar>
+        </ListItemAvatar>
+        <ListItemText primary="Photos" secondary="Jan 9, 2014" />
+      </ListItem>
+    </List>;
+}
+```

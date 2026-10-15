@@ -1,0 +1,52 @@
+```tsx
+import { Button } from '@astral/ui/Button';
+import { Menu } from '@astral/ui/Menu';
+import { MenuItem } from '@astral/ui/MenuItem';
+import { ListItemIcon } from '@astral/ui/ListItemIcon';
+import { ProfileOutlineMd } from '@astral/ui/icons/ProfileOutlineMd';
+import { CompanyOutlineMd } from '@astral/ui/icons/CompanyOutlineMd';
+import { SettingsFillMd } from '@astral/ui/icons/SettingsFillMd';
+import { QuitOutlineMd } from '@astral/ui/icons/QuitOutlineMd';
+
+() => {
+  const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
+  const open = useMemo(() => Boolean(anchorEl), [anchorEl]);
+  const handleClick = useCallback((event: MouseEvent<HTMLButtonElement>) => {
+    setAnchorEl(event.currentTarget);
+  }, []);
+  const handleClose = useCallback(() => {
+    setAnchorEl(null);
+  }, []);
+  return <>
+      <Button variant="text" onClick={handleClick}>
+        Profile
+      </Button>
+      <Menu title="Profile" anchorEl={anchorEl} open={open} onClose={handleClose}>
+        <MenuItem onClick={handleClose}>
+          <ListItemIcon>
+            <ProfileOutlineMd />
+          </ListItemIcon>
+          Мой профиль
+        </MenuItem>
+        <MenuItem onClick={handleClose}>
+          <ListItemIcon>
+            <CompanyOutlineMd />
+          </ListItemIcon>
+          Мои организации
+        </MenuItem>
+        <MenuItem divider onClick={handleClose}>
+          <ListItemIcon>
+            <SettingsFillMd />
+          </ListItemIcon>
+          Настройки
+        </MenuItem>
+        <MenuItem onClick={handleClose}>
+          <ListItemIcon>
+            <QuitOutlineMd />
+          </ListItemIcon>
+          Выйти
+        </MenuItem>
+      </Menu>
+    </>;
+}
+```

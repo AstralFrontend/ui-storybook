@@ -1,0 +1,7 @@
+```tsx
+import { ProgressBar } from '@astral/ui/ProgressBar';
+
+({
+  value = 25
+}) => <ProgressBar value={value} />
+```

@@ -1,0 +1,12 @@
+```tsx
+import { Grid } from '@astral/ui/Grid';
+import { Switch } from '@astral/ui/Switch';
+
+() => <Grid container spacing={4} columns={2}>
+    <Switch size="small" />
+    <Switch size="small" label="Text" />
+
+    <Switch />
+    <Switch label="Text" />
+  </Grid>
+```

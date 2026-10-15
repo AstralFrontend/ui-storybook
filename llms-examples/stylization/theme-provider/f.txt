@@ -1,0 +1,12 @@
+```tsx
+import { ThemeProvider } from '@astral/ui/ThemeProvider';
+
+() => {
+  const theme = createTheme({
+    palette: defaultPalette
+  });
+  return <ThemeProvider theme={theme}>
+      <main>Для просмотра примера зайди во вкладку docs</main>
+    </ThemeProvider>;
+}
+```

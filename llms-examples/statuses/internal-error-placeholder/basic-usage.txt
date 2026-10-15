@@ -1,0 +1,17 @@
+```tsx
+import { ConfigProvider } from '@astral/ui/ConfigProvider';
+import { InternalErrorPlaceholder } from '@astral/ui/placeholders/InternalErrorPlaceholder';
+
+() => {
+  return <ConfigProvider imagesMap={{
+    defaultErrorImgSrc: errorIllustration,
+    noDataImgSrc: errorIllustration,
+    outdatedReleaseErrorImgSrc: errorIllustration
+  }} techSup={{
+    email: 'test@example.com',
+    phone: '79999999999'
+  }}>
+      <InternalErrorPlaceholder />
+    </ConfigProvider>;
+}
+```

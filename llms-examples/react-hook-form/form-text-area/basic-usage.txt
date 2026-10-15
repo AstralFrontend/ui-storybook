@@ -1,0 +1,14 @@
+```tsx
+import { FormTextArea } from '@astral/ui/hook-form/FormTextArea';
+import { FormSubmitButton } from '@astral/ui/hook-form/FormSubmitButton';
+
+() => {
+  const form = useForm<FormValues>({
+    validationSchema
+  });
+  return <FormStoryContainer form={form}>
+      <FormTextArea required label="Form textarea field" control={form.control} name="textareaField" />
+      <FormSubmitButton>Submit</FormSubmitButton>
+    </FormStoryContainer>;
+}
+```

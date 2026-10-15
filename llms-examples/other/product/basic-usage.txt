@@ -1,0 +1,12 @@
+```tsx
+import { Typography } from '@astral/ui/Typography';
+import { Product } from '@astral/ui/Product';
+
+() => <Stack gap={4}>
+    <Typography variant="h3">ЭДО</Typography>
+    <Product component={AdaptedLink} logo={() => <UikitLogo />} name="Астрал.ЭДО" />
+
+    <Typography variant="h3">ОФД</Typography>
+    <Product logo={() => <img src={ofdLogoSrc} alt="Лого ОФД" />} name="Астрал.ОФД" />
+  </Stack>
+```

@@ -1,0 +1,16 @@
+```tsx
+import { List } from '@astral/ui/List';
+import { ListItem } from '@astral/ui/ListItem';
+import { ListItemText } from '@astral/ui/ListItemText';
+
+() => {
+  return <List>
+      <ListItem>
+        <ListItemText primary="Drafts" />
+      </ListItem>
+      <ListItem>
+        <ListItemText primary="Inbox" />
+      </ListItem>
+    </List>;
+}
+```

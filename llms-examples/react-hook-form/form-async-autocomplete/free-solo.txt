@@ -1,0 +1,23 @@
+```tsx
+import { Form } from '@astral/ui/hook-form/Form';
+import { FormAsyncAutocomplete } from '@astral/ui/hook-form/FormAsyncAutocomplete';
+import { FormSubmitButton } from '@astral/ui/hook-form/FormSubmitButton';
+
+() => {
+  const form = useForm<FormValues>({
+    validationSchema: validationSchemaFreeSolo
+  });
+  const handleSubmit = form.handleSubmit(values => new Promise<void>(resolve => {
+    setTimeout(() => {
+      window.alert(JSON.stringify(values));
+      resolve();
+    }, 1000);
+  }));
+  return <Form form={form} onSubmit={handleSubmit}>
+      <GridContainer container>
+        <FormAsyncAutocomplete<FormValues, User, false, false, true> fetchOptions={fetchUsers} control={form.control} name="autocomplete" freeSolo autoHighlight={false} getOptionLabel={option => typeof option === 'string' ? option : option.name} />
+        <FormSubmitButton>Submit</FormSubmitButton>
+      </GridContainer>
+    </Form>;
+}
+```

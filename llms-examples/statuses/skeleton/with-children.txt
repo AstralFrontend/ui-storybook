@@ -1,0 +1,10 @@
+```tsx
+import { Skeleton } from '@astral/ui/Skeleton';
+import { Avatar } from '@astral/ui/Avatar';
+
+() => <Container>
+    <Skeleton variant="circular">
+      <Avatar />
+    </Skeleton>
+  </Container>
+```

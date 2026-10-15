@@ -1,0 +1,14 @@
+```tsx
+import { NumberedList } from '@astral/ui/NumberedList';
+import { NumberedListItem } from '@astral/ui/NumberedListItem';
+
+() => {
+  return <Container>
+      <NumberedList>
+        <NumberedListItem>
+          Отправьте запрос на получение пакета(ов) ЭП
+        </NumberedListItem>
+      </NumberedList>
+    </Container>;
+}
+```

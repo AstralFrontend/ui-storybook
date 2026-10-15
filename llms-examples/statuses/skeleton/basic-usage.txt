@@ -1,0 +1,9 @@
+```tsx
+import { Skeleton } from '@astral/ui/Skeleton';
+
+() => <>
+    <Container>
+      <Skeleton />
+    </Container>
+  </>
+```

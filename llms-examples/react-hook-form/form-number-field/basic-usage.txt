@@ -1,0 +1,24 @@
+```tsx
+import { Form } from '@astral/ui/hook-form/Form';
+import { Grid } from '@astral/ui/Grid';
+import { FormNumberField } from '@astral/ui/hook-form/FormNumberField';
+import { FormSubmitButton } from '@astral/ui/hook-form/FormSubmitButton';
+
+() => {
+  const form = useForm<FormValues>({
+    validationSchema
+  });
+  const handleSubmit = form.handleSubmit(values => new Promise<void>(resolve => {
+    setTimeout(() => {
+      window.alert(JSON.stringify(values));
+      resolve();
+    }, 1000);
+  }));
+  return <Form form={form} onSubmit={handleSubmit}>
+      <Grid container spacing={2}>
+        <FormNumberField label="Количество лицензий" name="number" />
+        <FormSubmitButton>Отправить</FormSubmitButton>
+      </Grid>
+    </Form>;
+}
+```

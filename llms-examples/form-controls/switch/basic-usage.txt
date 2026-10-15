@@ -1,0 +1,23 @@
+```tsx
+import { Paper } from '@astral/ui/Paper';
+import { DialogTitle } from '@astral/ui/DialogTitle';
+import { DialogContent } from '@astral/ui/DialogContent';
+import { Typography } from '@astral/ui/Typography';
+import { Switch } from '@astral/ui/Switch';
+import { DialogActions } from '@astral/ui/DialogActions';
+
+() => {
+  return <Paper style={{
+    width: 500
+  }}>
+      <DialogTitle variant="h5">Настройки</DialogTitle>
+      <DialogContent>
+        <StyledGrid container>
+          <Typography>Отображать отклоненные заявления</Typography>
+          <Switch size="small" />
+        </StyledGrid>
+      </DialogContent>
+      <DialogActions />
+    </Paper>;
+}
+```

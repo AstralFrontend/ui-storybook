@@ -1,0 +1,41 @@
+```tsx
+import { InfiniteDataList } from '@astral/ui/InfiniteDataList';
+import { Typography } from '@astral/ui/Typography';
+
+() => {
+  const [loading, setLoading] = useState(true);
+  const [slicedData, setSlicedData] = useState<MockData[]>([]);
+  const [isEndReached, setIsEndReached] = useState(false);
+  const TOTAL_COUNT = 40;
+  const data = generateData();
+  useEffect(() => {
+    setTimeout(() => {
+      setSlicedData(data.slice(0, 10));
+      setLoading(false);
+    }, 1500);
+  }, []);
+  useEffect(() => {
+    if (slicedData.length >= TOTAL_COUNT) {
+      setIsEndReached(true);
+    }
+  }, [slicedData]);
+  const incrementData = () => {
+    setLoading(true);
+    setTimeout(() => {
+      setSlicedData(prevData => [...prevData, ...generateData(10)]);
+      setLoading(false);
+    }, 1500);
+  };
+  return <Container>
+      <InfiniteDataList keyId="id" data={slicedData} onEndReached={incrementData} isEndReached={isEndReached} isLoading={loading} itemContent={({
+      title,
+      organization
+    }, {
+      className
+    }) => <div className={className}>
+            <Typography>{title}</Typography>
+            <Typography color="secondary">{organization}</Typography>
+          </div>} onRetry={incrementData} />
+    </Container>;
+}
+```

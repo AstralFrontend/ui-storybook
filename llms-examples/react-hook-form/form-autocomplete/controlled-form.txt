@@ -1,0 +1,21 @@
+```tsx
+import { FormAutocomplete } from '@astral/ui/hook-form/FormAutocomplete';
+import { Button } from '@astral/ui/Button';
+
+() => {
+  const [, setIsUpdate] = useState(false);
+  const form = useForm<FormFreeValues>({
+    reValidateMode: 'onChange',
+    validationSchema: validationFreeSchema
+  });
+  const handleButtonClick = () => {
+    form.setValue('autocomplete', "It's sunny today");
+    setIsUpdate(true);
+  };
+  return <FormStoryContainer form={form}>
+      <FormAutocomplete<FormFreeValues, IOption, true, false, true> control={form.control} name="autocomplete" options={OPTIONS} freeSolo label="Form autocomplete with freeSolo" getOptionLabel={params => typeof params === 'string' ? params : params.title} />
+
+      <Button onClick={handleButtonClick}>Set text</Button>
+    </FormStoryContainer>;
+}
+```

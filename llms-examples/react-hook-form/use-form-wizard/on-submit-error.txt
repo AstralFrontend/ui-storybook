@@ -1,0 +1,52 @@
+```tsx
+import { FormWizard } from '@astral/ui/hook-form/FormWizard';
+import { NotificationContainer } from '@astral/ui/LegacyNotification';
+
+() => {
+  const validationSchemaTariffStep = object<StepTariffFormValues>({
+    tariff: string()
+  });
+  const validationSchemaPersonalData = object<StepOneFormValues>({
+    firstName: string(),
+    lastName: string()
+  });
+  const handleSubmit = (values: FormValuesWithTariff) => new Promise<void>(resolve => {
+    setTimeout(() => {
+      window.alert(JSON.stringify(values, null, 2));
+      resolve();
+    }, 1000);
+  });
+  const {
+    form,
+    currentStepId,
+    steps,
+    isFirstStep,
+    isLastStep,
+    onClickStep,
+    onPrevStep,
+    onSubmit,
+    onSubmitError
+  } = useFormWizard<FormValuesWithTariff>({
+    steps: [{
+      id: 'stepTariff',
+      label: 'Выбор тарифа',
+      validationSchema: validationSchemaTariffStep,
+      component: StepTariff,
+      onSubmitError: () => {
+        notify.error('Выберите тариф');
+      }
+    }, {
+      id: 'stepPersonalData',
+      label: 'Личные данные',
+      validationSchema: validationSchemaPersonalData,
+      component: StepPersonalData
+    }],
+    onSubmit: handleSubmit
+  });
+  return <Container>
+      <FormWizard<FormValuesWithTariff> form={form} currentStepId={currentStepId} isFirstStep={isFirstStep} isLastStep={isLastStep} steps={steps} submitButtonText="Отправить" onClickStep={onClickStep} onPrevStep={onPrevStep} onSubmit={onSubmit} onSubmitError={onSubmitError} />
+
+      <NotificationContainer />
+    </Container>;
+}
+```

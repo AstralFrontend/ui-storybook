@@ -1,0 +1,41 @@
+```tsx
+import { MenuList } from '@astral/ui/MenuList';
+import { MenuItem } from '@astral/ui/MenuItem';
+import { ListItemIcon } from '@astral/ui/ListItemIcon';
+import { ProfileOutlineMd } from '@astral/ui/icons/ProfileOutlineMd';
+import { ListItemText } from '@astral/ui/ListItemText';
+import { CompanyOutlineMd } from '@astral/ui/icons/CompanyOutlineMd';
+import { SettingsFillMd } from '@astral/ui/icons/SettingsFillMd';
+import { Divider } from '@astral/ui/Divider';
+import { QuitOutlineMd } from '@astral/ui/icons/QuitOutlineMd';
+
+() => {
+  return <MenuList>
+      <MenuItem>
+        <ListItemIcon>
+          <ProfileOutlineMd />
+        </ListItemIcon>
+        <ListItemText>Мой профиль</ListItemText>
+      </MenuItem>
+      <MenuItem>
+        <ListItemIcon>
+          <CompanyOutlineMd />
+        </ListItemIcon>
+        <ListItemText>Мои организации</ListItemText>
+      </MenuItem>
+      <MenuItem>
+        <ListItemIcon>
+          <SettingsFillMd />
+        </ListItemIcon>
+        <ListItemText>Настройки</ListItemText>
+      </MenuItem>
+      <Divider />
+      <MenuItem>
+        <ListItemIcon>
+          <QuitOutlineMd />
+        </ListItemIcon>
+        <ListItemText>Выйти</ListItemText>
+      </MenuItem>
+    </MenuList>;
+}
+```

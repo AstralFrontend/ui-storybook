@@ -1,0 +1,32 @@
+```tsx
+import { Typography } from '@astral/ui/Typography';
+import { Form } from '@astral/ui/hook-form/Form';
+import { Grid } from '@astral/ui/Grid';
+import { FormTextField } from '@astral/ui/hook-form/FormTextField';
+import { FormMobilePhoneField } from '@astral/ui/hook-form/FormMobilePhoneField';
+import { FormEmailField } from '@astral/ui/hook-form/FormEmailField';
+
+() => {
+  const form = useForm<FormValues>({
+    validationSchema
+  });
+  const handleSubmit = (values: FormValues) => new Promise<void>(resolve => {
+    setTimeout(() => resolve(), 2000);
+  }).then(() => {
+    window.alert(JSON.stringify(values, null, 4));
+  });
+  return <FormWrapper>
+      <Typography variant="h3">Личные и контактные данные</Typography>
+      <Form noValidate form={form} onSubmit={form.handleSubmit(handleSubmit)}>
+        <Grid container rowSpacing={2} columnSpacing={2} columns={3}>
+          <FormTextField required label="Фамилия" control={form.control} name="lastName" />
+          <FormTextField required label="Имя" control={form.control} name="name" />
+          <FormTextField label="Отчество" control={form.control} name="patronymic" />
+          <FormMobilePhoneField required label="Номер телефона" control={form.control} name="phone" />
+          <FormEmailField required label="Почта" control={form.control} name="email" />
+        </Grid>
+        <StyledFormSubmitButton>Отправить</StyledFormSubmitButton>
+      </Form>
+    </FormWrapper>;
+}
+```

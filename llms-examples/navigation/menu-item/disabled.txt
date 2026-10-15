@@ -1,0 +1,23 @@
+```tsx
+import { MenuList } from '@astral/ui/MenuList';
+import { MenuItem } from '@astral/ui/MenuItem';
+import { ListItemIcon } from '@astral/ui/ListItemIcon';
+import { ProfileOutlineMd } from '@astral/ui/icons/ProfileOutlineMd';
+
+() => {
+  return <MenuList>
+      <MenuItem disabled disabledReason="Действие недоступно. Попробуйте позднее">
+        <ListItemIcon>
+          <ProfileOutlineMd />
+        </ListItemIcon>
+        Мой профиль
+      </MenuItem>
+      <MenuItem>
+        <ListItemIcon>
+          <ProfileOutlineMd />
+        </ListItemIcon>
+        Выход
+      </MenuItem>
+    </MenuList>;
+}
+```

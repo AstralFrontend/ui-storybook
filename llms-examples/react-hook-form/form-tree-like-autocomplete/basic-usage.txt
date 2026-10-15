@@ -1,0 +1,33 @@
+```tsx
+import { Form } from '@astral/ui/hook-form/Form';
+import { Grid } from '@astral/ui/Grid';
+import { FormTreeLikeAutocomplete } from '@astral/ui/hook-form/FormTreeLikeAutocomplete';
+import { FormSubmitButton } from '@astral/ui/hook-form/FormSubmitButton';
+
+() => {
+  const form = useForm<FormValues>({
+    defaultValues: {
+      treeLikeAutocomplete: ['3']
+    },
+    validationSchema
+  });
+  const fakeOptions = [...FAKE_NOTE_TREE_LIST_DATA, {
+    id: '3',
+    label: 'Организация 3'
+  }];
+  const handleSubmit = form.handleSubmit(values => new Promise<void>(resolve => {
+    setTimeout(() => {
+      window.alert(JSON.stringify(values));
+      resolve();
+    }, 1000);
+  }));
+  return <Form form={form} onSubmit={handleSubmit}>
+      <Grid container spacing={2}>
+        <FormTreeLikeAutocomplete name="treeLikeAutocomplete" label="Название" required options={fakeOptions} dialogProps={{
+        title: 'Выбор элемента'
+      }} control={form.control} />
+        <FormSubmitButton>Submit</FormSubmitButton>
+      </Grid>
+    </Form>;
+}
+```

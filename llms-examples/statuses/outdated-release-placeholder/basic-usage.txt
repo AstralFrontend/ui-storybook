@@ -1,0 +1,14 @@
+```tsx
+import { ConfigProvider } from '@astral/ui/ConfigProvider';
+import { OutdatedReleasePlaceholder } from '@astral/ui/placeholders/OutdatedReleasePlaceholder';
+
+() => {
+  return <ConfigProvider imagesMap={{
+    defaultErrorImgSrc: outdatedReleaseIllustration,
+    noDataImgSrc: outdatedReleaseIllustration,
+    outdatedReleaseErrorImgSrc: outdatedReleaseIllustration
+  }}>
+      <OutdatedReleasePlaceholder />
+    </ConfigProvider>;
+}
+```

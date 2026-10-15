@@ -1,0 +1,20 @@
+```tsx
+import { InfiniteDataList } from '@astral/ui/InfiniteDataList';
+import { Typography } from '@astral/ui/Typography';
+
+() => {
+  const data = generateData();
+  const handleRetry = () => alert('Повторить запрос');
+  return <Container>
+      <InfiniteDataList keyId="id" data={data} isError itemContent={({
+      title,
+      organization
+    }, {
+      className
+    }) => <div className={className}>
+            <Typography>{title}</Typography>
+            <Typography color="secondary">{organization}</Typography>
+          </div>} onRetry={handleRetry} />
+    </Container>;
+}
+```

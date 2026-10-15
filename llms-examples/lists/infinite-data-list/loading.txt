@@ -1,0 +1,18 @@
+```tsx
+import { InfiniteDataList } from '@astral/ui/InfiniteDataList';
+import { Typography } from '@astral/ui/Typography';
+
+() => {
+  return <Container>
+      <InfiniteDataList<MockData> keyId="id" data={[]} isLoading itemContent={({
+      title,
+      organization
+    }, {
+      className
+    }) => <div className={className}>
+            <Typography>{title}</Typography>
+            <Typography color="secondary">{organization}</Typography>
+          </div>} onRetry={() => undefined} />
+    </Container>;
+}
+```

@@ -1,0 +1,126 @@
+```tsx
+import { Grid } from '@astral/ui/Grid';
+import { FormSelect } from '@astral/ui/hook-form/FormSelect';
+import { MenuItem } from '@astral/ui/MenuItem';
+import { FormTextField } from '@astral/ui/hook-form/FormTextField';
+import { FormWizard } from '@astral/ui/hook-form/FormWizard';
+
+() => {
+  type ExampleStepOneFormValues = {
+    recipient: string;
+    city?: string;
+  };
+  type ExampleStepFlInfoFormValues = {
+    firstName: string;
+    lastName: string;
+  };
+  type ExampleStepOrgInfoFormValues = {
+    organizationName: string;
+    ogrn: string;
+  };
+  type ExampleFormValues = ExampleStepOneFormValues & (ExampleStepFlInfoFormValues | ExampleStepOrgInfoFormValues);
+  const validationSchemaStepOne = object<ExampleStepOneFormValues>({
+    recipient: string(),
+    city: optional(string())
+  });
+  const validationSchemaStepFlInfo = object<ExampleStepFlInfoFormValues>({
+    firstName: string(),
+    lastName: string()
+  });
+  const validationSchemaStepOrgInfo = object<ExampleStepOrgInfoFormValues>({
+    organizationName: string(),
+    ogrn: string(ogrnUL())
+  });
+  const handleSubmit = (values: ExampleFormValues) => new Promise<void>(resolve => {
+    setTimeout(() => {
+      window.alert(JSON.stringify(values, null, 2));
+      resolve();
+    }, 1000);
+  });
+  const RecipientStep = () => {
+    const stepOneForm = useFormContext<ExampleStepOneFormValues>();
+    return <Grid container rowSpacing={2}>
+        <FormSelect required control={stepOneForm.control} name="recipient" label="Получатель" getOptionLabel={value => FAKE_RECIPIENT.find(option => option.value === value)?.name || ''}>
+          {FAKE_RECIPIENT.map(({
+          value,
+          name
+        }) => <MenuItem value={value} key={value}>
+              {name}
+            </MenuItem>)}
+        </FormSelect>
+
+        <FormTextField name="city" label="Город" control={form.control} />
+      </Grid>;
+  };
+  const FlInfoStep = () => {
+    const flInfoForm = useFormContext<ExampleStepFlInfoFormValues>();
+    return <>
+        <Grid container rowSpacing={2}>
+          <FormTextField required name="firstName" label="Имя" control={flInfoForm.control} />
+
+          <FormTextField required name="lastName" label="Фамилия" control={flInfoForm.control} />
+        </Grid>
+      </>;
+  };
+  const OrgInfoStep = () => {
+    const orgInfoForm = useFormContext<ExampleStepOrgInfoFormValues>();
+    return <Grid container rowSpacing={2}>
+        <FormTextField required name="organizationName" label="Организация" control={orgInfoForm.control} />
+        <FormTextField required name="ogrn" label="ОГРН" control={orgInfoForm.control} />
+      </Grid>;
+  };
+  const {
+    form,
+    currentStepId,
+    steps,
+    isFirstStep,
+    isLastStep,
+    onClickStep,
+    onPrevStep,
+    onSubmit
+  } = useFormWizard<ExampleFormValues>({
+    steps: [{
+      id: 'recipientStep',
+      label: 'Получатель',
+      validationSchema: validationSchemaStepOne,
+      component: RecipientStep
+    }, {
+      id: 'flInfoStep',
+      label: 'Данные ФЛ',
+      validationSchema: validationSchemaStepFlInfo,
+      shouldSkip: {
+        // Отслеживаем изменение поля 'recipient'
+        observableFields: ['recipient'],
+        // calculate вызывается при изменении значения в поле 'recipient'
+        calculate: formValues => {
+          // Если получатель юр.лицо, то пропускаем шаг
+          if (Object.is(formValues?.recipient, '2')) {
+            return true;
+          }
+          return false;
+        }
+      },
+      component: FlInfoStep
+    }, {
+      id: 'orgInfoStep',
+      label: 'Данные организации',
+      validationSchema: validationSchemaStepOrgInfo,
+      shouldSkip: {
+        // Отслеживаем изменение поля 'recipient'
+        observableFields: ['recipient'],
+        // calculate вызывается при изменении значения в поле 'recipient'
+        calculate: formValues => {
+          // Если получатель физ.лицо или не определено, то пропускаем шаг
+          if (!formValues?.recipient || Object.is(formValues?.recipient, '1')) {
+            return true;
+          }
+          return false;
+        }
+      },
+      component: OrgInfoStep
+    }],
+    onSubmit: handleSubmit
+  });
+  return <FormWizard<ExampleFormValues> form={form} currentStepId={currentStepId} isFirstStep={isFirstStep} isLastStep={isLastStep} steps={steps} submitButtonText="Отправить" onClickStep={onClickStep} onPrevStep={onPrevStep} onSubmit={onSubmit} />;
+}
+```

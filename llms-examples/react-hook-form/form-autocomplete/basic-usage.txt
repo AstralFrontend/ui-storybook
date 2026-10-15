@@ -1,0 +1,14 @@
+```tsx
+import { FormAutocomplete } from '@astral/ui/hook-form/FormAutocomplete';
+import { FormSubmitButton } from '@astral/ui/hook-form/FormSubmitButton';
+
+() => {
+  const form = useForm<FormValues>({
+    validationSchema
+  });
+  return <FormStoryContainer form={form}>
+      <FormAutocomplete<FormValues, IOption, true, false, false> multiple control={form.control} name="autocomplete" options={OPTIONS} label="Form autocomplete" getOptionLabel={params => params.title} placeholder="Placeholder" />
+      <FormSubmitButton>Submit</FormSubmitButton>
+    </FormStoryContainer>;
+}
+```

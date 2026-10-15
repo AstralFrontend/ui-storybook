@@ -1,0 +1,18 @@
+```tsx
+import { List } from '@astral/ui/List';
+import { ListItem } from '@astral/ui/ListItem';
+import { ListItemIcon } from '@astral/ui/ListItemIcon';
+import { HomeOutlineMd } from '@astral/ui/icons/HomeOutlineMd';
+import { ListItemText } from '@astral/ui/ListItemText';
+
+() => {
+  return <List>
+      <ListItem selected>
+        <ListItemIcon>
+          <HomeOutlineMd />
+        </ListItemIcon>
+        <ListItemText primary="Drafts" />
+      </ListItem>
+    </List>;
+}
+```

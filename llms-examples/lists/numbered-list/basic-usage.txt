@@ -1,0 +1,33 @@
+```tsx
+import { NumberedList } from '@astral/ui/NumberedList';
+import { NumberedListItem } from '@astral/ui/NumberedListItem';
+import { NumberField } from '@astral/ui/NumberField';
+import { Typography } from '@astral/ui/Typography';
+import { Link } from '@astral/ui/Link';
+
+() => {
+  return <Container>
+      <NumberedList>
+        <NumberedListItem>
+          Отправьте запрос на получение пакета(ов) ЭП
+        </NumberedListItem>
+        <NumberedListItem>
+          <ContentItemWrapper>
+            Укажите, сколько доверенностей хотите добавить, и\xA0отправьте заявку
+            <NumberField placeholder="Количество доверенностей" fullWidth />
+          </ContentItemWrapper>
+        </NumberedListItem>
+        <NumberedListItem>
+          <Typography>Обратитесь в обслуживающую организацию</Typography>
+          <Typography color="textSecondary">
+            Если у вас нет договора с обслуживающей организацией, подобрать ее
+            можно <Link href="#1">здесь</Link>.
+          </Typography>
+        </NumberedListItem>
+        <NumberedListItem>
+          Дождитесь одобрения заявки и\xA0приступайте к\xA0работе
+        </NumberedListItem>
+      </NumberedList>
+    </Container>;
+}
+```

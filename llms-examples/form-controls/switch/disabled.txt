@@ -1,0 +1,9 @@
+```tsx
+import { Grid } from '@astral/ui/Grid';
+import { Switch } from '@astral/ui/Switch';
+
+() => <Grid container columns={2}>
+    <Switch disabled />
+    <Switch checked disabled />
+  </Grid>
+```
