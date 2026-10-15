@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime-C0FnF6B9.js";import{n as t}from"./FormEmailField-BoZgH2fO.js";import{n}from"./FormMobilePhoneField-DM4b7ZvP.js";function r(){return(r=e((()=>{t()})))()}function i(){return(i=e((()=>{n()})))()}export{r as n,i as t};
