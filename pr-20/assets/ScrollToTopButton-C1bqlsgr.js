@@ -1,9 +1,0 @@
-import{n as e}from"./rolldown-runtime-C0FnF6B9.js";import{Va as t,ji as n,xa as r,yn as i}from"./preview-CphKROT6.js";import{n as a,t as o}from"./Fab-DrmQEfhf.js";import{n as s,t as c}from"./ChevronUpOutlineMd-TmIspNZo.js";function l(){return(l=e((()=>{a()})))()}var u;function d(){return(d=e((()=>{l(),i(),u=n(o)`
-  position: absolute;
-  right: ${({theme:e})=>e.spacing(3)};
-  bottom: ${({theme:e})=>e.spacing(8)};
-
-  ${({theme:e})=>e.breakpoints.down(`mobile`)} {
-    right: ${({theme:e})=>e.spacing(9)};
-  }
-`})))()}var f,p,m;function h(){return(h=e((()=>{f=t(),c(),d(),p=r(),m=(0,f.forwardRef)(({onClick:e,className:t},n)=>(0,p.jsx)(u,{ref:n,color:`default`,onClick:e,size:`small`,className:t,children:(0,p.jsx)(s,{})}));try{m.displayName=`ScrollToTopButton`,m.__docgenInfo={description:`Универсальная кнопка прокрутки содержимого наверх, не содержит логику`,displayName:`ScrollToTopButton`,filePath:`/home/runner/work/ui-temp-10-2026/ui-temp-10-2026/packages/ui/src/components/ScrollToTopButton/ScrollToTopButton.tsx`,methods:[],props:{className:{defaultValue:null,declarations:[{fileName:`ui-temp-10-2026/node_modules/@mui/material/OverridableComponent.d.ts`,name:`CommonProps`},{fileName:`ui-temp-10-2026/node_modules/@types/react/index.d.ts`,name:`HTMLAttributes`}],description:``,name:`className`,parent:{fileName:`ui-temp-10-2026/node_modules/@mui/material/OverridableComponent.d.ts`,name:`CommonProps`},required:!1,tags:{},type:{name:`string`}},onClick:{defaultValue:null,declarations:[{fileName:`ui-temp-10-2026/node_modules/@types/react/index.d.ts`,name:`DOMAttributes`},{fileName:`ui-temp-10-2026/node_modules/@types/react/index.d.ts`,name:`DOMAttributes`}],description:``,name:`onClick`,parent:{fileName:`ui-temp-10-2026/node_modules/@types/react/index.d.ts`,name:`DOMAttributes`},required:!1,tags:{},type:{name:`MouseEventHandler<HTMLButtonElement>`}}},tags:{}}}catch{}})))()}export{h as n,l as r,m as t};
