@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime-C0FnF6B9.js";import{Va as t}from"./preview-C_tlOeal.js";var n,r;function i(){return(i=e((()=>{n=t(),r=(e,t)=>{let r=(0,n.useRef)(()=>{});(0,n.useEffect)(()=>{r.current=e}),(0,n.useEffect)(()=>{if(t!==null){let e=setInterval(()=>r.current(),t||0);return()=>clearInterval(e)}},[t])}})))()}export{r as n,i as t};
