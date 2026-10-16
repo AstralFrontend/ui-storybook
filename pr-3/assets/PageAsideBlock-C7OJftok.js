@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime-C0FnF6B9.js";import{n as t}from"./PageAsideBlock-DU3Dqg0e.js";function n(){return(n=e((()=>{t()})))()}export{n as t};
