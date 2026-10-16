@@ -1,1 +1,0 @@
-import{n as e}from"./rolldown-runtime-C0FnF6B9.js";import{n as t}from"./TagBadge-I5up1H6J.js";function n(){return(n=e((()=>{t()})))()}export{n as t};
