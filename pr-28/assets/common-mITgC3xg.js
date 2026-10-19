@@ -1,3 +1,0 @@
-import{n as e}from"./rolldown-runtime-C0FnF6B9.js";import{ji as t,yn as n}from"./preview-C_tlOeal.js";var r;function i(){return(i=e((()=>{n(),r=t.div`
-  width: 500px;
-`})))()}var a;function o(){return(o=e((()=>{a=[{label:`Паспортные данные`,isError:!1},{label:`Адрес регистрации`,isError:!0},{label:`Контактная информация`,isError:!1},{label:`Подтверждение данных`,isError:!1}]})))()}function s(){return(s=e((()=>{i(),o()})))()}export{i as a,r as i,o as n,a as r,s as t};
