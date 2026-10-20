@@ -1,1 +1,0 @@
-import{n as e}from"./rolldown-runtime-C0FnF6B9.js";var t,n;function r(){return(r=e((()=>{t=[{name:`Правовой статус`,value:`Физическое лицо`},{name:`Криптопровайдер`,value:`КриптоПРО CSP`}],n=[{name:`Тариф`,value:`Базис`},{name:`Доп. услуги`,value:``},{name:`Расширения`,value:``}]})))()}export{t as n,r,n as t};
