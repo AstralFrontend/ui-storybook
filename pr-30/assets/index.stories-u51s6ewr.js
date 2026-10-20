@@ -1,0 +1,15 @@
+import{n as e}from"./rolldown-runtime-C0FnF6B9.js";import{ya as t}from"./preview-BgfOFFw_.js";import{_ as n,g as r}from"./date-foza3VmH.js";import{n as i,t as a}from"./useForm-Bf0UJkc1.js";import{n as o,t as s}from"./FormSubmitButton-CAKAnPVx.js";import{d as c,f as l,n as u,t as d}from"./createGuard-Bnbb_ytZ.js";import{n as f,t as p}from"./object-CXqDZ5YO.js";import{n as m,t as h}from"./compose-BaXbo_LB.js";import{n as g,t as _}from"./resetTime-B1UROxlY.js";import{n as v,t as y}from"./FormDateRangePicker-B9-fP6BD.js";import{n as b,t as x}from"./docs-D89u7wga.js";var S;function C(){return(C=e((()=>{_(),S=(e,t)=>g(e).getTime()<g(t).getTime()})))()}var w,T,E,D,O,k;function A(){return(A=e((()=>{l(),w={code:c(`rangedate-required`),message:`Укажите период`},T={code:c(`rangedate-startRequired`),message:`Укажите дату начала`},E={code:c(`rangedate-endRequired`),message:`Укажите дату окончания`},D={code:c(`rangedate-startInvalid`),message:`Дата начала некорректна`},O={code:c(`rangedate-endInvalid`),message:`Дата окончания некорректна`},k={code:c(`rangedate-endEarlierStart`),message:`Дата окончания раньше даты начала`}})))()}var j;function M(){return(M=e((()=>{r(),m(),u(),C(),A(),j=(...e)=>d((t,r,i)=>{let{required:a,messages:o}=Object.assign(Object.assign({},i||{}),{required:{start:i?.required&&`start`in i?.required?i?.required.start:!0,end:i?.required&&`end`in i?.required?i?.required.end:!0}}),s=t;return a?.start&&a?.end&&!s.start&&!s.end?r.createError({message:w.message,code:w.code}):a?.start&&!s.start?r.createError({message:o?.startRequired||T.message,code:T.code}):a?.end&&!s.end?r.createError({message:o?.endRequired||E.message,code:E.code}):s?.start&&!n(s.start)?r.createError({message:D.message,code:D.code}):s?.end&&!n(s.end)?r.createError({message:O.message,code:O.code}):s.end&&s.start&&S(s.end,s.start)?r.createError({message:o?.endEarlierStart||k.message,code:k.code}):h(...e)(s,r)})})))()}var N,P,F;function I(){return(I=e((()=>{p(),M(),x(),s(),a(),v(),N=t(),P=f({period:j()}),F=()=>{let e=i({validationSchema:P});return(0,N.jsxs)(b,{form:e,children:[(0,N.jsx)(y,{name:`period`,startDateProps:{label:`Дата начала`,required:!0},endDateProps:{label:`Дата окончания`,required:!0},control:e.control}),(0,N.jsx)(o,{children:`Submit`})]})},F.parameters={...F.parameters,docs:{...F.parameters?.docs,source:{originalSource:`() => {
+  const form = useForm<FormValues>({
+    validationSchema
+  });
+  return <FormStoryContainer form={form}>
+      <FormDateRangePicker name="period" startDateProps={{
+      label: 'Дата начала',
+      required: true
+    }} endDateProps={{
+      label: 'Дата окончания',
+      required: true
+    }} control={form.control} />
+      <FormSubmitButton>Submit</FormSubmitButton>
+    </FormStoryContainer>;
+}`,...F.parameters?.docs?.source}}}})))()}var L,R;function z(){return(z=e((()=>{v(),I(),L={title:`React-Hook-Form/FormDateRangePicker`,component:y,parameters:{docs:{description:{component:`Обертка [DateRangePicker](/story/date-pickers-dateRangePicker--docs) для react-hook-form.`}}}},R=[`BasicUsage`]})))()}z();export{F as BasicUsage,R as __namedExportsOrder,L as default};
