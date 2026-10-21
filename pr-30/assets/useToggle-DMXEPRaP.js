@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime-C0FnF6B9.js";import{za as t}from"./preview-DtOtDb_i.js";var n,r;function i(){return(i=e((()=>{n=t(),r=e=>{let{initialState:t=!1,onInactive:r,onActive:i}=e||{},[a,o]=(0,n.useState)(t);return[a,(...e)=>{o(!0),i?.(...e)},(...e)=>{o(!1),r?.(...e)}]}})))()}function a(){return(a=e((()=>{i()})))()}export{i as n,r,a as t};

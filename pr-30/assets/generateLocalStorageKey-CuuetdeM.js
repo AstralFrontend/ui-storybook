@@ -1,1 +1,0 @@
-import{n as e}from"./rolldown-runtime-C0FnF6B9.js";var t;function n(){return(n=e((()=>{t=(e,t)=>`@astral/ui::${e}::${t}`})))()}export{n,t};
