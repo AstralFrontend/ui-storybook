@@ -287,10 +287,6 @@
           "sections": []
         },
         {
-          "name": "RadioCard",
-          "type": "component"
-        },
-        {
           "name": "RadioField",
           "type": "component",
           "sections": []
@@ -307,6 +303,16 @@
           "name": "Select",
           "type": "component",
           "sections": []
+        },
+        {
+          "name": "SelectionCard",
+          "type": "component",
+          "sections": [
+            {
+              "name": "Deprecated/RadioCard",
+              "type": "component"
+            }
+          ]
         },
         {
           "name": "StepSlider",
@@ -1123,29 +1129,6 @@
                 "name": "ReactNode"
               }
             },
-            "edge": {
-              "defaultValue": {
-                "value": "false"
-              },
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/internal/SwitchBase.d.ts",
-                  "name": "SwitchBaseProps"
-                }
-              ],
-              "description": "If given, uses a negative margin to counteract the padding on one\nside (this is often helpful for aligning the left or right\nside of the icon with content above or below, without ruining the border\nsize and shape).",
-              "parent": {
-                "fileName": "ui-temp-10-2026/node_modules/@mui/material/internal/SwitchBase.d.ts",
-                "name": "SwitchBaseProps"
-              },
-              "required": false,
-              "tags": {
-                "default": "false"
-              },
-              "type": {
-                "name": "false | \"start\" | \"end\""
-              }
-            },
             "checked": {
               "defaultValue": null,
               "declarations": [
@@ -1182,6 +1165,29 @@
               "tags": {},
               "type": {
                 "name": "ReactNode"
+              }
+            },
+            "edge": {
+              "defaultValue": {
+                "value": "false"
+              },
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/internal/SwitchBase.d.ts",
+                  "name": "SwitchBaseProps"
+                }
+              ],
+              "description": "If given, uses a negative margin to counteract the padding on one\nside (this is often helpful for aligning the left or right\nside of the icon with content above or below, without ruining the border\nsize and shape).",
+              "parent": {
+                "fileName": "ui-temp-10-2026/node_modules/@mui/material/internal/SwitchBase.d.ts",
+                "name": "SwitchBaseProps"
+              },
+              "required": false,
+              "tags": {
+                "default": "false"
+              },
+              "type": {
+                "name": "false | \"start\" | \"end\""
               }
             },
             "labelPlacement": {
@@ -2228,6 +2234,30 @@
                     ]
                   }
                 },
+                "selected": {
+                  "defaultValue": {
+                    "value": "false"
+                  },
+                  "declarations": [
+                    {
+                      "fileName": "ui-temp-10-2026/node_modules/@mui/material/ListItem/ListItem.d.ts",
+                      "name": "ListItemBaseProps"
+                    }
+                  ],
+                  "description": "Use to apply selected styling.",
+                  "parent": {
+                    "fileName": "ui-temp-10-2026/node_modules/@mui/material/ListItem/ListItem.d.ts",
+                    "name": "ListItemBaseProps"
+                  },
+                  "required": false,
+                  "tags": {
+                    "default": "false",
+                    "deprecated": "checkout [ListItemButton](/material-ui/api/list-item-button/) instead"
+                  },
+                  "type": {
+                    "name": "boolean"
+                  }
+                },
                 "dense": {
                   "defaultValue": {
                     "value": "false"
@@ -2269,30 +2299,6 @@
                   "required": false,
                   "tags": {
                     "default": "false"
-                  },
-                  "type": {
-                    "name": "boolean"
-                  }
-                },
-                "selected": {
-                  "defaultValue": {
-                    "value": "false"
-                  },
-                  "declarations": [
-                    {
-                      "fileName": "ui-temp-10-2026/node_modules/@mui/material/ListItem/ListItem.d.ts",
-                      "name": "ListItemBaseProps"
-                    }
-                  ],
-                  "description": "Use to apply selected styling.",
-                  "parent": {
-                    "fileName": "ui-temp-10-2026/node_modules/@mui/material/ListItem/ListItem.d.ts",
-                    "name": "ListItemBaseProps"
-                  },
-                  "required": false,
-                  "tags": {
-                    "default": "false",
-                    "deprecated": "checkout [ListItemButton](/material-ui/api/list-item-button/) instead"
                   },
                   "type": {
                     "name": "boolean"
@@ -2967,7 +2973,7 @@
                     ]
                   }
                 },
-                "dense": {
+                "selected": {
                   "defaultValue": {
                     "value": "false"
                   },
@@ -2977,7 +2983,7 @@
                       "name": "ListItemButtonBaseProps"
                     }
                   ],
-                  "description": "If `true`, compact vertical padding designed for keyboard and mouse input is used.\nThe prop defaults to the value inherited from the parent List component.",
+                  "description": "Use to apply selected styling.",
                   "parent": {
                     "fileName": "ui-temp-10-2026/node_modules/@mui/material/ListItemButton/ListItemButton.d.ts",
                     "name": "ListItemButtonBaseProps"
@@ -2990,7 +2996,22 @@
                     "name": "boolean"
                   }
                 },
-                "selected": {
+                "withoutContainer": {
+                  "defaultValue": null,
+                  "declarations": [
+                    {
+                      "fileName": "ui-temp-10-2026/packages/ui/src/components/ListItemButton/ListItemButton.tsx",
+                      "name": "TypeLiteral"
+                    }
+                  ],
+                  "description": "withoutContainer необходим для обратной совместимости и рендерит компонент без тега li",
+                  "required": false,
+                  "tags": {},
+                  "type": {
+                    "name": "boolean"
+                  }
+                },
+                "dense": {
                   "defaultValue": {
                     "value": "false"
                   },
@@ -3000,7 +3021,7 @@
                       "name": "ListItemButtonBaseProps"
                     }
                   ],
-                  "description": "Use to apply selected styling.",
+                  "description": "If `true`, compact vertical padding designed for keyboard and mouse input is used.\nThe prop defaults to the value inherited from the parent List component.",
                   "parent": {
                     "fileName": "ui-temp-10-2026/node_modules/@mui/material/ListItemButton/ListItemButton.d.ts",
                     "name": "ListItemButtonBaseProps"
@@ -3059,6 +3080,21 @@
                     "name": "boolean"
                   }
                 },
+                "disabledReason": {
+                  "defaultValue": null,
+                  "declarations": [
+                    {
+                      "fileName": "ui-temp-10-2026/packages/ui/src/components/ListItemButton/ListItemButton.tsx",
+                      "name": "TypeLiteral"
+                    }
+                  ],
+                  "description": "Текст тултипа при заблокированном состоянии элемента меню",
+                  "required": false,
+                  "tags": {},
+                  "type": {
+                    "name": "string"
+                  }
+                },
                 "tooltipPlacement": {
                   "defaultValue": null,
                   "declarations": [
@@ -3111,36 +3147,6 @@
                         "value": "\"top-start\""
                       }
                     ]
-                  }
-                },
-                "disabledReason": {
-                  "defaultValue": null,
-                  "declarations": [
-                    {
-                      "fileName": "ui-temp-10-2026/packages/ui/src/components/ListItemButton/ListItemButton.tsx",
-                      "name": "TypeLiteral"
-                    }
-                  ],
-                  "description": "Текст тултипа при заблокированном состоянии элемента меню",
-                  "required": false,
-                  "tags": {},
-                  "type": {
-                    "name": "string"
-                  }
-                },
-                "withoutContainer": {
-                  "defaultValue": null,
-                  "declarations": [
-                    {
-                      "fileName": "ui-temp-10-2026/packages/ui/src/components/ListItemButton/ListItemButton.tsx",
-                      "name": "TypeLiteral"
-                    }
-                  ],
-                  "description": "withoutContainer необходим для обратной совместимости и рендерит компонент без тега li",
-                  "required": false,
-                  "tags": {},
-                  "type": {
-                    "name": "boolean"
                   }
                 }
               },
@@ -6401,7 +6407,7 @@
                     "name": "Ref<TouchRippleActions>"
                   }
                 },
-                "dense": {
+                "selected": {
                   "defaultValue": {
                     "value": "false"
                   },
@@ -6411,7 +6417,7 @@
                       "name": "MenuItemOwnProps"
                     }
                   ],
-                  "description": "If `true`, compact vertical padding designed for keyboard and mouse input is used.\nThe prop defaults to the value inherited from the parent Menu component.",
+                  "description": "If `true`, the component is selected.",
                   "parent": {
                     "fileName": "ui-temp-10-2026/node_modules/@mui/material/MenuItem/MenuItem.d.ts",
                     "name": "MenuItemOwnProps"
@@ -6424,7 +6430,7 @@
                     "name": "boolean"
                   }
                 },
-                "selected": {
+                "dense": {
                   "defaultValue": {
                     "value": "false"
                   },
@@ -6434,7 +6440,7 @@
                       "name": "MenuItemOwnProps"
                     }
                   ],
-                  "description": "If `true`, the component is selected.",
+                  "description": "If `true`, compact vertical padding designed for keyboard and mouse input is used.\nThe prop defaults to the value inherited from the parent Menu component.",
                   "parent": {
                     "fileName": "ui-temp-10-2026/node_modules/@mui/material/MenuItem/MenuItem.d.ts",
                     "name": "MenuItemOwnProps"
@@ -14949,6 +14955,21 @@
                 "name": "boolean"
               }
             },
+            "isLoading": {
+              "defaultValue": null,
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/packages/ui/src/components/AsyncAutocomplete/types.ts",
+                  "name": "TypeLiteral"
+                }
+              ],
+              "description": "Если `true`, будет показан индикатор загрузки",
+              "required": false,
+              "tags": {},
+              "type": {
+                "name": "boolean"
+              }
+            },
             "isDisabled": {
               "defaultValue": null,
               "declarations": [
@@ -14979,7 +15000,7 @@
                 "name": "boolean"
               }
             },
-            "isLoading": {
+            "fetchOptions": {
               "defaultValue": null,
               "declarations": [
                 {
@@ -14987,11 +15008,53 @@
                   "name": "TypeLiteral"
                 }
               ],
-              "description": "Если `true`, будет показан индикатор загрузки",
-              "required": false,
-              "tags": {},
+              "description": "Функция для асинхронной загрузки опций на основе поискового запроса\nПри возникновении ошибки запроса данных, компонент сам ее обработает.\nДля обработки ошибок вручную используйте параметр \\`onDataLoadError\\`",
+              "required": true,
+              "tags": {
+                "param": "search - Строка поиска, введенная пользователем. На основе этой\nстроки функция должна вернуть подходящие опции.\nsignal - Объект \\`AbortSignal\\`, который позволяет отменить запрос,\nесли пользователь изменил поисковый запрос или закрыл компонент.",
+                "returns": "Promise<TOptions[]> Промис, который разрешается массивом опций\n(`TOptions[]`). Эти опции будут отображены в выпадающем списке.",
+                "example": "```typescript\nconst fetchOptions = async (search: string, signal: AbortSignal) => {\n  const response = await fetch(`/api/search?query=${search}`, { signal });\n  const data = await response.json();\n  return data.results;\n};\n\n<AsyncAutocomplete fetchOptions={fetchOptions} />\n```"
+              },
               "type": {
-                "name": "boolean"
+                "name": "(search: string, signal?: AbortSignal) => Promise<TOption[]>"
+              }
+            },
+            "fetchDelayMs": {
+              "defaultValue": {
+                "value": "300"
+              },
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/packages/ui/src/components/AsyncAutocomplete/types.ts",
+                  "name": "TypeLiteral"
+                }
+              ],
+              "description": "Задержка для fetchOptions",
+              "required": false,
+              "tags": {
+                "default": "300"
+              },
+              "type": {
+                "name": "number"
+              }
+            },
+            "minSymbolsToFetch": {
+              "defaultValue": {
+                "value": "0"
+              },
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/packages/ui/src/components/AsyncAutocomplete/types.ts",
+                  "name": "TypeLiteral"
+                }
+              ],
+              "description": "Минимальное количество символов для выполнения запроса",
+              "required": false,
+              "tags": {
+                "default": "0"
+              },
+              "type": {
+                "name": "number"
               }
             },
             "disablePortal": {
@@ -15057,63 +15120,6 @@
                 "name": "boolean"
               }
             },
-            "fetchOptions": {
-              "defaultValue": null,
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/packages/ui/src/components/AsyncAutocomplete/types.ts",
-                  "name": "TypeLiteral"
-                }
-              ],
-              "description": "Функция для асинхронной загрузки опций на основе поискового запроса\nПри возникновении ошибки запроса данных, компонент сам ее обработает.\nДля обработки ошибок вручную используйте параметр \\`onDataLoadError\\`",
-              "required": true,
-              "tags": {
-                "param": "search - Строка поиска, введенная пользователем. На основе этой\nстроки функция должна вернуть подходящие опции.\nsignal - Объект \\`AbortSignal\\`, который позволяет отменить запрос,\nесли пользователь изменил поисковый запрос или закрыл компонент.",
-                "returns": "Promise<TOptions[]> Промис, который разрешается массивом опций\n(`TOptions[]`). Эти опции будут отображены в выпадающем списке.",
-                "example": "```typescript\nconst fetchOptions = async (search: string, signal: AbortSignal) => {\n  const response = await fetch(`/api/search?query=${search}`, { signal });\n  const data = await response.json();\n  return data.results;\n};\n\n<AsyncAutocomplete fetchOptions={fetchOptions} />\n```"
-              },
-              "type": {
-                "name": "(search: string, signal?: AbortSignal) => Promise<TOption[]>"
-              }
-            },
-            "fetchDelayMs": {
-              "defaultValue": {
-                "value": "300"
-              },
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/packages/ui/src/components/AsyncAutocomplete/types.ts",
-                  "name": "TypeLiteral"
-                }
-              ],
-              "description": "Задержка для fetchOptions",
-              "required": false,
-              "tags": {
-                "default": "300"
-              },
-              "type": {
-                "name": "number"
-              }
-            },
-            "minSymbolsToFetch": {
-              "defaultValue": {
-                "value": "0"
-              },
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/packages/ui/src/components/AsyncAutocomplete/types.ts",
-                  "name": "TypeLiteral"
-                }
-              ],
-              "description": "Минимальное количество символов для выполнения запроса",
-              "required": false,
-              "tags": {
-                "default": "0"
-              },
-              "type": {
-                "name": "number"
-              }
-            },
             "onOpen": {
               "defaultValue": null,
               "declarations": [
@@ -15133,6 +15139,58 @@
               },
               "type": {
                 "name": "(event: SyntheticEvent<Element, Event>) => void"
+              }
+            },
+            "isHidePersonalData": {
+              "defaultValue": null,
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/packages/ui/src/components/AddressAutocomplete/types.ts",
+                  "name": "TypeLiteral"
+                }
+              ],
+              "description": "Скрытие персональных данных от инструментов мониторинга",
+              "required": false,
+              "tags": {},
+              "type": {
+                "name": "boolean"
+              }
+            },
+            "isFullWidth": {
+              "defaultValue": null,
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/packages/ui/src/components/AsyncAutocomplete/types.ts",
+                  "name": "TypeLiteral"
+                }
+              ],
+              "description": "Если `true`, компонент растянется на всю ширину",
+              "required": false,
+              "tags": {},
+              "type": {
+                "name": "boolean"
+              }
+            },
+            "renderOption": {
+              "defaultValue": null,
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/Autocomplete/Autocomplete.d.ts",
+                  "name": "AutocompleteProps"
+                }
+              ],
+              "description": "Render the option, use `getOptionLabel` by default.",
+              "parent": {
+                "fileName": "ui-temp-10-2026/node_modules/@mui/material/Autocomplete/Autocomplete.d.ts",
+                "name": "AutocompleteProps"
+              },
+              "required": false,
+              "tags": {
+                "param": "props The props to apply on the li element.\noption The option to render.\nstate The state of each option.\nownerState The state of the Autocomplete component.",
+                "returns": ""
+              },
+              "type": {
+                "name": "(props: HTMLAttributes<HTMLLIElement> & { key: any; }, option: TOption, state: AutocompleteRenderOptionState, ownerState: AutocompleteOwnerState<...>) => ReactNode"
               }
             },
             "loadingText": {
@@ -15175,28 +15233,6 @@
               },
               "type": {
                 "name": "ReactNode"
-              }
-            },
-            "renderOption": {
-              "defaultValue": null,
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/Autocomplete/Autocomplete.d.ts",
-                  "name": "AutocompleteProps"
-                }
-              ],
-              "description": "Render the option, use `getOptionLabel` by default.",
-              "parent": {
-                "fileName": "ui-temp-10-2026/node_modules/@mui/material/Autocomplete/Autocomplete.d.ts",
-                "name": "AutocompleteProps"
-              },
-              "required": false,
-              "tags": {
-                "param": "props The props to apply on the li element.\noption The option to render.\nstate The state of each option.\nownerState The state of the Autocomplete component.",
-                "returns": ""
-              },
-              "type": {
-                "name": "(props: HTMLAttributes<HTMLLIElement> & { key: any; }, option: TOption, state: AutocompleteRenderOptionState, ownerState: AutocompleteOwnerState<...>) => ReactNode"
               }
             },
             "autoHighlight": {
@@ -15284,21 +15320,6 @@
                 "name": "(event: SyntheticEvent<Element, Event>, value: string, reason: AutocompleteInputChangeReason) => void"
               }
             },
-            "isFullWidth": {
-              "defaultValue": null,
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/packages/ui/src/components/AsyncAutocomplete/types.ts",
-                  "name": "TypeLiteral"
-                }
-              ],
-              "description": "Если `true`, компонент растянется на всю ширину",
-              "required": false,
-              "tags": {},
-              "type": {
-                "name": "boolean"
-              }
-            },
             "isSuccess": {
               "defaultValue": null,
               "declarations": [
@@ -15323,21 +15344,6 @@
                 }
               ],
               "description": "Если `true`, компонент будет помечен как обязательный",
-              "required": false,
-              "tags": {},
-              "type": {
-                "name": "boolean"
-              }
-            },
-            "isHidePersonalData": {
-              "defaultValue": null,
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/packages/ui/src/components/AddressAutocomplete/types.ts",
-                  "name": "TypeLiteral"
-                }
-              ],
-              "description": "Скрытие персональных данных от инструментов мониторинга",
               "required": false,
               "tags": {},
               "type": {
@@ -15812,6 +15818,21 @@
                 "name": "boolean"
               }
             },
+            "isLoading": {
+              "defaultValue": null,
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/packages/ui/src/components/AsyncAutocomplete/types.ts",
+                  "name": "TypeLiteral"
+                }
+              ],
+              "description": "Если `true`, будет показан индикатор загрузки",
+              "required": false,
+              "tags": {},
+              "type": {
+                "name": "boolean"
+              }
+            },
             "isDisabled": {
               "defaultValue": null,
               "declarations": [
@@ -15842,7 +15863,7 @@
                 "name": "boolean"
               }
             },
-            "isLoading": {
+            "fetchOptions": {
               "defaultValue": null,
               "declarations": [
                 {
@@ -15850,11 +15871,68 @@
                   "name": "TypeLiteral"
                 }
               ],
-              "description": "Если `true`, будет показан индикатор загрузки",
+              "description": "Функция для асинхронной загрузки опций на основе поискового запроса\nПри возникновении ошибки запроса данных, компонент сам ее обработает.\nДля обработки ошибок вручную используйте параметр \\`onDataLoadError\\`",
+              "required": true,
+              "tags": {
+                "param": "search - Строка поиска, введенная пользователем. На основе этой\nстроки функция должна вернуть подходящие опции.\nsignal - Объект \\`AbortSignal\\`, который позволяет отменить запрос,\nесли пользователь изменил поисковый запрос или закрыл компонент.",
+                "returns": "Promise<TOptions[]> Промис, который разрешается массивом опций\n(`TOptions[]`). Эти опции будут отображены в выпадающем списке.",
+                "example": "```typescript\nconst fetchOptions = async (search: string, signal: AbortSignal) => {\n  const response = await fetch(`/api/search?query=${search}`, { signal });\n  const data = await response.json();\n  return data.results;\n};\n\n<AsyncAutocomplete fetchOptions={fetchOptions} />\n```"
+              },
+              "type": {
+                "name": "(search: string, signal?: AbortSignal) => Promise<TOption[]>"
+              }
+            },
+            "fetchDelayMs": {
+              "defaultValue": {
+                "value": "300"
+              },
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/packages/ui/src/components/AsyncAutocomplete/types.ts",
+                  "name": "TypeLiteral"
+                }
+              ],
+              "description": "Задержка для fetchOptions",
+              "required": false,
+              "tags": {
+                "default": "300"
+              },
+              "type": {
+                "name": "number"
+              }
+            },
+            "onDataLoadError": {
+              "defaultValue": null,
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/packages/ui/src/components/AsyncAutocomplete/types.ts",
+                  "name": "TypeLiteral"
+                }
+              ],
+              "description": "Функция для обработки ошибок загрузки данных",
               "required": false,
               "tags": {},
               "type": {
-                "name": "boolean"
+                "name": "(error: Error) => void"
+              }
+            },
+            "minSymbolsToFetch": {
+              "defaultValue": {
+                "value": "0"
+              },
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/packages/ui/src/components/AsyncAutocomplete/types.ts",
+                  "name": "TypeLiteral"
+                }
+              ],
+              "description": "Минимальное количество символов для выполнения запроса",
+              "required": false,
+              "tags": {
+                "default": "0"
+              },
+              "type": {
+                "name": "number"
               }
             },
             "disablePortal": {
@@ -15943,124 +16021,6 @@
                 "name": "JSXElementConstructor<HTMLAttributes<HTMLElement>>"
               }
             },
-            "disabledItemsFocusable": {
-              "defaultValue": {
-                "value": "false"
-              },
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
-                  "name": "UseAutocompleteProps"
-                }
-              ],
-              "description": "If `true`, will allow focus on disabled items.",
-              "parent": {
-                "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
-                "name": "UseAutocompleteProps"
-              },
-              "required": false,
-              "tags": {
-                "default": "false"
-              },
-              "type": {
-                "name": "boolean"
-              }
-            },
-            "disableListWrap": {
-              "defaultValue": {
-                "value": "false"
-              },
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
-                  "name": "UseAutocompleteProps"
-                }
-              ],
-              "description": "If `true`, the list box in the popup will not wrap focus.",
-              "parent": {
-                "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
-                "name": "UseAutocompleteProps"
-              },
-              "required": false,
-              "tags": {
-                "default": "false"
-              },
-              "type": {
-                "name": "boolean"
-              }
-            },
-            "fetchOptions": {
-              "defaultValue": null,
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/packages/ui/src/components/AsyncAutocomplete/types.ts",
-                  "name": "TypeLiteral"
-                }
-              ],
-              "description": "Функция для асинхронной загрузки опций на основе поискового запроса\nПри возникновении ошибки запроса данных, компонент сам ее обработает.\nДля обработки ошибок вручную используйте параметр \\`onDataLoadError\\`",
-              "required": true,
-              "tags": {
-                "param": "search - Строка поиска, введенная пользователем. На основе этой\nстроки функция должна вернуть подходящие опции.\nsignal - Объект \\`AbortSignal\\`, который позволяет отменить запрос,\nесли пользователь изменил поисковый запрос или закрыл компонент.",
-                "returns": "Promise<TOptions[]> Промис, который разрешается массивом опций\n(`TOptions[]`). Эти опции будут отображены в выпадающем списке.",
-                "example": "```typescript\nconst fetchOptions = async (search: string, signal: AbortSignal) => {\n  const response = await fetch(`/api/search?query=${search}`, { signal });\n  const data = await response.json();\n  return data.results;\n};\n\n<AsyncAutocomplete fetchOptions={fetchOptions} />\n```"
-              },
-              "type": {
-                "name": "(search: string, signal?: AbortSignal) => Promise<TOption[]>"
-              }
-            },
-            "fetchDelayMs": {
-              "defaultValue": {
-                "value": "300"
-              },
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/packages/ui/src/components/AsyncAutocomplete/types.ts",
-                  "name": "TypeLiteral"
-                }
-              ],
-              "description": "Задержка для fetchOptions",
-              "required": false,
-              "tags": {
-                "default": "300"
-              },
-              "type": {
-                "name": "number"
-              }
-            },
-            "onDataLoadError": {
-              "defaultValue": null,
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/packages/ui/src/components/AsyncAutocomplete/types.ts",
-                  "name": "TypeLiteral"
-                }
-              ],
-              "description": "Функция для обработки ошибок загрузки данных",
-              "required": false,
-              "tags": {},
-              "type": {
-                "name": "(error: Error) => void"
-              }
-            },
-            "minSymbolsToFetch": {
-              "defaultValue": {
-                "value": "0"
-              },
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/packages/ui/src/components/AsyncAutocomplete/types.ts",
-                  "name": "TypeLiteral"
-                }
-              ],
-              "description": "Минимальное количество символов для выполнения запроса",
-              "required": false,
-              "tags": {
-                "default": "0"
-              },
-              "type": {
-                "name": "number"
-              }
-            },
             "onOpen": {
               "defaultValue": null,
               "declarations": [
@@ -16129,6 +16089,178 @@
                 "name": "JSXElementConstructor<PopperProps>"
               }
             },
+            "multiple": {
+              "defaultValue": {
+                "value": "false"
+              },
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
+                  "name": "UseAutocompleteProps"
+                }
+              ],
+              "description": "If `true`, `value` must be an array and the menu will support multiple selections.",
+              "parent": {
+                "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
+                "name": "UseAutocompleteProps"
+              },
+              "required": false,
+              "tags": {
+                "default": "false"
+              },
+              "type": {
+                "name": "boolean"
+              }
+            },
+            "disabledItemsFocusable": {
+              "defaultValue": {
+                "value": "false"
+              },
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
+                  "name": "UseAutocompleteProps"
+                }
+              ],
+              "description": "If `true`, will allow focus on disabled items.",
+              "parent": {
+                "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
+                "name": "UseAutocompleteProps"
+              },
+              "required": false,
+              "tags": {
+                "default": "false"
+              },
+              "type": {
+                "name": "boolean"
+              }
+            },
+            "disableListWrap": {
+              "defaultValue": {
+                "value": "false"
+              },
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
+                  "name": "UseAutocompleteProps"
+                }
+              ],
+              "description": "If `true`, the list box in the popup will not wrap focus.",
+              "parent": {
+                "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
+                "name": "UseAutocompleteProps"
+              },
+              "required": false,
+              "tags": {
+                "default": "false"
+              },
+              "type": {
+                "name": "boolean"
+              }
+            },
+            "closeText": {
+              "defaultValue": {
+                "value": "Закрыть"
+              },
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/packages/ui/src/components/Autocomplete/types.ts",
+                  "name": "TypeLiteral"
+                }
+              ],
+              "description": "Переопределяет текст для кнопки закрытия всплывающего окна",
+              "required": false,
+              "tags": {
+                "default": "Закрыть"
+              },
+              "type": {
+                "name": "string"
+              }
+            },
+            "isFullWidth": {
+              "defaultValue": null,
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/packages/ui/src/components/AsyncAutocomplete/types.ts",
+                  "name": "TypeLiteral"
+                }
+              ],
+              "description": "Если `true`, компонент растянется на всю ширину",
+              "required": false,
+              "tags": {},
+              "type": {
+                "name": "boolean"
+              }
+            },
+            "getOptionLabel": {
+              "defaultValue": {
+                "value": "(option) => option.label ?? option"
+              },
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
+                  "name": "UseAutocompleteProps"
+                }
+              ],
+              "description": "Used to determine the string value for a given option.\nIt's used to fill the input (and the list box options if \\`renderOption\\` is not provided).\n\nIf used in free solo mode, it must accept both the type of the options and a string.",
+              "parent": {
+                "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
+                "name": "UseAutocompleteProps"
+              },
+              "required": false,
+              "tags": {
+                "param": "option",
+                "returns": "",
+                "default": "(option) => option.label ?? option"
+              },
+              "type": {
+                "name": "(option: TOption | AutocompleteFreeSoloValueMapping<TFreeSolo>) => string"
+              }
+            },
+            "isOptionEqualToValue": {
+              "defaultValue": null,
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
+                  "name": "UseAutocompleteProps"
+                }
+              ],
+              "description": "Used to determine if the option represents the given value.\nUses strict equality by default.\n⚠️ Both arguments need to be handled, an option can only match with one value.",
+              "parent": {
+                "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
+                "name": "UseAutocompleteProps"
+              },
+              "required": false,
+              "tags": {
+                "param": "option The option to test.\nvalue The value to test against.",
+                "returns": ""
+              },
+              "type": {
+                "name": "(option: TOption, value: TOption) => boolean"
+              }
+            },
+            "renderOption": {
+              "defaultValue": null,
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/Autocomplete/Autocomplete.d.ts",
+                  "name": "AutocompleteProps"
+                }
+              ],
+              "description": "Render the option, use `getOptionLabel` by default.",
+              "parent": {
+                "fileName": "ui-temp-10-2026/node_modules/@mui/material/Autocomplete/Autocomplete.d.ts",
+                "name": "AutocompleteProps"
+              },
+              "required": false,
+              "tags": {
+                "param": "props The props to apply on the li element.\noption The option to render.\nstate The state of each option.\nownerState The state of the Autocomplete component.",
+                "returns": ""
+              },
+              "type": {
+                "name": "(props: HTMLAttributes<HTMLLIElement> & { key: any; }, option: TOption, state: AutocompleteRenderOptionState, ownerState: AutocompleteOwnerState<...>) => ReactNode"
+              }
+            },
             "ChipProps": {
               "defaultValue": null,
               "declarations": [
@@ -16185,25 +16317,6 @@
               "required": false,
               "tags": {
                 "default": "Очистить"
-              },
-              "type": {
-                "name": "string"
-              }
-            },
-            "closeText": {
-              "defaultValue": {
-                "value": "Закрыть"
-              },
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/packages/ui/src/components/Autocomplete/types.ts",
-                  "name": "TypeLiteral"
-                }
-              ],
-              "description": "Переопределяет текст для кнопки закрытия всплывающего окна",
-              "required": false,
-              "tags": {
-                "default": "Закрыть"
               },
               "type": {
                 "name": "string"
@@ -16443,28 +16556,6 @@
                 "name": "(props: Omit<WithoutEmotionSpecific<TextFieldProps>, \"color\" | \"margin\" | \"variant\" | \"select\" | \"multiline\" | \"SelectProps\"> & { ...; } & Omit<...>) => ReactNode"
               }
             },
-            "renderOption": {
-              "defaultValue": null,
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/Autocomplete/Autocomplete.d.ts",
-                  "name": "AutocompleteProps"
-                }
-              ],
-              "description": "Render the option, use `getOptionLabel` by default.",
-              "parent": {
-                "fileName": "ui-temp-10-2026/node_modules/@mui/material/Autocomplete/Autocomplete.d.ts",
-                "name": "AutocompleteProps"
-              },
-              "required": false,
-              "tags": {
-                "param": "props The props to apply on the li element.\noption The option to render.\nstate The state of each option.\nownerState The state of the Autocomplete component.",
-                "returns": ""
-              },
-              "type": {
-                "name": "(props: HTMLAttributes<HTMLLIElement> & { key: any; }, option: TOption, state: AutocompleteRenderOptionState, ownerState: AutocompleteOwnerState<...>) => ReactNode"
-              }
-            },
             "renderTags": {
               "defaultValue": null,
               "declarations": [
@@ -16598,7 +16689,7 @@
                 "default": "false"
               },
               "type": {
-                "name": "boolean | \"touch\" | \"mouse\""
+                "name": "boolean | \"mouse\" | \"touch\""
               }
             },
             "clearOnBlur": {
@@ -16802,31 +16893,6 @@
                 "name": "(option: TOption | AutocompleteFreeSoloValueMapping<TFreeSolo>) => string | number"
               }
             },
-            "getOptionLabel": {
-              "defaultValue": {
-                "value": "(option) => option.label ?? option"
-              },
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
-                  "name": "UseAutocompleteProps"
-                }
-              ],
-              "description": "Used to determine the string value for a given option.\nIt's used to fill the input (and the list box options if \\`renderOption\\` is not provided).\n\nIf used in free solo mode, it must accept both the type of the options and a string.",
-              "parent": {
-                "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
-                "name": "UseAutocompleteProps"
-              },
-              "required": false,
-              "tags": {
-                "param": "option",
-                "returns": "",
-                "default": "(option) => option.label ?? option"
-              },
-              "type": {
-                "name": "(option: TOption | AutocompleteFreeSoloValueMapping<TFreeSolo>) => string"
-              }
-            },
             "groupBy": {
               "defaultValue": null,
               "declarations": [
@@ -16883,51 +16949,6 @@
                 }
               ],
               "description": "If `true`, the highlight can move to the input.",
-              "parent": {
-                "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
-                "name": "UseAutocompleteProps"
-              },
-              "required": false,
-              "tags": {
-                "default": "false"
-              },
-              "type": {
-                "name": "boolean"
-              }
-            },
-            "isOptionEqualToValue": {
-              "defaultValue": null,
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
-                  "name": "UseAutocompleteProps"
-                }
-              ],
-              "description": "Used to determine if the option represents the given value.\nUses strict equality by default.\n⚠️ Both arguments need to be handled, an option can only match with one value.",
-              "parent": {
-                "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
-                "name": "UseAutocompleteProps"
-              },
-              "required": false,
-              "tags": {
-                "param": "option The option to test.\nvalue The value to test against.",
-                "returns": ""
-              },
-              "type": {
-                "name": "(option: TOption, value: TOption) => boolean"
-              }
-            },
-            "multiple": {
-              "defaultValue": {
-                "value": "false"
-              },
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
-                  "name": "UseAutocompleteProps"
-                }
-              ],
-              "description": "If `true`, `value` must be an array and the menu will support multiple selections.",
               "parent": {
                 "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
                 "name": "UseAutocompleteProps"
@@ -17086,21 +17107,6 @@
               "tags": {},
               "type": {
                 "name": "string"
-              }
-            },
-            "isFullWidth": {
-              "defaultValue": null,
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/packages/ui/src/components/AsyncAutocomplete/types.ts",
-                  "name": "TypeLiteral"
-                }
-              ],
-              "description": "Если `true`, компонент растянется на всю ширину",
-              "required": false,
-              "tags": {},
-              "type": {
-                "name": "boolean"
               }
             },
             "isSuccess": {
@@ -17833,52 +17839,6 @@
                 "name": "JSXElementConstructor<HTMLAttributes<HTMLElement>>"
               }
             },
-            "disabledItemsFocusable": {
-              "defaultValue": {
-                "value": "false"
-              },
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
-                  "name": "UseAutocompleteProps"
-                }
-              ],
-              "description": "If `true`, will allow focus on disabled items.",
-              "parent": {
-                "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
-                "name": "UseAutocompleteProps"
-              },
-              "required": false,
-              "tags": {
-                "default": "false"
-              },
-              "type": {
-                "name": "boolean"
-              }
-            },
-            "disableListWrap": {
-              "defaultValue": {
-                "value": "false"
-              },
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
-                  "name": "UseAutocompleteProps"
-                }
-              ],
-              "description": "If `true`, the list box in the popup will not wrap focus.",
-              "parent": {
-                "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
-                "name": "UseAutocompleteProps"
-              },
-              "required": false,
-              "tags": {
-                "default": "false"
-              },
-              "type": {
-                "name": "boolean"
-              }
-            },
             "loading": {
               "defaultValue": {
                 "value": "false"
@@ -17970,6 +17930,163 @@
                 "name": "JSXElementConstructor<PopperProps>"
               }
             },
+            "multiple": {
+              "defaultValue": {
+                "value": "false"
+              },
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
+                  "name": "UseAutocompleteProps"
+                }
+              ],
+              "description": "If `true`, `value` must be an array and the menu will support multiple selections.",
+              "parent": {
+                "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
+                "name": "UseAutocompleteProps"
+              },
+              "required": false,
+              "tags": {
+                "default": "false"
+              },
+              "type": {
+                "name": "boolean"
+              }
+            },
+            "disabledItemsFocusable": {
+              "defaultValue": {
+                "value": "false"
+              },
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
+                  "name": "UseAutocompleteProps"
+                }
+              ],
+              "description": "If `true`, will allow focus on disabled items.",
+              "parent": {
+                "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
+                "name": "UseAutocompleteProps"
+              },
+              "required": false,
+              "tags": {
+                "default": "false"
+              },
+              "type": {
+                "name": "boolean"
+              }
+            },
+            "disableListWrap": {
+              "defaultValue": {
+                "value": "false"
+              },
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
+                  "name": "UseAutocompleteProps"
+                }
+              ],
+              "description": "If `true`, the list box in the popup will not wrap focus.",
+              "parent": {
+                "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
+                "name": "UseAutocompleteProps"
+              },
+              "required": false,
+              "tags": {
+                "default": "false"
+              },
+              "type": {
+                "name": "boolean"
+              }
+            },
+            "closeText": {
+              "defaultValue": {
+                "value": "Закрыть"
+              },
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/packages/ui/src/components/Autocomplete/types.ts",
+                  "name": "TypeLiteral"
+                }
+              ],
+              "description": "Переопределяет текст для кнопки закрытия всплывающего окна",
+              "required": false,
+              "tags": {
+                "default": "Закрыть"
+              },
+              "type": {
+                "name": "string"
+              }
+            },
+            "getOptionLabel": {
+              "defaultValue": {
+                "value": "(option) => option.label ?? option"
+              },
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
+                  "name": "UseAutocompleteProps"
+                }
+              ],
+              "description": "Used to determine the string value for a given option.\nIt's used to fill the input (and the list box options if \\`renderOption\\` is not provided).\n\nIf used in free solo mode, it must accept both the type of the options and a string.",
+              "parent": {
+                "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
+                "name": "UseAutocompleteProps"
+              },
+              "required": false,
+              "tags": {
+                "param": "option",
+                "returns": "",
+                "default": "(option) => option.label ?? option"
+              },
+              "type": {
+                "name": "(option: TOption | AutocompleteFreeSoloValueMapping<TFreeSolo>) => string"
+              }
+            },
+            "isOptionEqualToValue": {
+              "defaultValue": null,
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
+                  "name": "UseAutocompleteProps"
+                }
+              ],
+              "description": "Used to determine if the option represents the given value.\nUses strict equality by default.\n⚠️ Both arguments need to be handled, an option can only match with one value.",
+              "parent": {
+                "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
+                "name": "UseAutocompleteProps"
+              },
+              "required": false,
+              "tags": {
+                "param": "option The option to test.\nvalue The value to test against.",
+                "returns": ""
+              },
+              "type": {
+                "name": "(option: TOption, value: TOption) => boolean"
+              }
+            },
+            "renderOption": {
+              "defaultValue": null,
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/Autocomplete/Autocomplete.d.ts",
+                  "name": "AutocompleteProps"
+                }
+              ],
+              "description": "Render the option, use `getOptionLabel` by default.",
+              "parent": {
+                "fileName": "ui-temp-10-2026/node_modules/@mui/material/Autocomplete/Autocomplete.d.ts",
+                "name": "AutocompleteProps"
+              },
+              "required": false,
+              "tags": {
+                "param": "props The props to apply on the li element.\noption The option to render.\nstate The state of each option.\nownerState The state of the Autocomplete component.",
+                "returns": ""
+              },
+              "type": {
+                "name": "(props: HTMLAttributes<HTMLLIElement> & { key: any; }, option: TOption, state: AutocompleteRenderOptionState, ownerState: AutocompleteOwnerState<...>) => ReactNode"
+              }
+            },
             "ChipProps": {
               "defaultValue": null,
               "declarations": [
@@ -18026,25 +18143,6 @@
               "required": false,
               "tags": {
                 "default": "Очистить"
-              },
-              "type": {
-                "name": "string"
-              }
-            },
-            "closeText": {
-              "defaultValue": {
-                "value": "Закрыть"
-              },
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/packages/ui/src/components/Autocomplete/types.ts",
-                  "name": "TypeLiteral"
-                }
-              ],
-              "description": "Переопределяет текст для кнопки закрытия всплывающего окна",
-              "required": false,
-              "tags": {
-                "default": "Закрыть"
               },
               "type": {
                 "name": "string"
@@ -18284,28 +18382,6 @@
                 "name": "(props: Omit<WithoutEmotionSpecific<TextFieldProps>, \"color\" | \"margin\" | \"variant\" | \"select\" | \"multiline\" | \"SelectProps\"> & { ...; } & Omit<...>) => ReactNode"
               }
             },
-            "renderOption": {
-              "defaultValue": null,
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/Autocomplete/Autocomplete.d.ts",
-                  "name": "AutocompleteProps"
-                }
-              ],
-              "description": "Render the option, use `getOptionLabel` by default.",
-              "parent": {
-                "fileName": "ui-temp-10-2026/node_modules/@mui/material/Autocomplete/Autocomplete.d.ts",
-                "name": "AutocompleteProps"
-              },
-              "required": false,
-              "tags": {
-                "param": "props The props to apply on the li element.\noption The option to render.\nstate The state of each option.\nownerState The state of the Autocomplete component.",
-                "returns": ""
-              },
-              "type": {
-                "name": "(props: HTMLAttributes<HTMLLIElement> & { key: any; }, option: TOption, state: AutocompleteRenderOptionState, ownerState: AutocompleteOwnerState<...>) => ReactNode"
-              }
-            },
             "renderTags": {
               "defaultValue": null,
               "declarations": [
@@ -18439,7 +18515,7 @@
                 "default": "false"
               },
               "type": {
-                "name": "boolean | \"touch\" | \"mouse\""
+                "name": "boolean | \"mouse\" | \"touch\""
               }
             },
             "clearOnBlur": {
@@ -18643,31 +18719,6 @@
                 "name": "(option: TOption | AutocompleteFreeSoloValueMapping<TFreeSolo>) => string | number"
               }
             },
-            "getOptionLabel": {
-              "defaultValue": {
-                "value": "(option) => option.label ?? option"
-              },
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
-                  "name": "UseAutocompleteProps"
-                }
-              ],
-              "description": "Used to determine the string value for a given option.\nIt's used to fill the input (and the list box options if \\`renderOption\\` is not provided).\n\nIf used in free solo mode, it must accept both the type of the options and a string.",
-              "parent": {
-                "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
-                "name": "UseAutocompleteProps"
-              },
-              "required": false,
-              "tags": {
-                "param": "option",
-                "returns": "",
-                "default": "(option) => option.label ?? option"
-              },
-              "type": {
-                "name": "(option: TOption | AutocompleteFreeSoloValueMapping<TFreeSolo>) => string"
-              }
-            },
             "groupBy": {
               "defaultValue": null,
               "declarations": [
@@ -18753,51 +18804,6 @@
               "tags": {},
               "type": {
                 "name": "string"
-              }
-            },
-            "isOptionEqualToValue": {
-              "defaultValue": null,
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
-                  "name": "UseAutocompleteProps"
-                }
-              ],
-              "description": "Used to determine if the option represents the given value.\nUses strict equality by default.\n⚠️ Both arguments need to be handled, an option can only match with one value.",
-              "parent": {
-                "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
-                "name": "UseAutocompleteProps"
-              },
-              "required": false,
-              "tags": {
-                "param": "option The option to test.\nvalue The value to test against.",
-                "returns": ""
-              },
-              "type": {
-                "name": "(option: TOption, value: TOption) => boolean"
-              }
-            },
-            "multiple": {
-              "defaultValue": {
-                "value": "false"
-              },
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
-                  "name": "UseAutocompleteProps"
-                }
-              ],
-              "description": "If `true`, `value` must be an array and the menu will support multiple selections.",
-              "parent": {
-                "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
-                "name": "UseAutocompleteProps"
-              },
-              "required": false,
-              "tags": {
-                "default": "false"
-              },
-              "type": {
-                "name": "boolean"
               }
             },
             "onHighlightChange": {
@@ -23362,6 +23368,10 @@
         },
         {
           "name": "FormSelect",
+          "type": "component"
+        },
+        {
+          "name": "FormSelectionCardGroup",
           "type": "component"
         },
         {
@@ -33568,36 +33578,6 @@
                 "name": "TreeListData[]"
               }
             },
-            "isDisabled": {
-              "defaultValue": null,
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/packages/ui/src/components/TreeAutocomplete/types.ts",
-                  "name": "TypeLiteral"
-                }
-              ],
-              "description": "Если true, поля будут недоступны для взаимодействия",
-              "required": false,
-              "tags": {},
-              "type": {
-                "name": "boolean"
-              }
-            },
-            "isError": {
-              "defaultValue": null,
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/packages/ui/src/components/TreeAutocomplete/types.ts",
-                  "name": "TypeLiteral"
-                }
-              ],
-              "description": "Если true, поля будут подсвечены, как содержащие ошибку",
-              "required": false,
-              "tags": {},
-              "type": {
-                "name": "boolean"
-              }
-            },
             "isLoading": {
               "defaultValue": null,
               "declarations": [
@@ -33622,6 +33602,51 @@
                 }
               ],
               "description": "Флаг ошибки загрузки options\nЕсли true, вместо дерева options будет отображен плейсхолдер с ошибкой",
+              "required": false,
+              "tags": {},
+              "type": {
+                "name": "boolean"
+              }
+            },
+            "filterOptions": {
+              "defaultValue": null,
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/packages/ui/src/components/TreeAutocomplete/types.ts",
+                  "name": "TypeLiteral"
+                }
+              ],
+              "description": "Функция для поиска элементов по дереву, если не определено, то будет использован встроенный поиск",
+              "required": false,
+              "tags": {},
+              "type": {
+                "name": "(node: TreeListData, searchValue: string) => boolean"
+              }
+            },
+            "isDisabled": {
+              "defaultValue": null,
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/packages/ui/src/components/TreeAutocomplete/types.ts",
+                  "name": "TypeLiteral"
+                }
+              ],
+              "description": "Если true, поля будут недоступны для взаимодействия",
+              "required": false,
+              "tags": {},
+              "type": {
+                "name": "boolean"
+              }
+            },
+            "isError": {
+              "defaultValue": null,
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/packages/ui/src/components/TreeAutocomplete/types.ts",
+                  "name": "TypeLiteral"
+                }
+              ],
+              "description": "Если true, поля будут подсвечены, как содержащие ошибку",
               "required": false,
               "tags": {},
               "type": {
@@ -33686,21 +33711,6 @@
               "tags": {},
               "type": {
                 "name": "() => void"
-              }
-            },
-            "filterOptions": {
-              "defaultValue": null,
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/packages/ui/src/components/TreeAutocomplete/types.ts",
-                  "name": "TypeLiteral"
-                }
-              ],
-              "description": "Функция для поиска элементов по дереву, если не определено, то будет использован встроенный поиск",
-              "required": false,
-              "tags": {},
-              "type": {
-                "name": "(node: TreeListData, searchValue: string) => boolean"
               }
             },
             "name": {
@@ -34485,36 +34495,6 @@
                 "name": "TreeLikeListAutocompleteData[]"
               }
             },
-            "isDisabled": {
-              "defaultValue": null,
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/packages/ui/src/components/TreeLikeAutocomplete/types.ts",
-                  "name": "TypeLiteral"
-                }
-              ],
-              "description": "Если true, поля будут недоступны для взаимодействия",
-              "required": false,
-              "tags": {},
-              "type": {
-                "name": "boolean"
-              }
-            },
-            "isError": {
-              "defaultValue": null,
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/packages/ui/src/components/TreeLikeAutocomplete/types.ts",
-                  "name": "TypeLiteral"
-                }
-              ],
-              "description": "Если true, поля будут подсвечены, как содержащие ошибку",
-              "required": false,
-              "tags": {},
-              "type": {
-                "name": "boolean"
-              }
-            },
             "isLoading": {
               "defaultValue": null,
               "declarations": [
@@ -34539,6 +34519,51 @@
                 }
               ],
               "description": "Флаг ошибки загрузки options\nЕсли true, вместо дерева options будет отображен плейсхолдер с ошибкой",
+              "required": false,
+              "tags": {},
+              "type": {
+                "name": "boolean"
+              }
+            },
+            "filterOptions": {
+              "defaultValue": null,
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/packages/ui/src/components/TreeLikeAutocomplete/types.ts",
+                  "name": "TypeLiteral"
+                }
+              ],
+              "description": "Функция для поиска элементов по дереву, если не определено, то будет использован встроенный поиск",
+              "required": false,
+              "tags": {},
+              "type": {
+                "name": "(node: TreeListData, searchValue: string) => boolean"
+              }
+            },
+            "isDisabled": {
+              "defaultValue": null,
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/packages/ui/src/components/TreeLikeAutocomplete/types.ts",
+                  "name": "TypeLiteral"
+                }
+              ],
+              "description": "Если true, поля будут недоступны для взаимодействия",
+              "required": false,
+              "tags": {},
+              "type": {
+                "name": "boolean"
+              }
+            },
+            "isError": {
+              "defaultValue": null,
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/packages/ui/src/components/TreeLikeAutocomplete/types.ts",
+                  "name": "TypeLiteral"
+                }
+              ],
+              "description": "Если true, поля будут подсвечены, как содержащие ошибку",
               "required": false,
               "tags": {},
               "type": {
@@ -34603,21 +34628,6 @@
               "tags": {},
               "type": {
                 "name": "() => void"
-              }
-            },
-            "filterOptions": {
-              "defaultValue": null,
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/packages/ui/src/components/TreeLikeAutocomplete/types.ts",
-                  "name": "TypeLiteral"
-                }
-              ],
-              "description": "Функция для поиска элементов по дереву, если не определено, то будет использован встроенный поиск",
-              "required": false,
-              "tags": {},
-              "type": {
-                "name": "(node: TreeListData, searchValue: string) => boolean"
               }
             },
             "isConfirmChildrenSelection": {
