@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime-C0FnF6B9.js";import{za as t}from"./preview-COOA12PR.js";var n,r;function i(){return(i=e((()=>{n=t(),r=e=>{let t=(0,n.useRef)(null);return(0,n.useImperativeHandle)(e,()=>t.current,[e]),t}})))()}function a(){return(a=e((()=>{i()})))()}export{i as n,r,a as t};
