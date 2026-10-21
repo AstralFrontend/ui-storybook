@@ -1,0 +1,117 @@
+import{n as e}from"./rolldown-runtime-C0FnF6B9.js";import{$r as t,Cn as n,Dn as r,Ni as i,On as a,Xt as o,an as s,ba as c,ei as l,ji as u,on as d,wn as f,ya as p,yn as m,za as h}from"./preview-CLkCEehX.js";import{n as g}from"./useLocalStorage-CQ8elvbF.js";import{t as ee}from"./useLocalStorage-D4apRF32.js";import{E as te,O as _}from"./PageContentHeaderActions-B3Uf5yyL.js";import{n as v,t as y}from"./MenuOnOutlineMd-BzVMbcDw.js";import{n as b,t as x}from"./PinButton-BOvMNMs1.js";import{S,_ as C,f as w,g as T,h as E,l as D,m as O,p as k,v as A,y as j}from"./PageContent-CO5JOZEb.js";import{n as ne,t as M}from"./generateLocalStorageKey-CuuetdeM.js";var N,P;function F(){return(F=e((()=>{a(),ne(),N={content:r(`pinnable-aside__content`),withHeader:r(`pinnable-aside_with-header`),root:r(`pinnable-aside`)},P=M(`Aside`,`isPinned`)})))()}var I,L,R,z,B,V,H;function U(){return(U=e((()=>{o(),D(),C(),m(),F(),I=u(`aside`,{shouldForwardProp:e=>![`$isPinned`].includes(e)})`
+  position: relative;
+
+  overflow: ${({$isPinned:e})=>e?`hidden`:`unset`};
+  grid-column: 2;
+  grid-row: 2;
+
+  height: 100%;
+
+  border-bottom-right-radius: ${({theme:e})=>e.shape.medium};
+
+  &:hover {
+    .${N.content} {
+      transform: translateX(0);
+    }
+  }
+
+  &.${N.withHeader} {
+    & .${A.root} {
+      padding-top: ${({theme:e})=>e.spacing(5)};
+    }
+  }
+
+  ${({theme:e})=>e.breakpoints.down(`mobile`)} {
+    display: none;
+  }
+`,L=u(`div`,{shouldForwardProp:e=>![`$isPinned`].includes(e)})`
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 100%;
+
+  border-top: 1px solid ${({theme:e})=>e.palette.components.border.default};
+  border-left: 1px solid ${({theme:e})=>e.palette.components.border.default};
+
+  ${({$isPinned:e})=>e&&`display: none;`}
+`,R=i`
+  transform: translateX(0);
+`,z=i`
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateX(105%);
+`,B=u(`div`,{shouldForwardProp:e=>![`$isPinned`].includes(e)})`
+  position: relative;
+  z-index: ${({theme:e})=>e.zIndex.appBar-2};
+
+  overflow: hidden;
+  display: flex;
+  grid-column: 2;
+  grid-row: 2;
+  flex-direction: column;
+
+  width: ${te};
+  height: 100%;
+
+  background-color: ${({theme:e})=>e.palette.background.default};
+  border-top: 1px solid ${({theme:e})=>e.palette.components.border.default};
+  border-left: 1px solid ${({theme:e})=>e.palette.components.border.default};
+
+  transition: ${({theme:e})=>e.transitions.create([`transform`],{duration:e.transitions.duration.shorter*2,easing:e.transitions.easing.easeInOut,delay:e.transitions.duration.shorter})};
+
+  ${({$isPinned:e})=>e?R:z}
+  
+  ${({$isPinned:e,theme:t})=>!e&&`
+    box-shadow: 0px 0px 1px 0px #072D574F, -8px -5px 12px -6px #072D5726;
+    border-radius: ${t.shape.medium};
+  `}
+
+  ${({theme:e})=>e.breakpoints.down(`mobile`)} {
+    overflow: unset;
+    order: -1;
+
+    width: 100%;
+
+    border-top: unset;
+    border-left: 0;
+    border-radius: ${({theme:e})=>e.shape.medium};
+  }
+`,V=u.div`
+  overflow-y: auto;
+  flex-grow: 1;
+
+  padding: ${({theme:e})=>e.spacing(4,6)};
+
+  ${({theme:e})=>e.breakpoints.down(`laptop`)} {
+    padding: ${({theme:e})=>e.spacing(4)};
+  }
+`,H=u.footer`
+  display: flex;
+  flex-shrink: 0;
+
+  box-sizing: content-box;
+  height: ${s};
+  margin-top: auto;
+
+  background-color: ${({theme:e})=>e.palette.background.default};
+  border-top: 1px solid ${({theme:e})=>e.palette.components.border.default};
+
+  ${({theme:e})=>e.breakpoints.down(`mobile`)} {
+    display: none;
+  }
+
+  ${({theme:e})=>e.breakpoints.down(`laptop`)} {
+    height: ${d};
+  }
+`})))()}var W,G;function K(){return(K=e((()=>{W=h(),D(),ee(),F(),G=({isPinned:e,onPin:t,persistState:n,navigation:r})=>{let{pageHeaderContainer:i}=S({navigation:r});(0,W.useEffect)(()=>{let r=e!==void 0,i=t!==void 0,a=n!==void 0;r!==i&&console.warn(`PagePinnableAside: Параметры isPinned и onPin необходимо передавать вместе`),!r&&!a&&console.error(`PagePinnableAside: Необходимо передать параметры isPinned и onPin или состояние persistState`)},[]);let a=e!==void 0,o=(0,W.useMemo)(()=>n?`${P}::${n.id}`:null,[n]),[s=!0,c]=o?g(o,!0):[!0,()=>void 0],l=a?e:s??!0;return{isPinned:l,togglePin:()=>{let e=!l;if(a)return t?.(e);c(e)},pageHeaderContainer:i,isMobileNavigationVisible:r&&i}}})))()}function q(){return(q=e((()=>{K()})))()}var J,Y,X,Z;function Q(){return(Q=e((()=>{J=c(),y(),D(),T(),x(),l(),f(),F(),U(),q(),Y=p(),X=n(N.root,{variants:{withHeader:{true:N.withHeader}}}),Z=({header:e,children:n,className:r,navigation:i,...a})=>{let{isPinned:o,togglePin:s,pageHeaderContainer:c,isMobileNavigationVisible:l}=G({navigation:i,...a});return(0,Y.jsxs)(Y.Fragment,{children:[l&&(0,J.createPortal)((0,Y.jsx)(O,{className:_.mobileNavigation,children:i}),c),e&&(0,Y.jsx)(k,{children:e}),(0,Y.jsx)(j,{content:n}),(0,Y.jsxs)(I,{$isPinned:o,className:X({withHeader:!!e}),children:[(0,Y.jsx)(L,{$isPinned:o,children:(0,Y.jsx)(v,{})}),(0,Y.jsxs)(B,{$isPinned:o,className:t(r,N.content),children:[(0,Y.jsxs)(V,{children:[e&&(0,Y.jsxs)(w,{children:[e,(0,Y.jsx)(E,{})]}),i,n]}),(0,Y.jsx)(H,{children:(0,Y.jsx)(b,{isPinned:o,isUseCollapse:!1,onClick:s})})]})]})]})};try{Z.displayName=`PagePinnableAside`,Z.__docgenInfo={description:`Открепляемый aside`,displayName:`PagePinnableAside`,filePath:`/home/runner/work/ui-temp-10-2026/ui-temp-10-2026/packages/ui/src/components/PagePinnableAside/PagePinnableAside.tsx`,methods:[],props:{children:{defaultValue:null,declarations:[{fileName:`ui-temp-10-2026/packages/ui/src/components/PagePinnableAside/types.ts`,name:`TypeLiteral`}],description:``,name:`children`,required:!1,tags:{},type:{name:`ReactNode`}},className:{defaultValue:null,declarations:[{fileName:`ui-temp-10-2026/packages/ui/src/components/PagePinnableAside/types.ts`,name:`TypeLiteral`}],description:`Название класса, применяется к корневому компоненту`,name:`className`,required:!1,tags:{},type:{name:`string`}},isPinned:{defaultValue:null,declarations:[{fileName:`ui-temp-10-2026/packages/ui/src/components/PagePinnableAside/types.ts`,name:`TypeLiteral`}],description:`Состояния прикреплен/откреплен`,name:`isPinned`,required:!1,tags:{},type:{name:`boolean`}},onPin:{defaultValue:null,declarations:[{fileName:`ui-temp-10-2026/packages/ui/src/components/PagePinnableAside/types.ts`,name:`TypeLiteral`}],description:`Функция изменения состояния закрепления`,name:`onPin`,required:!1,tags:{},type:{name:`(isPinned: boolean) => void`}},persistState:{defaultValue:null,declarations:[{fileName:`ui-temp-10-2026/packages/ui/src/components/PagePinnableAside/types.ts`,name:`TypeLiteral`}],description:`Настройки сохранения состояния в localstorage`,name:`persistState`,required:!1,tags:{},type:{name:`{ isEnabled: boolean; id: string; }`}},header:{defaultValue:null,declarations:[{fileName:`ui-temp-10-2026/packages/ui/src/components/PagePinnableAside/types.ts`,name:`TypeLiteral`}],description:`Заголовок боковой панели`,name:`header`,required:!1,tags:{},type:{name:`ReactNode`}},navigation:{defaultValue:null,declarations:[{fileName:`ui-temp-10-2026/packages/ui/src/components/PagePinnableAside/types.ts`,name:`TypeLiteral`}],description:`Компонент для отображения навигации`,name:`navigation`,required:!1,tags:{example:`<PagePinnableAside navigation={
+  <PageAsideNavigation>
+    <PageAsideNavigationItem>
+      Home
+    </PageAsideNavigationItem>
+  </PageAsideNavigation>}
+/>`},type:{name:`ReactNode`}}},tags:{}}}catch{}})))()}function $(){return($=e((()=>{Q()})))()}export{Z as n,Q as r,$ as t};
