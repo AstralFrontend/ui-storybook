@@ -1,1 +1,0 @@
-import{n as e}from"./rolldown-runtime-C0FnF6B9.js";function t(e){let t=e.documentElement.clientWidth;return Math.abs(window.innerWidth-t)}function n(){return(n=e((()=>{})))()}export{n,t};
