@@ -1,5 +1,0 @@
-import{n as e}from"./rolldown-runtime-C0FnF6B9.js";import{ji as t,xa as n,yn as r}from"./preview-lt0cavAw.js";import{n as i,t as a}from"./CheckboxField-6eNmtLuN.js";var o,s,c;function l(){return(l=e((()=>{r(),i(),o=n(),s=t.div`
-  width: 250px;
-`,c=()=>(0,o.jsx)(s,{children:(0,o.jsx)(a,{label:`Длинный текст пояснения в несколько строк`,helperText:`helper text`})}),c.parameters={...c.parameters,docs:{...c.parameters?.docs,source:{originalSource:`() => <Wrapper>
-    <CheckboxField label="Длинный текст пояснения в несколько строк" helperText="helper text" />
-  </Wrapper>`,...c.parameters?.docs?.source}}}})))()}var u,d;function f(){return(f=e((()=>{i(),l(),u={title:`Form-Controls/CheckboxField/Tests`,component:a},d=[`LongLabel`]})))()}f();export{c as LongLabel,d as __namedExportsOrder,u as default};

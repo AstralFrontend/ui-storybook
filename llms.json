@@ -1087,6 +1087,25 @@
                 "name": "Ref<TouchRippleActions>"
               }
             },
+            "icon": {
+              "defaultValue": null,
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/Switch/Switch.d.ts",
+                  "name": "SwitchProps"
+                }
+              ],
+              "description": "The icon to display when the component is unchecked.",
+              "parent": {
+                "fileName": "ui-temp-10-2026/node_modules/@mui/material/Switch/Switch.d.ts",
+                "name": "SwitchProps"
+              },
+              "required": false,
+              "tags": {},
+              "type": {
+                "name": "ReactNode"
+              }
+            },
             "disableFocusRipple": {
               "defaultValue": {
                 "value": "false"
@@ -1110,63 +1129,6 @@
                 "name": "boolean"
               }
             },
-            "icon": {
-              "defaultValue": null,
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/Switch/Switch.d.ts",
-                  "name": "SwitchProps"
-                }
-              ],
-              "description": "The icon to display when the component is unchecked.",
-              "parent": {
-                "fileName": "ui-temp-10-2026/node_modules/@mui/material/Switch/Switch.d.ts",
-                "name": "SwitchProps"
-              },
-              "required": false,
-              "tags": {},
-              "type": {
-                "name": "ReactNode"
-              }
-            },
-            "checked": {
-              "defaultValue": null,
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/internal/SwitchBase.d.ts",
-                  "name": "SwitchBaseProps"
-                }
-              ],
-              "description": "If `true`, the component is checked.",
-              "parent": {
-                "fileName": "ui-temp-10-2026/node_modules/@mui/material/internal/SwitchBase.d.ts",
-                "name": "SwitchBaseProps"
-              },
-              "required": false,
-              "tags": {},
-              "type": {
-                "name": "boolean"
-              }
-            },
-            "checkedIcon": {
-              "defaultValue": null,
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/Switch/Switch.d.ts",
-                  "name": "SwitchProps"
-                }
-              ],
-              "description": "The icon to display when the component is checked.",
-              "parent": {
-                "fileName": "ui-temp-10-2026/node_modules/@mui/material/Switch/Switch.d.ts",
-                "name": "SwitchProps"
-              },
-              "required": false,
-              "tags": {},
-              "type": {
-                "name": "ReactNode"
-              }
-            },
             "edge": {
               "defaultValue": {
                 "value": "false"
@@ -1188,6 +1150,25 @@
               },
               "type": {
                 "name": "false | \"start\" | \"end\""
+              }
+            },
+            "checked": {
+              "defaultValue": null,
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/internal/SwitchBase.d.ts",
+                  "name": "SwitchBaseProps"
+                }
+              ],
+              "description": "If `true`, the component is checked.",
+              "parent": {
+                "fileName": "ui-temp-10-2026/node_modules/@mui/material/internal/SwitchBase.d.ts",
+                "name": "SwitchBaseProps"
+              },
+              "required": false,
+              "tags": {},
+              "type": {
+                "name": "boolean"
               }
             },
             "labelPlacement": {
@@ -1218,6 +1199,25 @@
                     "value": "\"end\""
                   }
                 ]
+              }
+            },
+            "checkedIcon": {
+              "defaultValue": null,
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/Switch/Switch.d.ts",
+                  "name": "SwitchProps"
+                }
+              ],
+              "description": "The icon to display when the component is checked.",
+              "parent": {
+                "fileName": "ui-temp-10-2026/node_modules/@mui/material/Switch/Switch.d.ts",
+                "name": "SwitchProps"
+              },
+              "required": false,
+              "tags": {},
+              "type": {
+                "name": "ReactNode"
               }
             }
           },
@@ -2202,62 +2202,6 @@
                     "name": "{ root?: ElementType<any, keyof IntrinsicElements>; }"
                   }
                 },
-                "alignItems": {
-                  "defaultValue": {
-                    "value": "'center'"
-                  },
-                  "declarations": [
-                    {
-                      "fileName": "ui-temp-10-2026/node_modules/@mui/material/ListItem/ListItem.d.ts",
-                      "name": "ListItemBaseProps"
-                    }
-                  ],
-                  "description": "Defines the `align-items` style property.",
-                  "parent": {
-                    "fileName": "ui-temp-10-2026/node_modules/@mui/material/ListItem/ListItem.d.ts",
-                    "name": "ListItemBaseProps"
-                  },
-                  "required": false,
-                  "tags": {
-                    "default": "'center'"
-                  },
-                  "type": {
-                    "name": "enum",
-                    "raw": "\"center\" | \"flex-start\"",
-                    "value": [
-                      {
-                        "value": "\"center\""
-                      },
-                      {
-                        "value": "\"flex-start\""
-                      }
-                    ]
-                  }
-                },
-                "selected": {
-                  "defaultValue": {
-                    "value": "false"
-                  },
-                  "declarations": [
-                    {
-                      "fileName": "ui-temp-10-2026/node_modules/@mui/material/ListItem/ListItem.d.ts",
-                      "name": "ListItemBaseProps"
-                    }
-                  ],
-                  "description": "Use to apply selected styling.",
-                  "parent": {
-                    "fileName": "ui-temp-10-2026/node_modules/@mui/material/ListItem/ListItem.d.ts",
-                    "name": "ListItemBaseProps"
-                  },
-                  "required": false,
-                  "tags": {
-                    "default": "false",
-                    "deprecated": "checkout [ListItemButton](/material-ui/api/list-item-button/) instead"
-                  },
-                  "type": {
-                    "name": "boolean"
-                  }
-                },
                 "dense": {
                   "defaultValue": {
                     "value": "false"
@@ -2304,6 +2248,38 @@
                     "name": "boolean"
                   }
                 },
+                "alignItems": {
+                  "defaultValue": {
+                    "value": "'center'"
+                  },
+                  "declarations": [
+                    {
+                      "fileName": "ui-temp-10-2026/node_modules/@mui/material/ListItem/ListItem.d.ts",
+                      "name": "ListItemBaseProps"
+                    }
+                  ],
+                  "description": "Defines the `align-items` style property.",
+                  "parent": {
+                    "fileName": "ui-temp-10-2026/node_modules/@mui/material/ListItem/ListItem.d.ts",
+                    "name": "ListItemBaseProps"
+                  },
+                  "required": false,
+                  "tags": {
+                    "default": "'center'"
+                  },
+                  "type": {
+                    "name": "enum",
+                    "raw": "\"center\" | \"flex-start\"",
+                    "value": [
+                      {
+                        "value": "\"center\""
+                      },
+                      {
+                        "value": "\"flex-start\""
+                      }
+                    ]
+                  }
+                },
                 "disableGutters": {
                   "defaultValue": {
                     "value": "false"
@@ -2345,6 +2321,30 @@
                   "required": false,
                   "tags": {
                     "default": "false"
+                  },
+                  "type": {
+                    "name": "boolean"
+                  }
+                },
+                "selected": {
+                  "defaultValue": {
+                    "value": "false"
+                  },
+                  "declarations": [
+                    {
+                      "fileName": "ui-temp-10-2026/node_modules/@mui/material/ListItem/ListItem.d.ts",
+                      "name": "ListItemBaseProps"
+                    }
+                  ],
+                  "description": "Use to apply selected styling.",
+                  "parent": {
+                    "fileName": "ui-temp-10-2026/node_modules/@mui/material/ListItem/ListItem.d.ts",
+                    "name": "ListItemBaseProps"
+                  },
+                  "required": false,
+                  "tags": {
+                    "default": "false",
+                    "deprecated": "checkout [ListItemButton](/material-ui/api/list-item-button/) instead"
                   },
                   "type": {
                     "name": "boolean"
@@ -2773,6 +2773,29 @@
                     "name": "Ref<ButtonBaseActions>"
                   }
                 },
+                "dense": {
+                  "defaultValue": {
+                    "value": "false"
+                  },
+                  "declarations": [
+                    {
+                      "fileName": "ui-temp-10-2026/node_modules/@mui/material/ListItemButton/ListItemButton.d.ts",
+                      "name": "ListItemButtonBaseProps"
+                    }
+                  ],
+                  "description": "If `true`, compact vertical padding designed for keyboard and mouse input is used.\nThe prop defaults to the value inherited from the parent List component.",
+                  "parent": {
+                    "fileName": "ui-temp-10-2026/node_modules/@mui/material/ListItemButton/ListItemButton.d.ts",
+                    "name": "ListItemButtonBaseProps"
+                  },
+                  "required": false,
+                  "tags": {
+                    "default": "false"
+                  },
+                  "type": {
+                    "name": "boolean"
+                  }
+                },
                 "centerRipple": {
                   "defaultValue": {
                     "value": "false"
@@ -2973,67 +2996,6 @@
                     ]
                   }
                 },
-                "selected": {
-                  "defaultValue": {
-                    "value": "false"
-                  },
-                  "declarations": [
-                    {
-                      "fileName": "ui-temp-10-2026/node_modules/@mui/material/ListItemButton/ListItemButton.d.ts",
-                      "name": "ListItemButtonBaseProps"
-                    }
-                  ],
-                  "description": "Use to apply selected styling.",
-                  "parent": {
-                    "fileName": "ui-temp-10-2026/node_modules/@mui/material/ListItemButton/ListItemButton.d.ts",
-                    "name": "ListItemButtonBaseProps"
-                  },
-                  "required": false,
-                  "tags": {
-                    "default": "false"
-                  },
-                  "type": {
-                    "name": "boolean"
-                  }
-                },
-                "withoutContainer": {
-                  "defaultValue": null,
-                  "declarations": [
-                    {
-                      "fileName": "ui-temp-10-2026/packages/ui/src/components/ListItemButton/ListItemButton.tsx",
-                      "name": "TypeLiteral"
-                    }
-                  ],
-                  "description": "withoutContainer необходим для обратной совместимости и рендерит компонент без тега li",
-                  "required": false,
-                  "tags": {},
-                  "type": {
-                    "name": "boolean"
-                  }
-                },
-                "dense": {
-                  "defaultValue": {
-                    "value": "false"
-                  },
-                  "declarations": [
-                    {
-                      "fileName": "ui-temp-10-2026/node_modules/@mui/material/ListItemButton/ListItemButton.d.ts",
-                      "name": "ListItemButtonBaseProps"
-                    }
-                  ],
-                  "description": "If `true`, compact vertical padding designed for keyboard and mouse input is used.\nThe prop defaults to the value inherited from the parent List component.",
-                  "parent": {
-                    "fileName": "ui-temp-10-2026/node_modules/@mui/material/ListItemButton/ListItemButton.d.ts",
-                    "name": "ListItemButtonBaseProps"
-                  },
-                  "required": false,
-                  "tags": {
-                    "default": "false"
-                  },
-                  "type": {
-                    "name": "boolean"
-                  }
-                },
                 "disableGutters": {
                   "defaultValue": {
                     "value": "false"
@@ -3068,6 +3030,29 @@
                     }
                   ],
                   "description": "If `true`, a 1px light border is added to the bottom of the list item.",
+                  "parent": {
+                    "fileName": "ui-temp-10-2026/node_modules/@mui/material/ListItemButton/ListItemButton.d.ts",
+                    "name": "ListItemButtonBaseProps"
+                  },
+                  "required": false,
+                  "tags": {
+                    "default": "false"
+                  },
+                  "type": {
+                    "name": "boolean"
+                  }
+                },
+                "selected": {
+                  "defaultValue": {
+                    "value": "false"
+                  },
+                  "declarations": [
+                    {
+                      "fileName": "ui-temp-10-2026/node_modules/@mui/material/ListItemButton/ListItemButton.d.ts",
+                      "name": "ListItemButtonBaseProps"
+                    }
+                  ],
+                  "description": "Use to apply selected styling.",
                   "parent": {
                     "fileName": "ui-temp-10-2026/node_modules/@mui/material/ListItemButton/ListItemButton.d.ts",
                     "name": "ListItemButtonBaseProps"
@@ -3147,6 +3132,21 @@
                         "value": "\"top-start\""
                       }
                     ]
+                  }
+                },
+                "withoutContainer": {
+                  "defaultValue": null,
+                  "declarations": [
+                    {
+                      "fileName": "ui-temp-10-2026/packages/ui/src/components/ListItemButton/ListItemButton.tsx",
+                      "name": "TypeLiteral"
+                    }
+                  ],
+                  "description": "withoutContainer необходим для обратной совместимости и рендерит компонент без тега li",
+                  "required": false,
+                  "tags": {},
+                  "type": {
+                    "name": "boolean"
                   }
                 }
               },
@@ -4386,99 +4386,6 @@
                 "name": "boolean"
               }
             },
-            "PaperProps": {
-              "defaultValue": {
-                "value": "{}"
-              },
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/Popover/Popover.d.ts",
-                  "name": "PopoverProps"
-                }
-              ],
-              "description": "Props applied to the [`Paper`](/material-ui/api/paper/) element.\n\nThis prop is an alias for `slotProps.paper` and will be overriden by it if both are used.",
-              "parent": {
-                "fileName": "ui-temp-10-2026/node_modules/@mui/material/Popover/Popover.d.ts",
-                "name": "PopoverProps"
-              },
-              "required": false,
-              "tags": {
-                "deprecated": "Use `slotProps.paper` instead.",
-                "default": "{}"
-              },
-              "type": {
-                "name": "Partial<PaperProps<ElementType<any, keyof IntrinsicElements>>>"
-              }
-            },
-            "TransitionComponent": {
-              "defaultValue": {
-                "value": "Grow"
-              },
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/Popover/Popover.d.ts",
-                  "name": "PopoverProps"
-                }
-              ],
-              "description": "The component used for the transition.\n[Follow this guide](/material-ui/transitions/#transitioncomponent-prop) to learn more about the requirements for this component.",
-              "parent": {
-                "fileName": "ui-temp-10-2026/node_modules/@mui/material/Popover/Popover.d.ts",
-                "name": "PopoverProps"
-              },
-              "required": false,
-              "tags": {
-                "default": "Grow"
-              },
-              "type": {
-                "name": "JSXElementConstructor<TransitionProps & { children: ReactElement<any, any>; }>"
-              }
-            },
-            "transitionDuration": {
-              "defaultValue": {
-                "value": "'auto'"
-              },
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/Menu/Menu.d.ts",
-                  "name": "MenuProps"
-                }
-              ],
-              "description": "The length of the transition in `ms`, or 'auto'",
-              "parent": {
-                "fileName": "ui-temp-10-2026/node_modules/@mui/material/Menu/Menu.d.ts",
-                "name": "MenuProps"
-              },
-              "required": false,
-              "tags": {
-                "default": "'auto'"
-              },
-              "type": {
-                "name": "number | \"auto\" | { appear?: number; enter?: number; exit?: number; } | { appear?: number; enter?: number; exit?: number; }"
-              }
-            },
-            "TransitionProps": {
-              "defaultValue": {
-                "value": "{}"
-              },
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/Menu/Menu.d.ts",
-                  "name": "MenuProps"
-                }
-              ],
-              "description": "Props applied to the transition element.\nBy default, the element is based on this [`Transition`](https://reactcommunity.org/react-transition-group/transition/) component.",
-              "parent": {
-                "fileName": "ui-temp-10-2026/node_modules/@mui/material/Menu/Menu.d.ts",
-                "name": "MenuProps"
-              },
-              "required": false,
-              "tags": {
-                "default": "{}"
-              },
-              "type": {
-                "name": "TransitionProps"
-              }
-            },
             "action": {
               "defaultValue": null,
               "declarations": [
@@ -4496,29 +4403,6 @@
               "tags": {},
               "type": {
                 "name": "Ref<PopoverActions>"
-              }
-            },
-            "transformOrigin": {
-              "defaultValue": {
-                "value": "{\nvertical: 'top',\nhorizontal: 'left',\n}"
-              },
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/Popover/Popover.d.ts",
-                  "name": "PopoverProps"
-                }
-              ],
-              "description": "This is the point on the popover which\nwill attach to the anchor's origin.\n\nOptions:\nvertical: [top, center, bottom, x(px)];\nhorizontal: [left, center, right, x(px)].",
-              "parent": {
-                "fileName": "ui-temp-10-2026/node_modules/@mui/material/Popover/Popover.d.ts",
-                "name": "PopoverProps"
-              },
-              "required": false,
-              "tags": {
-                "default": "{\nvertical: 'top',\nhorizontal: 'left',\n}"
-              },
-              "type": {
-                "name": "PopoverOrigin"
               }
             },
             "anchorEl": {
@@ -4638,6 +4522,122 @@
               },
               "type": {
                 "name": "number"
+              }
+            },
+            "PaperProps": {
+              "defaultValue": {
+                "value": "{}"
+              },
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/Popover/Popover.d.ts",
+                  "name": "PopoverProps"
+                }
+              ],
+              "description": "Props applied to the [`Paper`](/material-ui/api/paper/) element.\n\nThis prop is an alias for `slotProps.paper` and will be overriden by it if both are used.",
+              "parent": {
+                "fileName": "ui-temp-10-2026/node_modules/@mui/material/Popover/Popover.d.ts",
+                "name": "PopoverProps"
+              },
+              "required": false,
+              "tags": {
+                "deprecated": "Use `slotProps.paper` instead.",
+                "default": "{}"
+              },
+              "type": {
+                "name": "Partial<PaperProps<ElementType<any, keyof IntrinsicElements>>>"
+              }
+            },
+            "transformOrigin": {
+              "defaultValue": {
+                "value": "{\nvertical: 'top',\nhorizontal: 'left',\n}"
+              },
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/Popover/Popover.d.ts",
+                  "name": "PopoverProps"
+                }
+              ],
+              "description": "This is the point on the popover which\nwill attach to the anchor's origin.\n\nOptions:\nvertical: [top, center, bottom, x(px)];\nhorizontal: [left, center, right, x(px)].",
+              "parent": {
+                "fileName": "ui-temp-10-2026/node_modules/@mui/material/Popover/Popover.d.ts",
+                "name": "PopoverProps"
+              },
+              "required": false,
+              "tags": {
+                "default": "{\nvertical: 'top',\nhorizontal: 'left',\n}"
+              },
+              "type": {
+                "name": "PopoverOrigin"
+              }
+            },
+            "TransitionComponent": {
+              "defaultValue": {
+                "value": "Grow"
+              },
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/Popover/Popover.d.ts",
+                  "name": "PopoverProps"
+                }
+              ],
+              "description": "The component used for the transition.\n[Follow this guide](/material-ui/transitions/#transitioncomponent-prop) to learn more about the requirements for this component.",
+              "parent": {
+                "fileName": "ui-temp-10-2026/node_modules/@mui/material/Popover/Popover.d.ts",
+                "name": "PopoverProps"
+              },
+              "required": false,
+              "tags": {
+                "default": "Grow"
+              },
+              "type": {
+                "name": "JSXElementConstructor<TransitionProps & { children: ReactElement<any, any>; }>"
+              }
+            },
+            "transitionDuration": {
+              "defaultValue": {
+                "value": "'auto'"
+              },
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/Menu/Menu.d.ts",
+                  "name": "MenuProps"
+                }
+              ],
+              "description": "The length of the transition in `ms`, or 'auto'",
+              "parent": {
+                "fileName": "ui-temp-10-2026/node_modules/@mui/material/Menu/Menu.d.ts",
+                "name": "MenuProps"
+              },
+              "required": false,
+              "tags": {
+                "default": "'auto'"
+              },
+              "type": {
+                "name": "number | \"auto\" | { appear?: number; enter?: number; exit?: number; } | { appear?: number; enter?: number; exit?: number; }"
+              }
+            },
+            "TransitionProps": {
+              "defaultValue": {
+                "value": "{}"
+              },
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/Menu/Menu.d.ts",
+                  "name": "MenuProps"
+                }
+              ],
+              "description": "Props applied to the transition element.\nBy default, the element is based on this [`Transition`](https://reactcommunity.org/react-transition-group/transition/) component.",
+              "parent": {
+                "fileName": "ui-temp-10-2026/node_modules/@mui/material/Menu/Menu.d.ts",
+                "name": "MenuProps"
+              },
+              "required": false,
+              "tags": {
+                "default": "{}"
+              },
+              "type": {
+                "name": "TransitionProps"
               }
             },
             "disableAutoFocusItem": {
@@ -5621,99 +5621,6 @@
                 "name": "boolean"
               }
             },
-            "PaperProps": {
-              "defaultValue": {
-                "value": "{}"
-              },
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/Popover/Popover.d.ts",
-                  "name": "PopoverProps"
-                }
-              ],
-              "description": "Props applied to the [`Paper`](/material-ui/api/paper/) element.\n\nThis prop is an alias for `slotProps.paper` and will be overriden by it if both are used.",
-              "parent": {
-                "fileName": "ui-temp-10-2026/node_modules/@mui/material/Popover/Popover.d.ts",
-                "name": "PopoverProps"
-              },
-              "required": false,
-              "tags": {
-                "deprecated": "Use `slotProps.paper` instead.",
-                "default": "{}"
-              },
-              "type": {
-                "name": "Partial<PaperProps<ElementType<any, keyof IntrinsicElements>>>"
-              }
-            },
-            "TransitionComponent": {
-              "defaultValue": {
-                "value": "Grow"
-              },
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/Popover/Popover.d.ts",
-                  "name": "PopoverProps"
-                }
-              ],
-              "description": "The component used for the transition.\n[Follow this guide](/material-ui/transitions/#transitioncomponent-prop) to learn more about the requirements for this component.",
-              "parent": {
-                "fileName": "ui-temp-10-2026/node_modules/@mui/material/Popover/Popover.d.ts",
-                "name": "PopoverProps"
-              },
-              "required": false,
-              "tags": {
-                "default": "Grow"
-              },
-              "type": {
-                "name": "JSXElementConstructor<TransitionProps & { children: ReactElement<any, any>; }>"
-              }
-            },
-            "transitionDuration": {
-              "defaultValue": {
-                "value": "'auto'"
-              },
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/Menu/Menu.d.ts",
-                  "name": "MenuProps"
-                }
-              ],
-              "description": "The length of the transition in `ms`, or 'auto'",
-              "parent": {
-                "fileName": "ui-temp-10-2026/node_modules/@mui/material/Menu/Menu.d.ts",
-                "name": "MenuProps"
-              },
-              "required": false,
-              "tags": {
-                "default": "'auto'"
-              },
-              "type": {
-                "name": "number | \"auto\" | { appear?: number; enter?: number; exit?: number; } | { appear?: number; enter?: number; exit?: number; }"
-              }
-            },
-            "TransitionProps": {
-              "defaultValue": {
-                "value": "{}"
-              },
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/Menu/Menu.d.ts",
-                  "name": "MenuProps"
-                }
-              ],
-              "description": "Props applied to the transition element.\nBy default, the element is based on this [`Transition`](https://reactcommunity.org/react-transition-group/transition/) component.",
-              "parent": {
-                "fileName": "ui-temp-10-2026/node_modules/@mui/material/Menu/Menu.d.ts",
-                "name": "MenuProps"
-              },
-              "required": false,
-              "tags": {
-                "default": "{}"
-              },
-              "type": {
-                "name": "TransitionProps"
-              }
-            },
             "action": {
               "defaultValue": null,
               "declarations": [
@@ -5731,29 +5638,6 @@
               "tags": {},
               "type": {
                 "name": "Ref<PopoverActions>"
-              }
-            },
-            "transformOrigin": {
-              "defaultValue": {
-                "value": "{\nvertical: 'top',\nhorizontal: 'left',\n}"
-              },
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/Popover/Popover.d.ts",
-                  "name": "PopoverProps"
-                }
-              ],
-              "description": "This is the point on the popover which\nwill attach to the anchor's origin.\n\nOptions:\nvertical: [top, center, bottom, x(px)];\nhorizontal: [left, center, right, x(px)].",
-              "parent": {
-                "fileName": "ui-temp-10-2026/node_modules/@mui/material/Popover/Popover.d.ts",
-                "name": "PopoverProps"
-              },
-              "required": false,
-              "tags": {
-                "default": "{\nvertical: 'top',\nhorizontal: 'left',\n}"
-              },
-              "type": {
-                "name": "PopoverOrigin"
               }
             },
             "anchorEl": {
@@ -5873,6 +5757,122 @@
               },
               "type": {
                 "name": "number"
+              }
+            },
+            "PaperProps": {
+              "defaultValue": {
+                "value": "{}"
+              },
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/Popover/Popover.d.ts",
+                  "name": "PopoverProps"
+                }
+              ],
+              "description": "Props applied to the [`Paper`](/material-ui/api/paper/) element.\n\nThis prop is an alias for `slotProps.paper` and will be overriden by it if both are used.",
+              "parent": {
+                "fileName": "ui-temp-10-2026/node_modules/@mui/material/Popover/Popover.d.ts",
+                "name": "PopoverProps"
+              },
+              "required": false,
+              "tags": {
+                "deprecated": "Use `slotProps.paper` instead.",
+                "default": "{}"
+              },
+              "type": {
+                "name": "Partial<PaperProps<ElementType<any, keyof IntrinsicElements>>>"
+              }
+            },
+            "transformOrigin": {
+              "defaultValue": {
+                "value": "{\nvertical: 'top',\nhorizontal: 'left',\n}"
+              },
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/Popover/Popover.d.ts",
+                  "name": "PopoverProps"
+                }
+              ],
+              "description": "This is the point on the popover which\nwill attach to the anchor's origin.\n\nOptions:\nvertical: [top, center, bottom, x(px)];\nhorizontal: [left, center, right, x(px)].",
+              "parent": {
+                "fileName": "ui-temp-10-2026/node_modules/@mui/material/Popover/Popover.d.ts",
+                "name": "PopoverProps"
+              },
+              "required": false,
+              "tags": {
+                "default": "{\nvertical: 'top',\nhorizontal: 'left',\n}"
+              },
+              "type": {
+                "name": "PopoverOrigin"
+              }
+            },
+            "TransitionComponent": {
+              "defaultValue": {
+                "value": "Grow"
+              },
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/Popover/Popover.d.ts",
+                  "name": "PopoverProps"
+                }
+              ],
+              "description": "The component used for the transition.\n[Follow this guide](/material-ui/transitions/#transitioncomponent-prop) to learn more about the requirements for this component.",
+              "parent": {
+                "fileName": "ui-temp-10-2026/node_modules/@mui/material/Popover/Popover.d.ts",
+                "name": "PopoverProps"
+              },
+              "required": false,
+              "tags": {
+                "default": "Grow"
+              },
+              "type": {
+                "name": "JSXElementConstructor<TransitionProps & { children: ReactElement<any, any>; }>"
+              }
+            },
+            "transitionDuration": {
+              "defaultValue": {
+                "value": "'auto'"
+              },
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/Menu/Menu.d.ts",
+                  "name": "MenuProps"
+                }
+              ],
+              "description": "The length of the transition in `ms`, or 'auto'",
+              "parent": {
+                "fileName": "ui-temp-10-2026/node_modules/@mui/material/Menu/Menu.d.ts",
+                "name": "MenuProps"
+              },
+              "required": false,
+              "tags": {
+                "default": "'auto'"
+              },
+              "type": {
+                "name": "number | \"auto\" | { appear?: number; enter?: number; exit?: number; } | { appear?: number; enter?: number; exit?: number; }"
+              }
+            },
+            "TransitionProps": {
+              "defaultValue": {
+                "value": "{}"
+              },
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/Menu/Menu.d.ts",
+                  "name": "MenuProps"
+                }
+              ],
+              "description": "Props applied to the transition element.\nBy default, the element is based on this [`Transition`](https://reactcommunity.org/react-transition-group/transition/) component.",
+              "parent": {
+                "fileName": "ui-temp-10-2026/node_modules/@mui/material/Menu/Menu.d.ts",
+                "name": "MenuProps"
+              },
+              "required": false,
+              "tags": {
+                "default": "{}"
+              },
+              "type": {
+                "name": "TransitionProps"
               }
             },
             "disableAutoFocusItem": {
@@ -6216,6 +6216,29 @@
                     "name": "Ref<ButtonBaseActions>"
                   }
                 },
+                "dense": {
+                  "defaultValue": {
+                    "value": "false"
+                  },
+                  "declarations": [
+                    {
+                      "fileName": "ui-temp-10-2026/node_modules/@mui/material/MenuItem/MenuItem.d.ts",
+                      "name": "MenuItemOwnProps"
+                    }
+                  ],
+                  "description": "If `true`, compact vertical padding designed for keyboard and mouse input is used.\nThe prop defaults to the value inherited from the parent Menu component.",
+                  "parent": {
+                    "fileName": "ui-temp-10-2026/node_modules/@mui/material/MenuItem/MenuItem.d.ts",
+                    "name": "MenuItemOwnProps"
+                  },
+                  "required": false,
+                  "tags": {
+                    "default": "false"
+                  },
+                  "type": {
+                    "name": "boolean"
+                  }
+                },
                 "centerRipple": {
                   "defaultValue": {
                     "value": "false"
@@ -6407,52 +6430,6 @@
                     "name": "Ref<TouchRippleActions>"
                   }
                 },
-                "selected": {
-                  "defaultValue": {
-                    "value": "false"
-                  },
-                  "declarations": [
-                    {
-                      "fileName": "ui-temp-10-2026/node_modules/@mui/material/MenuItem/MenuItem.d.ts",
-                      "name": "MenuItemOwnProps"
-                    }
-                  ],
-                  "description": "If `true`, the component is selected.",
-                  "parent": {
-                    "fileName": "ui-temp-10-2026/node_modules/@mui/material/MenuItem/MenuItem.d.ts",
-                    "name": "MenuItemOwnProps"
-                  },
-                  "required": false,
-                  "tags": {
-                    "default": "false"
-                  },
-                  "type": {
-                    "name": "boolean"
-                  }
-                },
-                "dense": {
-                  "defaultValue": {
-                    "value": "false"
-                  },
-                  "declarations": [
-                    {
-                      "fileName": "ui-temp-10-2026/node_modules/@mui/material/MenuItem/MenuItem.d.ts",
-                      "name": "MenuItemOwnProps"
-                    }
-                  ],
-                  "description": "If `true`, compact vertical padding designed for keyboard and mouse input is used.\nThe prop defaults to the value inherited from the parent Menu component.",
-                  "parent": {
-                    "fileName": "ui-temp-10-2026/node_modules/@mui/material/MenuItem/MenuItem.d.ts",
-                    "name": "MenuItemOwnProps"
-                  },
-                  "required": false,
-                  "tags": {
-                    "default": "false"
-                  },
-                  "type": {
-                    "name": "boolean"
-                  }
-                },
                 "disableGutters": {
                   "defaultValue": {
                     "value": "false"
@@ -6487,6 +6464,29 @@
                     }
                   ],
                   "description": "If `true`, a 1px light border is added to the bottom of the menu item.",
+                  "parent": {
+                    "fileName": "ui-temp-10-2026/node_modules/@mui/material/MenuItem/MenuItem.d.ts",
+                    "name": "MenuItemOwnProps"
+                  },
+                  "required": false,
+                  "tags": {
+                    "default": "false"
+                  },
+                  "type": {
+                    "name": "boolean"
+                  }
+                },
+                "selected": {
+                  "defaultValue": {
+                    "value": "false"
+                  },
+                  "declarations": [
+                    {
+                      "fileName": "ui-temp-10-2026/node_modules/@mui/material/MenuItem/MenuItem.d.ts",
+                      "name": "MenuItemOwnProps"
+                    }
+                  ],
+                  "description": "If `true`, the component is selected.",
                   "parent": {
                     "fileName": "ui-temp-10-2026/node_modules/@mui/material/MenuItem/MenuItem.d.ts",
                     "name": "MenuItemOwnProps"
@@ -14196,6 +14196,40 @@
                 "name": "FocusEventHandler<any>"
               }
             },
+            "selected": {
+              "defaultValue": null,
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/packages/ui/src/components/Button/types.ts",
+                  "name": "TypeLiteral"
+                }
+              ],
+              "description": "Состояние кнопки - selected",
+              "required": false,
+              "tags": {},
+              "type": {
+                "name": "boolean"
+              }
+            },
+            "href": {
+              "defaultValue": null,
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/Button/Button.d.ts",
+                  "name": "ButtonOwnProps"
+                }
+              ],
+              "description": "The URL to link to when the button is clicked.\nIf defined, an `a` element will be used as the root node.",
+              "parent": {
+                "fileName": "ui-temp-10-2026/node_modules/@mui/material/Button/Button.d.ts",
+                "name": "ButtonOwnProps"
+              },
+              "required": false,
+              "tags": {},
+              "type": {
+                "name": "string"
+              }
+            },
             "disableElevation": {
               "defaultValue": {
                 "value": "false"
@@ -14236,25 +14270,6 @@
               "tags": {},
               "type": {
                 "name": "ReactNode"
-              }
-            },
-            "href": {
-              "defaultValue": null,
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/Button/Button.d.ts",
-                  "name": "ButtonOwnProps"
-                }
-              ],
-              "description": "The URL to link to when the button is clicked.\nIf defined, an `a` element will be used as the root node.",
-              "parent": {
-                "fileName": "ui-temp-10-2026/node_modules/@mui/material/Button/Button.d.ts",
-                "name": "ButtonOwnProps"
-              },
-              "required": false,
-              "tags": {},
-              "type": {
-                "name": "string"
               }
             },
             "startIcon": {
@@ -14400,21 +14415,6 @@
                 }
               ],
               "description": "Если `true`, появляется loader внутри кнопки",
-              "required": false,
-              "tags": {},
-              "type": {
-                "name": "boolean"
-              }
-            },
-            "selected": {
-              "defaultValue": null,
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/packages/ui/src/components/Button/types.ts",
-                  "name": "TypeLiteral"
-                }
-              ],
-              "description": "Состояние кнопки - selected",
               "required": false,
               "tags": {},
               "type": {
@@ -14970,21 +14970,6 @@
                 "name": "boolean"
               }
             },
-            "isDisabled": {
-              "defaultValue": null,
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/packages/ui/src/components/AsyncAutocomplete/types.ts",
-                  "name": "TypeLiteral"
-                }
-              ],
-              "description": "Если `true`, компонент будет не доступен для взаимодействия",
-              "required": false,
-              "tags": {},
-              "type": {
-                "name": "boolean"
-              }
-            },
             "isError": {
               "defaultValue": null,
               "declarations": [
@@ -14998,63 +14983,6 @@
               "tags": {},
               "type": {
                 "name": "boolean"
-              }
-            },
-            "fetchOptions": {
-              "defaultValue": null,
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/packages/ui/src/components/AsyncAutocomplete/types.ts",
-                  "name": "TypeLiteral"
-                }
-              ],
-              "description": "Функция для асинхронной загрузки опций на основе поискового запроса\nПри возникновении ошибки запроса данных, компонент сам ее обработает.\nДля обработки ошибок вручную используйте параметр \\`onDataLoadError\\`",
-              "required": true,
-              "tags": {
-                "param": "search - Строка поиска, введенная пользователем. На основе этой\nстроки функция должна вернуть подходящие опции.\nsignal - Объект \\`AbortSignal\\`, который позволяет отменить запрос,\nесли пользователь изменил поисковый запрос или закрыл компонент.",
-                "returns": "Promise<TOptions[]> Промис, который разрешается массивом опций\n(`TOptions[]`). Эти опции будут отображены в выпадающем списке.",
-                "example": "```typescript\nconst fetchOptions = async (search: string, signal: AbortSignal) => {\n  const response = await fetch(`/api/search?query=${search}`, { signal });\n  const data = await response.json();\n  return data.results;\n};\n\n<AsyncAutocomplete fetchOptions={fetchOptions} />\n```"
-              },
-              "type": {
-                "name": "(search: string, signal?: AbortSignal) => Promise<TOption[]>"
-              }
-            },
-            "fetchDelayMs": {
-              "defaultValue": {
-                "value": "300"
-              },
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/packages/ui/src/components/AsyncAutocomplete/types.ts",
-                  "name": "TypeLiteral"
-                }
-              ],
-              "description": "Задержка для fetchOptions",
-              "required": false,
-              "tags": {
-                "default": "300"
-              },
-              "type": {
-                "name": "number"
-              }
-            },
-            "minSymbolsToFetch": {
-              "defaultValue": {
-                "value": "0"
-              },
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/packages/ui/src/components/AsyncAutocomplete/types.ts",
-                  "name": "TypeLiteral"
-                }
-              ],
-              "description": "Минимальное количество символов для выполнения запроса",
-              "required": false,
-              "tags": {
-                "default": "0"
-              },
-              "type": {
-                "name": "number"
               }
             },
             "disablePortal": {
@@ -15120,6 +15048,21 @@
                 "name": "boolean"
               }
             },
+            "isDisabled": {
+              "defaultValue": null,
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/packages/ui/src/components/AsyncAutocomplete/types.ts",
+                  "name": "TypeLiteral"
+                }
+              ],
+              "description": "Если `true`, компонент будет не доступен для взаимодействия",
+              "required": false,
+              "tags": {},
+              "type": {
+                "name": "boolean"
+              }
+            },
             "onOpen": {
               "defaultValue": null,
               "declarations": [
@@ -15141,6 +15084,63 @@
                 "name": "(event: SyntheticEvent<Element, Event>) => void"
               }
             },
+            "fetchOptions": {
+              "defaultValue": null,
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/packages/ui/src/components/AsyncAutocomplete/types.ts",
+                  "name": "TypeLiteral"
+                }
+              ],
+              "description": "Функция для асинхронной загрузки опций на основе поискового запроса\nПри возникновении ошибки запроса данных, компонент сам ее обработает.\nДля обработки ошибок вручную используйте параметр \\`onDataLoadError\\`",
+              "required": true,
+              "tags": {
+                "param": "search - Строка поиска, введенная пользователем. На основе этой\nстроки функция должна вернуть подходящие опции.\nsignal - Объект \\`AbortSignal\\`, который позволяет отменить запрос,\nесли пользователь изменил поисковый запрос или закрыл компонент.",
+                "returns": "Promise<TOptions[]> Промис, который разрешается массивом опций\n(`TOptions[]`). Эти опции будут отображены в выпадающем списке.",
+                "example": "```typescript\nconst fetchOptions = async (search: string, signal: AbortSignal) => {\n  const response = await fetch(`/api/search?query=${search}`, { signal });\n  const data = await response.json();\n  return data.results;\n};\n\n<AsyncAutocomplete fetchOptions={fetchOptions} />\n```"
+              },
+              "type": {
+                "name": "(search: string, signal?: AbortSignal) => Promise<TOption[]>"
+              }
+            },
+            "fetchDelayMs": {
+              "defaultValue": {
+                "value": "300"
+              },
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/packages/ui/src/components/AsyncAutocomplete/types.ts",
+                  "name": "TypeLiteral"
+                }
+              ],
+              "description": "Задержка для fetchOptions",
+              "required": false,
+              "tags": {
+                "default": "300"
+              },
+              "type": {
+                "name": "number"
+              }
+            },
+            "minSymbolsToFetch": {
+              "defaultValue": {
+                "value": "0"
+              },
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/packages/ui/src/components/AsyncAutocomplete/types.ts",
+                  "name": "TypeLiteral"
+                }
+              ],
+              "description": "Минимальное количество символов для выполнения запроса",
+              "required": false,
+              "tags": {
+                "default": "0"
+              },
+              "type": {
+                "name": "number"
+              }
+            },
             "isHidePersonalData": {
               "defaultValue": null,
               "declarations": [
@@ -15150,21 +15150,6 @@
                 }
               ],
               "description": "Скрытие персональных данных от инструментов мониторинга",
-              "required": false,
-              "tags": {},
-              "type": {
-                "name": "boolean"
-              }
-            },
-            "isFullWidth": {
-              "defaultValue": null,
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/packages/ui/src/components/AsyncAutocomplete/types.ts",
-                  "name": "TypeLiteral"
-                }
-              ],
-              "description": "Если `true`, компонент растянется на всю ширину",
               "required": false,
               "tags": {},
               "type": {
@@ -15318,6 +15303,21 @@
               },
               "type": {
                 "name": "(event: SyntheticEvent<Element, Event>, value: string, reason: AutocompleteInputChangeReason) => void"
+              }
+            },
+            "isFullWidth": {
+              "defaultValue": null,
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/packages/ui/src/components/AsyncAutocomplete/types.ts",
+                  "name": "TypeLiteral"
+                }
+              ],
+              "description": "Если `true`, компонент растянется на всю ширину",
+              "required": false,
+              "tags": {},
+              "type": {
+                "name": "boolean"
               }
             },
             "isSuccess": {
@@ -15833,21 +15833,6 @@
                 "name": "boolean"
               }
             },
-            "isDisabled": {
-              "defaultValue": null,
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/packages/ui/src/components/AsyncAutocomplete/types.ts",
-                  "name": "TypeLiteral"
-                }
-              ],
-              "description": "Если `true`, компонент будет не доступен для взаимодействия",
-              "required": false,
-              "tags": {},
-              "type": {
-                "name": "boolean"
-              }
-            },
             "isError": {
               "defaultValue": null,
               "declarations": [
@@ -15861,78 +15846,6 @@
               "tags": {},
               "type": {
                 "name": "boolean"
-              }
-            },
-            "fetchOptions": {
-              "defaultValue": null,
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/packages/ui/src/components/AsyncAutocomplete/types.ts",
-                  "name": "TypeLiteral"
-                }
-              ],
-              "description": "Функция для асинхронной загрузки опций на основе поискового запроса\nПри возникновении ошибки запроса данных, компонент сам ее обработает.\nДля обработки ошибок вручную используйте параметр \\`onDataLoadError\\`",
-              "required": true,
-              "tags": {
-                "param": "search - Строка поиска, введенная пользователем. На основе этой\nстроки функция должна вернуть подходящие опции.\nsignal - Объект \\`AbortSignal\\`, который позволяет отменить запрос,\nесли пользователь изменил поисковый запрос или закрыл компонент.",
-                "returns": "Promise<TOptions[]> Промис, который разрешается массивом опций\n(`TOptions[]`). Эти опции будут отображены в выпадающем списке.",
-                "example": "```typescript\nconst fetchOptions = async (search: string, signal: AbortSignal) => {\n  const response = await fetch(`/api/search?query=${search}`, { signal });\n  const data = await response.json();\n  return data.results;\n};\n\n<AsyncAutocomplete fetchOptions={fetchOptions} />\n```"
-              },
-              "type": {
-                "name": "(search: string, signal?: AbortSignal) => Promise<TOption[]>"
-              }
-            },
-            "fetchDelayMs": {
-              "defaultValue": {
-                "value": "300"
-              },
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/packages/ui/src/components/AsyncAutocomplete/types.ts",
-                  "name": "TypeLiteral"
-                }
-              ],
-              "description": "Задержка для fetchOptions",
-              "required": false,
-              "tags": {
-                "default": "300"
-              },
-              "type": {
-                "name": "number"
-              }
-            },
-            "onDataLoadError": {
-              "defaultValue": null,
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/packages/ui/src/components/AsyncAutocomplete/types.ts",
-                  "name": "TypeLiteral"
-                }
-              ],
-              "description": "Функция для обработки ошибок загрузки данных",
-              "required": false,
-              "tags": {},
-              "type": {
-                "name": "(error: Error) => void"
-              }
-            },
-            "minSymbolsToFetch": {
-              "defaultValue": {
-                "value": "0"
-              },
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/packages/ui/src/components/AsyncAutocomplete/types.ts",
-                  "name": "TypeLiteral"
-                }
-              ],
-              "description": "Минимальное количество символов для выполнения запроса",
-              "required": false,
-              "tags": {
-                "default": "0"
-              },
-              "type": {
-                "name": "number"
               }
             },
             "disablePortal": {
@@ -15992,6 +15905,67 @@
                 "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
                 "name": "UseAutocompleteProps"
               },
+              "required": false,
+              "tags": {},
+              "type": {
+                "name": "boolean"
+              }
+            },
+            "disabledItemsFocusable": {
+              "defaultValue": {
+                "value": "false"
+              },
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
+                  "name": "UseAutocompleteProps"
+                }
+              ],
+              "description": "If `true`, will allow focus on disabled items.",
+              "parent": {
+                "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
+                "name": "UseAutocompleteProps"
+              },
+              "required": false,
+              "tags": {
+                "default": "false"
+              },
+              "type": {
+                "name": "boolean"
+              }
+            },
+            "disableListWrap": {
+              "defaultValue": {
+                "value": "false"
+              },
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
+                  "name": "UseAutocompleteProps"
+                }
+              ],
+              "description": "If `true`, the list box in the popup will not wrap focus.",
+              "parent": {
+                "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
+                "name": "UseAutocompleteProps"
+              },
+              "required": false,
+              "tags": {
+                "default": "false"
+              },
+              "type": {
+                "name": "boolean"
+              }
+            },
+            "isDisabled": {
+              "defaultValue": null,
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/packages/ui/src/components/AsyncAutocomplete/types.ts",
+                  "name": "TypeLiteral"
+                }
+              ],
+              "description": "Если `true`, компонент будет не доступен для взаимодействия",
               "required": false,
               "tags": {},
               "type": {
@@ -16112,72 +16086,7 @@
                 "name": "boolean"
               }
             },
-            "disabledItemsFocusable": {
-              "defaultValue": {
-                "value": "false"
-              },
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
-                  "name": "UseAutocompleteProps"
-                }
-              ],
-              "description": "If `true`, will allow focus on disabled items.",
-              "parent": {
-                "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
-                "name": "UseAutocompleteProps"
-              },
-              "required": false,
-              "tags": {
-                "default": "false"
-              },
-              "type": {
-                "name": "boolean"
-              }
-            },
-            "disableListWrap": {
-              "defaultValue": {
-                "value": "false"
-              },
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
-                  "name": "UseAutocompleteProps"
-                }
-              ],
-              "description": "If `true`, the list box in the popup will not wrap focus.",
-              "parent": {
-                "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
-                "name": "UseAutocompleteProps"
-              },
-              "required": false,
-              "tags": {
-                "default": "false"
-              },
-              "type": {
-                "name": "boolean"
-              }
-            },
-            "closeText": {
-              "defaultValue": {
-                "value": "Закрыть"
-              },
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/packages/ui/src/components/Autocomplete/types.ts",
-                  "name": "TypeLiteral"
-                }
-              ],
-              "description": "Переопределяет текст для кнопки закрытия всплывающего окна",
-              "required": false,
-              "tags": {
-                "default": "Закрыть"
-              },
-              "type": {
-                "name": "string"
-              }
-            },
-            "isFullWidth": {
+            "fetchOptions": {
               "defaultValue": null,
               "declarations": [
                 {
@@ -16185,11 +16094,90 @@
                   "name": "TypeLiteral"
                 }
               ],
-              "description": "Если `true`, компонент растянется на всю ширину",
+              "description": "Функция для асинхронной загрузки опций на основе поискового запроса\nПри возникновении ошибки запроса данных, компонент сам ее обработает.\nДля обработки ошибок вручную используйте параметр \\`onDataLoadError\\`",
+              "required": true,
+              "tags": {
+                "param": "search - Строка поиска, введенная пользователем. На основе этой\nстроки функция должна вернуть подходящие опции.\nsignal - Объект \\`AbortSignal\\`, который позволяет отменить запрос,\nесли пользователь изменил поисковый запрос или закрыл компонент.",
+                "returns": "Promise<TOptions[]> Промис, который разрешается массивом опций\n(`TOptions[]`). Эти опции будут отображены в выпадающем списке.",
+                "example": "```typescript\nconst fetchOptions = async (search: string, signal: AbortSignal) => {\n  const response = await fetch(`/api/search?query=${search}`, { signal });\n  const data = await response.json();\n  return data.results;\n};\n\n<AsyncAutocomplete fetchOptions={fetchOptions} />\n```"
+              },
+              "type": {
+                "name": "(search: string, signal?: AbortSignal) => Promise<TOption[]>"
+              }
+            },
+            "fetchDelayMs": {
+              "defaultValue": {
+                "value": "300"
+              },
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/packages/ui/src/components/AsyncAutocomplete/types.ts",
+                  "name": "TypeLiteral"
+                }
+              ],
+              "description": "Задержка для fetchOptions",
+              "required": false,
+              "tags": {
+                "default": "300"
+              },
+              "type": {
+                "name": "number"
+              }
+            },
+            "onDataLoadError": {
+              "defaultValue": null,
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/packages/ui/src/components/AsyncAutocomplete/types.ts",
+                  "name": "TypeLiteral"
+                }
+              ],
+              "description": "Функция для обработки ошибок загрузки данных",
               "required": false,
               "tags": {},
               "type": {
-                "name": "boolean"
+                "name": "(error: Error) => void"
+              }
+            },
+            "minSymbolsToFetch": {
+              "defaultValue": {
+                "value": "0"
+              },
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/packages/ui/src/components/AsyncAutocomplete/types.ts",
+                  "name": "TypeLiteral"
+                }
+              ],
+              "description": "Минимальное количество символов для выполнения запроса",
+              "required": false,
+              "tags": {
+                "default": "0"
+              },
+              "type": {
+                "name": "number"
+              }
+            },
+            "renderOption": {
+              "defaultValue": null,
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/Autocomplete/Autocomplete.d.ts",
+                  "name": "AutocompleteProps"
+                }
+              ],
+              "description": "Render the option, use `getOptionLabel` by default.",
+              "parent": {
+                "fileName": "ui-temp-10-2026/node_modules/@mui/material/Autocomplete/Autocomplete.d.ts",
+                "name": "AutocompleteProps"
+              },
+              "required": false,
+              "tags": {
+                "param": "props The props to apply on the li element.\noption The option to render.\nstate The state of each option.\nownerState The state of the Autocomplete component.",
+                "returns": ""
+              },
+              "type": {
+                "name": "(props: HTMLAttributes<HTMLLIElement> & { key: any; }, option: TOption, state: AutocompleteRenderOptionState, ownerState: AutocompleteOwnerState<...>) => ReactNode"
               }
             },
             "getOptionLabel": {
@@ -16239,26 +16227,23 @@
                 "name": "(option: TOption, value: TOption) => boolean"
               }
             },
-            "renderOption": {
-              "defaultValue": null,
+            "closeText": {
+              "defaultValue": {
+                "value": "Закрыть"
+              },
               "declarations": [
                 {
-                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/Autocomplete/Autocomplete.d.ts",
-                  "name": "AutocompleteProps"
+                  "fileName": "ui-temp-10-2026/packages/ui/src/components/Autocomplete/types.ts",
+                  "name": "TypeLiteral"
                 }
               ],
-              "description": "Render the option, use `getOptionLabel` by default.",
-              "parent": {
-                "fileName": "ui-temp-10-2026/node_modules/@mui/material/Autocomplete/Autocomplete.d.ts",
-                "name": "AutocompleteProps"
-              },
+              "description": "Переопределяет текст для кнопки закрытия всплывающего окна",
               "required": false,
               "tags": {
-                "param": "props The props to apply on the li element.\noption The option to render.\nstate The state of each option.\nownerState The state of the Autocomplete component.",
-                "returns": ""
+                "default": "Закрыть"
               },
               "type": {
-                "name": "(props: HTMLAttributes<HTMLLIElement> & { key: any; }, option: TOption, state: AutocompleteRenderOptionState, ownerState: AutocompleteOwnerState<...>) => ReactNode"
+                "name": "string"
               }
             },
             "ChipProps": {
@@ -17109,6 +17094,21 @@
                 "name": "string"
               }
             },
+            "isFullWidth": {
+              "defaultValue": null,
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/packages/ui/src/components/AsyncAutocomplete/types.ts",
+                  "name": "TypeLiteral"
+                }
+              ],
+              "description": "Если `true`, компонент растянется на всю ширину",
+              "required": false,
+              "tags": {},
+              "type": {
+                "name": "boolean"
+              }
+            },
             "isSuccess": {
               "defaultValue": null,
               "declarations": [
@@ -17709,50 +17709,6 @@
                 "name": "boolean"
               }
             },
-            "options": {
-              "defaultValue": null,
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
-                  "name": "UseAutocompleteProps"
-                }
-              ],
-              "description": "Array of options.",
-              "parent": {
-                "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
-                "name": "UseAutocompleteProps"
-              },
-              "required": true,
-              "tags": {},
-              "type": {
-                "name": "readonly TOption[]"
-              }
-            },
-            "filterOptions": {
-              "defaultValue": {
-                "value": "createFilterOptions()"
-              },
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
-                  "name": "UseAutocompleteProps"
-                }
-              ],
-              "description": "A function that determines the filtered options to be rendered on search.",
-              "parent": {
-                "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
-                "name": "UseAutocompleteProps"
-              },
-              "required": false,
-              "tags": {
-                "default": "createFilterOptions()",
-                "param": "options The options to render.\nstate The state of the component.",
-                "returns": ""
-              },
-              "type": {
-                "name": "(options: TOption[], state: FilterOptionsState<TOption>) => TOption[]"
-              }
-            },
             "disablePortal": {
               "defaultValue": {
                 "value": "false"
@@ -17816,6 +17772,96 @@
                 "name": "boolean"
               }
             },
+            "disabledItemsFocusable": {
+              "defaultValue": {
+                "value": "false"
+              },
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
+                  "name": "UseAutocompleteProps"
+                }
+              ],
+              "description": "If `true`, will allow focus on disabled items.",
+              "parent": {
+                "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
+                "name": "UseAutocompleteProps"
+              },
+              "required": false,
+              "tags": {
+                "default": "false"
+              },
+              "type": {
+                "name": "boolean"
+              }
+            },
+            "disableListWrap": {
+              "defaultValue": {
+                "value": "false"
+              },
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
+                  "name": "UseAutocompleteProps"
+                }
+              ],
+              "description": "If `true`, the list box in the popup will not wrap focus.",
+              "parent": {
+                "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
+                "name": "UseAutocompleteProps"
+              },
+              "required": false,
+              "tags": {
+                "default": "false"
+              },
+              "type": {
+                "name": "boolean"
+              }
+            },
+            "options": {
+              "defaultValue": null,
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
+                  "name": "UseAutocompleteProps"
+                }
+              ],
+              "description": "Array of options.",
+              "parent": {
+                "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
+                "name": "UseAutocompleteProps"
+              },
+              "required": true,
+              "tags": {},
+              "type": {
+                "name": "readonly TOption[]"
+              }
+            },
+            "filterOptions": {
+              "defaultValue": {
+                "value": "createFilterOptions()"
+              },
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
+                  "name": "UseAutocompleteProps"
+                }
+              ],
+              "description": "A function that determines the filtered options to be rendered on search.",
+              "parent": {
+                "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
+                "name": "UseAutocompleteProps"
+              },
+              "required": false,
+              "tags": {
+                "default": "createFilterOptions()",
+                "param": "options The options to render.\nstate The state of the component.",
+                "returns": ""
+              },
+              "type": {
+                "name": "(options: TOption[], state: FilterOptionsState<TOption>) => TOption[]"
+              }
+            },
             "PaperComponent": {
               "defaultValue": {
                 "value": "Paper"
@@ -17837,29 +17883,6 @@
               },
               "type": {
                 "name": "JSXElementConstructor<HTMLAttributes<HTMLElement>>"
-              }
-            },
-            "loading": {
-              "defaultValue": {
-                "value": "false"
-              },
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/Autocomplete/Autocomplete.d.ts",
-                  "name": "AutocompleteProps"
-                }
-              ],
-              "description": "If `true`, the component is in a loading state.\nThis shows the `loadingText` in place of suggestions (only if there are no suggestions to show, for example `options` are empty).",
-              "parent": {
-                "fileName": "ui-temp-10-2026/node_modules/@mui/material/Autocomplete/Autocomplete.d.ts",
-                "name": "AutocompleteProps"
-              },
-              "required": false,
-              "tags": {
-                "default": "false"
-              },
-              "type": {
-                "name": "boolean"
               }
             },
             "onOpen": {
@@ -17953,20 +17976,20 @@
                 "name": "boolean"
               }
             },
-            "disabledItemsFocusable": {
+            "loading": {
               "defaultValue": {
                 "value": "false"
               },
               "declarations": [
                 {
-                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
-                  "name": "UseAutocompleteProps"
+                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/Autocomplete/Autocomplete.d.ts",
+                  "name": "AutocompleteProps"
                 }
               ],
-              "description": "If `true`, will allow focus on disabled items.",
+              "description": "If `true`, the component is in a loading state.\nThis shows the `loadingText` in place of suggestions (only if there are no suggestions to show, for example `options` are empty).",
               "parent": {
-                "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
-                "name": "UseAutocompleteProps"
+                "fileName": "ui-temp-10-2026/node_modules/@mui/material/Autocomplete/Autocomplete.d.ts",
+                "name": "AutocompleteProps"
               },
               "required": false,
               "tags": {
@@ -17976,46 +17999,26 @@
                 "name": "boolean"
               }
             },
-            "disableListWrap": {
-              "defaultValue": {
-                "value": "false"
-              },
+            "renderOption": {
+              "defaultValue": null,
               "declarations": [
                 {
-                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
-                  "name": "UseAutocompleteProps"
+                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/Autocomplete/Autocomplete.d.ts",
+                  "name": "AutocompleteProps"
                 }
               ],
-              "description": "If `true`, the list box in the popup will not wrap focus.",
+              "description": "Render the option, use `getOptionLabel` by default.",
               "parent": {
-                "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
-                "name": "UseAutocompleteProps"
+                "fileName": "ui-temp-10-2026/node_modules/@mui/material/Autocomplete/Autocomplete.d.ts",
+                "name": "AutocompleteProps"
               },
               "required": false,
               "tags": {
-                "default": "false"
+                "param": "props The props to apply on the li element.\noption The option to render.\nstate The state of each option.\nownerState The state of the Autocomplete component.",
+                "returns": ""
               },
               "type": {
-                "name": "boolean"
-              }
-            },
-            "closeText": {
-              "defaultValue": {
-                "value": "Закрыть"
-              },
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/packages/ui/src/components/Autocomplete/types.ts",
-                  "name": "TypeLiteral"
-                }
-              ],
-              "description": "Переопределяет текст для кнопки закрытия всплывающего окна",
-              "required": false,
-              "tags": {
-                "default": "Закрыть"
-              },
-              "type": {
-                "name": "string"
+                "name": "(props: HTMLAttributes<HTMLLIElement> & { key: any; }, option: TOption, state: AutocompleteRenderOptionState, ownerState: AutocompleteOwnerState<...>) => ReactNode"
               }
             },
             "getOptionLabel": {
@@ -18065,26 +18068,23 @@
                 "name": "(option: TOption, value: TOption) => boolean"
               }
             },
-            "renderOption": {
-              "defaultValue": null,
+            "closeText": {
+              "defaultValue": {
+                "value": "Закрыть"
+              },
               "declarations": [
                 {
-                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/Autocomplete/Autocomplete.d.ts",
-                  "name": "AutocompleteProps"
+                  "fileName": "ui-temp-10-2026/packages/ui/src/components/Autocomplete/types.ts",
+                  "name": "TypeLiteral"
                 }
               ],
-              "description": "Render the option, use `getOptionLabel` by default.",
-              "parent": {
-                "fileName": "ui-temp-10-2026/node_modules/@mui/material/Autocomplete/Autocomplete.d.ts",
-                "name": "AutocompleteProps"
-              },
+              "description": "Переопределяет текст для кнопки закрытия всплывающего окна",
               "required": false,
               "tags": {
-                "param": "props The props to apply on the li element.\noption The option to render.\nstate The state of each option.\nownerState The state of the Autocomplete component.",
-                "returns": ""
+                "default": "Закрыть"
               },
               "type": {
-                "name": "(props: HTMLAttributes<HTMLLIElement> & { key: any; }, option: TOption, state: AutocompleteRenderOptionState, ownerState: AutocompleteOwnerState<...>) => ReactNode"
+                "name": "string"
               }
             },
             "ChipProps": {
@@ -19105,21 +19105,6 @@
                 "name": "boolean"
               }
             },
-            "loading": {
-              "defaultValue": null,
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/packages/ui/src/components/CodeField/CodeField.tsx",
-                  "name": "TypeLiteral"
-                }
-              ],
-              "description": "Если true, показывается анимация загрузки",
-              "required": false,
-              "tags": {},
-              "type": {
-                "name": "boolean"
-              }
-            },
             "errorText": {
               "defaultValue": null,
               "declarations": [
@@ -19144,6 +19129,21 @@
                 }
               ],
               "description": "Скрытие персональных данных от инструментов мониторинга",
+              "required": false,
+              "tags": {},
+              "type": {
+                "name": "boolean"
+              }
+            },
+            "loading": {
+              "defaultValue": null,
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/packages/ui/src/components/CodeField/CodeField.tsx",
+                  "name": "TypeLiteral"
+                }
+              ],
+              "description": "Если true, показывается анимация загрузки",
               "required": false,
               "tags": {},
               "type": {
@@ -20512,21 +20512,6 @@
                 "name": "unknown"
               }
             },
-            "endAdornment": {
-              "defaultValue": null,
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/packages/ui/src/components/TextField/TextField.tsx",
-                  "name": "TypeLiteral"
-                }
-              ],
-              "description": "Элемент, который добавляется в конец",
-              "required": false,
-              "tags": {},
-              "type": {
-                "name": "ReactNode"
-              }
-            },
             "success": {
               "defaultValue": null,
               "declarations": [
@@ -20540,6 +20525,21 @@
               "tags": {},
               "type": {
                 "name": "boolean"
+              }
+            },
+            "endAdornment": {
+              "defaultValue": null,
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/packages/ui/src/components/TextField/TextField.tsx",
+                  "name": "TypeLiteral"
+                }
+              ],
+              "description": "Элемент, который добавляется в конец",
+              "required": false,
+              "tags": {},
+              "type": {
+                "name": "ReactNode"
               }
             },
             "startAdornment": {
@@ -21323,21 +21323,6 @@
                 "name": "string"
               }
             },
-            "endAdornment": {
-              "defaultValue": null,
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/packages/ui/src/components/TextField/TextField.tsx",
-                  "name": "TypeLiteral"
-                }
-              ],
-              "description": "Элемент, который добавляется в конец",
-              "required": false,
-              "tags": {},
-              "type": {
-                "name": "ReactNode"
-              }
-            },
             "success": {
               "defaultValue": null,
               "declarations": [
@@ -21351,6 +21336,21 @@
               "tags": {},
               "type": {
                 "name": "boolean"
+              }
+            },
+            "endAdornment": {
+              "defaultValue": null,
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/packages/ui/src/components/TextField/TextField.tsx",
+                  "name": "TypeLiteral"
+                }
+              ],
+              "description": "Элемент, который добавляется в конец",
+              "required": false,
+              "tags": {},
+              "type": {
+                "name": "ReactNode"
               }
             },
             "startAdornment": {
@@ -22312,21 +22312,6 @@
                 "name": "number"
               }
             },
-            "endAdornment": {
-              "defaultValue": null,
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/packages/ui/src/components/TextField/TextField.tsx",
-                  "name": "TypeLiteral"
-                }
-              ],
-              "description": "Элемент, который добавляется в конец",
-              "required": false,
-              "tags": {},
-              "type": {
-                "name": "ReactNode"
-              }
-            },
             "success": {
               "defaultValue": null,
               "declarations": [
@@ -22340,6 +22325,21 @@
               "tags": {},
               "type": {
                 "name": "boolean"
+              }
+            },
+            "endAdornment": {
+              "defaultValue": null,
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/packages/ui/src/components/TextField/TextField.tsx",
+                  "name": "TypeLiteral"
+                }
+              ],
+              "description": "Элемент, который добавляется в конец",
+              "required": false,
+              "tags": {},
+              "type": {
+                "name": "ReactNode"
               }
             },
             "startAdornment": {
@@ -23168,21 +23168,6 @@
                 "name": "unknown"
               }
             },
-            "endAdornment": {
-              "defaultValue": null,
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/packages/ui/src/components/TextField/TextField.tsx",
-                  "name": "TypeLiteral"
-                }
-              ],
-              "description": "Элемент, который добавляется в конец",
-              "required": false,
-              "tags": {},
-              "type": {
-                "name": "ReactNode"
-              }
-            },
             "success": {
               "defaultValue": null,
               "declarations": [
@@ -23196,6 +23181,21 @@
               "tags": {},
               "type": {
                 "name": "boolean"
+              }
+            },
+            "endAdornment": {
+              "defaultValue": null,
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/packages/ui/src/components/TextField/TextField.tsx",
+                  "name": "TypeLiteral"
+                }
+              ],
+              "description": "Элемент, который добавляется в конец",
+              "required": false,
+              "tags": {},
+              "type": {
+                "name": "ReactNode"
               }
             },
             "startAdornment": {
@@ -30417,6 +30417,40 @@
                 "name": "FocusEventHandler<any>"
               }
             },
+            "selected": {
+              "defaultValue": null,
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/packages/ui/src/components/Button/types.ts",
+                  "name": "TypeLiteral"
+                }
+              ],
+              "description": "Состояние кнопки - selected",
+              "required": false,
+              "tags": {},
+              "type": {
+                "name": "boolean"
+              }
+            },
+            "href": {
+              "defaultValue": null,
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/Button/Button.d.ts",
+                  "name": "ButtonOwnProps"
+                }
+              ],
+              "description": "The URL to link to when the button is clicked.\nIf defined, an `a` element will be used as the root node.",
+              "parent": {
+                "fileName": "ui-temp-10-2026/node_modules/@mui/material/Button/Button.d.ts",
+                "name": "ButtonOwnProps"
+              },
+              "required": false,
+              "tags": {},
+              "type": {
+                "name": "string"
+              }
+            },
             "disableElevation": {
               "defaultValue": {
                 "value": "false"
@@ -30457,25 +30491,6 @@
               "tags": {},
               "type": {
                 "name": "ReactNode"
-              }
-            },
-            "href": {
-              "defaultValue": null,
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/Button/Button.d.ts",
-                  "name": "ButtonOwnProps"
-                }
-              ],
-              "description": "The URL to link to when the button is clicked.\nIf defined, an `a` element will be used as the root node.",
-              "parent": {
-                "fileName": "ui-temp-10-2026/node_modules/@mui/material/Button/Button.d.ts",
-                "name": "ButtonOwnProps"
-              },
-              "required": false,
-              "tags": {},
-              "type": {
-                "name": "string"
               }
             },
             "startIcon": {
@@ -30621,21 +30636,6 @@
                 }
               ],
               "description": "Если `true`, появляется loader внутри кнопки",
-              "required": false,
-              "tags": {},
-              "type": {
-                "name": "boolean"
-              }
-            },
-            "selected": {
-              "defaultValue": null,
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/packages/ui/src/components/Button/types.ts",
-                  "name": "TypeLiteral"
-                }
-              ],
-              "description": "Состояние кнопки - selected",
               "required": false,
               "tags": {},
               "type": {
@@ -31378,21 +31378,6 @@
                 "name": "unknown"
               }
             },
-            "endAdornment": {
-              "defaultValue": null,
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/packages/ui/src/components/TextField/TextField.tsx",
-                  "name": "TypeLiteral"
-                }
-              ],
-              "description": "Элемент, который добавляется в конец",
-              "required": false,
-              "tags": {},
-              "type": {
-                "name": "ReactNode"
-              }
-            },
             "success": {
               "defaultValue": null,
               "declarations": [
@@ -31406,6 +31391,21 @@
               "tags": {},
               "type": {
                 "name": "boolean"
+              }
+            },
+            "endAdornment": {
+              "defaultValue": null,
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/packages/ui/src/components/TextField/TextField.tsx",
+                  "name": "TypeLiteral"
+                }
+              ],
+              "description": "Элемент, который добавляется в конец",
+              "required": false,
+              "tags": {},
+              "type": {
+                "name": "ReactNode"
               }
             },
             "startAdornment": {
@@ -32293,21 +32293,6 @@
                 "name": "unknown"
               }
             },
-            "endAdornment": {
-              "defaultValue": null,
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/packages/ui/src/components/TextField/TextField.tsx",
-                  "name": "TypeLiteral"
-                }
-              ],
-              "description": "Элемент, который добавляется в конец",
-              "required": false,
-              "tags": {},
-              "type": {
-                "name": "ReactNode"
-              }
-            },
             "success": {
               "defaultValue": null,
               "declarations": [
@@ -32321,6 +32306,21 @@
               "tags": {},
               "type": {
                 "name": "boolean"
+              }
+            },
+            "endAdornment": {
+              "defaultValue": null,
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/packages/ui/src/components/TextField/TextField.tsx",
+                  "name": "TypeLiteral"
+                }
+              ],
+              "description": "Элемент, который добавляется в конец",
+              "required": false,
+              "tags": {},
+              "type": {
+                "name": "ReactNode"
               }
             },
             "startAdornment": {
@@ -33563,21 +33563,6 @@
                 "name": "boolean"
               }
             },
-            "options": {
-              "defaultValue": null,
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/packages/ui/src/components/TreeAutocomplete/types.ts",
-                  "name": "TypeLiteral"
-                }
-              ],
-              "description": "Опции, которые необходимо отобразить в виде дерева.",
-              "required": true,
-              "tags": {},
-              "type": {
-                "name": "TreeListData[]"
-              }
-            },
             "isLoading": {
               "defaultValue": null,
               "declarations": [
@@ -33593,7 +33578,7 @@
                 "name": "boolean"
               }
             },
-            "isLoadingError": {
+            "isError": {
               "defaultValue": null,
               "declarations": [
                 {
@@ -33601,14 +33586,14 @@
                   "name": "TypeLiteral"
                 }
               ],
-              "description": "Флаг ошибки загрузки options\nЕсли true, вместо дерева options будет отображен плейсхолдер с ошибкой",
+              "description": "Если true, поля будут подсвечены, как содержащие ошибку",
               "required": false,
               "tags": {},
               "type": {
                 "name": "boolean"
               }
             },
-            "filterOptions": {
+            "options": {
               "defaultValue": null,
               "declarations": [
                 {
@@ -33616,11 +33601,11 @@
                   "name": "TypeLiteral"
                 }
               ],
-              "description": "Функция для поиска элементов по дереву, если не определено, то будет использован встроенный поиск",
-              "required": false,
+              "description": "Опции, которые необходимо отобразить в виде дерева.",
+              "required": true,
               "tags": {},
               "type": {
-                "name": "(node: TreeListData, searchValue: string) => boolean"
+                "name": "TreeListData[]"
               }
             },
             "isDisabled": {
@@ -33638,7 +33623,7 @@
                 "name": "boolean"
               }
             },
-            "isError": {
+            "isLoadingError": {
               "defaultValue": null,
               "declarations": [
                 {
@@ -33646,7 +33631,7 @@
                   "name": "TypeLiteral"
                 }
               ],
-              "description": "Если true, поля будут подсвечены, как содержащие ошибку",
+              "description": "Флаг ошибки загрузки options\nЕсли true, вместо дерева options будет отображен плейсхолдер с ошибкой",
               "required": false,
               "tags": {},
               "type": {
@@ -33711,6 +33696,21 @@
               "tags": {},
               "type": {
                 "name": "() => void"
+              }
+            },
+            "filterOptions": {
+              "defaultValue": null,
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/packages/ui/src/components/TreeAutocomplete/types.ts",
+                  "name": "TypeLiteral"
+                }
+              ],
+              "description": "Функция для поиска элементов по дереву, если не определено, то будет использован встроенный поиск",
+              "required": false,
+              "tags": {},
+              "type": {
+                "name": "(node: TreeListData, searchValue: string) => boolean"
               }
             },
             "name": {
@@ -34480,21 +34480,6 @@
                 "name": "boolean"
               }
             },
-            "options": {
-              "defaultValue": null,
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/packages/ui/src/components/TreeLikeAutocomplete/types.ts",
-                  "name": "TypeLiteral"
-                }
-              ],
-              "description": "Опции, которые необходимо отобразить в виде дерева.",
-              "required": true,
-              "tags": {},
-              "type": {
-                "name": "TreeLikeListAutocompleteData[]"
-              }
-            },
             "isLoading": {
               "defaultValue": null,
               "declarations": [
@@ -34510,7 +34495,7 @@
                 "name": "boolean"
               }
             },
-            "isLoadingError": {
+            "isError": {
               "defaultValue": null,
               "declarations": [
                 {
@@ -34518,14 +34503,14 @@
                   "name": "TypeLiteral"
                 }
               ],
-              "description": "Флаг ошибки загрузки options\nЕсли true, вместо дерева options будет отображен плейсхолдер с ошибкой",
+              "description": "Если true, поля будут подсвечены, как содержащие ошибку",
               "required": false,
               "tags": {},
               "type": {
                 "name": "boolean"
               }
             },
-            "filterOptions": {
+            "options": {
               "defaultValue": null,
               "declarations": [
                 {
@@ -34533,11 +34518,11 @@
                   "name": "TypeLiteral"
                 }
               ],
-              "description": "Функция для поиска элементов по дереву, если не определено, то будет использован встроенный поиск",
-              "required": false,
+              "description": "Опции, которые необходимо отобразить в виде дерева.",
+              "required": true,
               "tags": {},
               "type": {
-                "name": "(node: TreeListData, searchValue: string) => boolean"
+                "name": "TreeLikeListAutocompleteData[]"
               }
             },
             "isDisabled": {
@@ -34555,7 +34540,7 @@
                 "name": "boolean"
               }
             },
-            "isError": {
+            "isLoadingError": {
               "defaultValue": null,
               "declarations": [
                 {
@@ -34563,7 +34548,7 @@
                   "name": "TypeLiteral"
                 }
               ],
-              "description": "Если true, поля будут подсвечены, как содержащие ошибку",
+              "description": "Флаг ошибки загрузки options\nЕсли true, вместо дерева options будет отображен плейсхолдер с ошибкой",
               "required": false,
               "tags": {},
               "type": {
@@ -34628,6 +34613,21 @@
               "tags": {},
               "type": {
                 "name": "() => void"
+              }
+            },
+            "filterOptions": {
+              "defaultValue": null,
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/packages/ui/src/components/TreeLikeAutocomplete/types.ts",
+                  "name": "TypeLiteral"
+                }
+              ],
+              "description": "Функция для поиска элементов по дереву, если не определено, то будет использован встроенный поиск",
+              "required": false,
+              "tags": {},
+              "type": {
+                "name": "(node: TreeListData, searchValue: string) => boolean"
               }
             },
             "isConfirmChildrenSelection": {
@@ -35107,16 +35107,16 @@
               "tags": {},
               "type": {
                 "name": "enum",
-                "raw": "\"text\" | \"circular\" | \"rounded\"",
+                "raw": "\"text\" | \"rounded\" | \"circular\"",
                 "value": [
                   {
                     "value": "\"text\""
                   },
                   {
-                    "value": "\"circular\""
+                    "value": "\"rounded\""
                   },
                   {
-                    "value": "\"rounded\""
+                    "value": "\"circular\""
                   }
                 ]
               }
