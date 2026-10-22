@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime-C0FnF6B9.js";import{i as t}from"./BulletListItem-B-tz4I9y.js";function n(){return(n=e((()=>{t()})))()}export{n as t};
