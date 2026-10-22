@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime-C0FnF6B9.js";import{l as t,u as n}from"./createGuard-Bnbb_ytZ.js";var r;function i(){return(i=e((()=>{n(),r=(...e)=>(n,r)=>e.reduce((e,i)=>e||t(i,n,r),void 0)})))()}export{i as n,r as t};
