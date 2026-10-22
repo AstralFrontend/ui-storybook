@@ -1,1 +1,0 @@
-import{n as e}from"./rolldown-runtime-C0FnF6B9.js";import{n as t,o as n,r}from"./Tabs-BmNW0he1.js";function i(){return(i=e((()=>{n(),r(),t()})))()}export{i as t};
