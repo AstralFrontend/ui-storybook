@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime-C0FnF6B9.js";import{Dn as t,On as n}from"./preview-CdUppftE.js";var r;function i(){return(i=e((()=>{n(),r={root:t(`page-layout`),withoutHeader:t(`page-layout_without-header`)}})))()}export{r as n,i as t};
