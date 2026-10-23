@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime-C0FnF6B9.js";import{n as t}from"./NumberField-Bj0-w4Pt.js";function n(){return(n=e((()=>{t()})))()}export{n as t};
