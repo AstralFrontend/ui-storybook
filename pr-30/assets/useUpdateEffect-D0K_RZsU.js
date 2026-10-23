@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime-C0FnF6B9.js";import{t}from"./useUpdateEffect-57JmeX8p.js";function n(){return(n=e((()=>{t()})))()}export{n as t};

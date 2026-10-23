@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime-C0FnF6B9.js";import{t}from"./SideDialogContentText-C704BG4a.js";function n(){return(n=e((()=>{t()})))()}export{n as t};
