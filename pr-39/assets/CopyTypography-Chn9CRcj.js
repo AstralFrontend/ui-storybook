@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime-C0FnF6B9.js";import{n as t}from"./CopyTypography-_ilh0143.js";function n(){return(n=e((()=>{t()})))()}export{n as t};
