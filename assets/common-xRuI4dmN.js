@@ -1,0 +1,5 @@
+import{n as e}from"./rolldown-runtime-C0FnF6B9.js";import{ji as t,yn as n}from"./preview-DtfC2r_n.js";var r;function i(){return(i=e((()=>{n(),r=t.div`
+  min-width: 200px;
+  max-width: 400px;
+  margin: 0 auto 10px;
+`;try{r.displayName=`Wrapper`,r.__docgenInfo={description:``,displayName:`Wrapper`,filePath:`/home/runner/work/ui-temp-10-2026/ui-temp-10-2026/packages/ui/src/components/Filename/stories/common.tsx`,methods:[],props:{theme:{defaultValue:null,declarations:[{fileName:`ui-temp-10-2026/node_modules/@emotion/styled/dist/declarations/src/index.d.ts`,name:`TypeLiteral`}],description:``,name:`theme`,required:!1,tags:{},type:{name:`Theme`}},as:{defaultValue:null,declarations:[{fileName:`ui-temp-10-2026/node_modules/@emotion/styled/dist/declarations/src/index.d.ts`,name:`TypeLiteral`}],description:``,name:`as`,required:!1,tags:{},type:{name:`ElementType<any, keyof IntrinsicElements>`}}},tags:{}}}catch{}})))()}export{i as n,r as t};

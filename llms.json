@@ -1087,25 +1087,6 @@
                 "name": "Ref<TouchRippleActions>"
               }
             },
-            "icon": {
-              "defaultValue": null,
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/Switch/Switch.d.ts",
-                  "name": "SwitchProps"
-                }
-              ],
-              "description": "The icon to display when the component is unchecked.",
-              "parent": {
-                "fileName": "ui-temp-10-2026/node_modules/@mui/material/Switch/Switch.d.ts",
-                "name": "SwitchProps"
-              },
-              "required": false,
-              "tags": {},
-              "type": {
-                "name": "ReactNode"
-              }
-            },
             "disableFocusRipple": {
               "defaultValue": {
                 "value": "false"
@@ -1127,6 +1108,25 @@
               },
               "type": {
                 "name": "boolean"
+              }
+            },
+            "icon": {
+              "defaultValue": null,
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/Switch/Switch.d.ts",
+                  "name": "SwitchProps"
+                }
+              ],
+              "description": "The icon to display when the component is unchecked.",
+              "parent": {
+                "fileName": "ui-temp-10-2026/node_modules/@mui/material/Switch/Switch.d.ts",
+                "name": "SwitchProps"
+              },
+              "required": false,
+              "tags": {},
+              "type": {
+                "name": "ReactNode"
               }
             },
             "edge": {
@@ -1171,6 +1171,25 @@
                 "name": "boolean"
               }
             },
+            "checkedIcon": {
+              "defaultValue": null,
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/Switch/Switch.d.ts",
+                  "name": "SwitchProps"
+                }
+              ],
+              "description": "The icon to display when the component is checked.",
+              "parent": {
+                "fileName": "ui-temp-10-2026/node_modules/@mui/material/Switch/Switch.d.ts",
+                "name": "SwitchProps"
+              },
+              "required": false,
+              "tags": {},
+              "type": {
+                "name": "ReactNode"
+              }
+            },
             "labelPlacement": {
               "defaultValue": null,
               "declarations": [
@@ -1199,25 +1218,6 @@
                     "value": "\"end\""
                   }
                 ]
-              }
-            },
-            "checkedIcon": {
-              "defaultValue": null,
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/Switch/Switch.d.ts",
-                  "name": "SwitchProps"
-                }
-              ],
-              "description": "The icon to display when the component is checked.",
-              "parent": {
-                "fileName": "ui-temp-10-2026/node_modules/@mui/material/Switch/Switch.d.ts",
-                "name": "SwitchProps"
-              },
-              "required": false,
-              "tags": {},
-              "type": {
-                "name": "ReactNode"
               }
             }
           },
@@ -4386,6 +4386,99 @@
                 "name": "boolean"
               }
             },
+            "PaperProps": {
+              "defaultValue": {
+                "value": "{}"
+              },
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/Popover/Popover.d.ts",
+                  "name": "PopoverProps"
+                }
+              ],
+              "description": "Props applied to the [`Paper`](/material-ui/api/paper/) element.\n\nThis prop is an alias for `slotProps.paper` and will be overriden by it if both are used.",
+              "parent": {
+                "fileName": "ui-temp-10-2026/node_modules/@mui/material/Popover/Popover.d.ts",
+                "name": "PopoverProps"
+              },
+              "required": false,
+              "tags": {
+                "deprecated": "Use `slotProps.paper` instead.",
+                "default": "{}"
+              },
+              "type": {
+                "name": "Partial<PaperProps<ElementType<any, keyof IntrinsicElements>>>"
+              }
+            },
+            "TransitionComponent": {
+              "defaultValue": {
+                "value": "Grow"
+              },
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/Popover/Popover.d.ts",
+                  "name": "PopoverProps"
+                }
+              ],
+              "description": "The component used for the transition.\n[Follow this guide](/material-ui/transitions/#transitioncomponent-prop) to learn more about the requirements for this component.",
+              "parent": {
+                "fileName": "ui-temp-10-2026/node_modules/@mui/material/Popover/Popover.d.ts",
+                "name": "PopoverProps"
+              },
+              "required": false,
+              "tags": {
+                "default": "Grow"
+              },
+              "type": {
+                "name": "JSXElementConstructor<TransitionProps & { children: ReactElement<any, any>; }>"
+              }
+            },
+            "transitionDuration": {
+              "defaultValue": {
+                "value": "'auto'"
+              },
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/Menu/Menu.d.ts",
+                  "name": "MenuProps"
+                }
+              ],
+              "description": "The length of the transition in `ms`, or 'auto'",
+              "parent": {
+                "fileName": "ui-temp-10-2026/node_modules/@mui/material/Menu/Menu.d.ts",
+                "name": "MenuProps"
+              },
+              "required": false,
+              "tags": {
+                "default": "'auto'"
+              },
+              "type": {
+                "name": "number | \"auto\" | { appear?: number; enter?: number; exit?: number; } | { appear?: number; enter?: number; exit?: number; }"
+              }
+            },
+            "TransitionProps": {
+              "defaultValue": {
+                "value": "{}"
+              },
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/Menu/Menu.d.ts",
+                  "name": "MenuProps"
+                }
+              ],
+              "description": "Props applied to the transition element.\nBy default, the element is based on this [`Transition`](https://reactcommunity.org/react-transition-group/transition/) component.",
+              "parent": {
+                "fileName": "ui-temp-10-2026/node_modules/@mui/material/Menu/Menu.d.ts",
+                "name": "MenuProps"
+              },
+              "required": false,
+              "tags": {
+                "default": "{}"
+              },
+              "type": {
+                "name": "TransitionProps"
+              }
+            },
             "action": {
               "defaultValue": null,
               "declarations": [
@@ -4524,30 +4617,6 @@
                 "name": "number"
               }
             },
-            "PaperProps": {
-              "defaultValue": {
-                "value": "{}"
-              },
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/Popover/Popover.d.ts",
-                  "name": "PopoverProps"
-                }
-              ],
-              "description": "Props applied to the [`Paper`](/material-ui/api/paper/) element.\n\nThis prop is an alias for `slotProps.paper` and will be overriden by it if both are used.",
-              "parent": {
-                "fileName": "ui-temp-10-2026/node_modules/@mui/material/Popover/Popover.d.ts",
-                "name": "PopoverProps"
-              },
-              "required": false,
-              "tags": {
-                "deprecated": "Use `slotProps.paper` instead.",
-                "default": "{}"
-              },
-              "type": {
-                "name": "Partial<PaperProps<ElementType<any, keyof IntrinsicElements>>>"
-              }
-            },
             "transformOrigin": {
               "defaultValue": {
                 "value": "{\nvertical: 'top',\nhorizontal: 'left',\n}"
@@ -4569,75 +4638,6 @@
               },
               "type": {
                 "name": "PopoverOrigin"
-              }
-            },
-            "TransitionComponent": {
-              "defaultValue": {
-                "value": "Grow"
-              },
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/Popover/Popover.d.ts",
-                  "name": "PopoverProps"
-                }
-              ],
-              "description": "The component used for the transition.\n[Follow this guide](/material-ui/transitions/#transitioncomponent-prop) to learn more about the requirements for this component.",
-              "parent": {
-                "fileName": "ui-temp-10-2026/node_modules/@mui/material/Popover/Popover.d.ts",
-                "name": "PopoverProps"
-              },
-              "required": false,
-              "tags": {
-                "default": "Grow"
-              },
-              "type": {
-                "name": "JSXElementConstructor<TransitionProps & { children: ReactElement<any, any>; }>"
-              }
-            },
-            "transitionDuration": {
-              "defaultValue": {
-                "value": "'auto'"
-              },
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/Menu/Menu.d.ts",
-                  "name": "MenuProps"
-                }
-              ],
-              "description": "The length of the transition in `ms`, or 'auto'",
-              "parent": {
-                "fileName": "ui-temp-10-2026/node_modules/@mui/material/Menu/Menu.d.ts",
-                "name": "MenuProps"
-              },
-              "required": false,
-              "tags": {
-                "default": "'auto'"
-              },
-              "type": {
-                "name": "number | \"auto\" | { appear?: number; enter?: number; exit?: number; } | { appear?: number; enter?: number; exit?: number; }"
-              }
-            },
-            "TransitionProps": {
-              "defaultValue": {
-                "value": "{}"
-              },
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/Menu/Menu.d.ts",
-                  "name": "MenuProps"
-                }
-              ],
-              "description": "Props applied to the transition element.\nBy default, the element is based on this [`Transition`](https://reactcommunity.org/react-transition-group/transition/) component.",
-              "parent": {
-                "fileName": "ui-temp-10-2026/node_modules/@mui/material/Menu/Menu.d.ts",
-                "name": "MenuProps"
-              },
-              "required": false,
-              "tags": {
-                "default": "{}"
-              },
-              "type": {
-                "name": "TransitionProps"
               }
             },
             "disableAutoFocusItem": {
@@ -5621,6 +5621,99 @@
                 "name": "boolean"
               }
             },
+            "PaperProps": {
+              "defaultValue": {
+                "value": "{}"
+              },
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/Popover/Popover.d.ts",
+                  "name": "PopoverProps"
+                }
+              ],
+              "description": "Props applied to the [`Paper`](/material-ui/api/paper/) element.\n\nThis prop is an alias for `slotProps.paper` and will be overriden by it if both are used.",
+              "parent": {
+                "fileName": "ui-temp-10-2026/node_modules/@mui/material/Popover/Popover.d.ts",
+                "name": "PopoverProps"
+              },
+              "required": false,
+              "tags": {
+                "deprecated": "Use `slotProps.paper` instead.",
+                "default": "{}"
+              },
+              "type": {
+                "name": "Partial<PaperProps<ElementType<any, keyof IntrinsicElements>>>"
+              }
+            },
+            "TransitionComponent": {
+              "defaultValue": {
+                "value": "Grow"
+              },
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/Popover/Popover.d.ts",
+                  "name": "PopoverProps"
+                }
+              ],
+              "description": "The component used for the transition.\n[Follow this guide](/material-ui/transitions/#transitioncomponent-prop) to learn more about the requirements for this component.",
+              "parent": {
+                "fileName": "ui-temp-10-2026/node_modules/@mui/material/Popover/Popover.d.ts",
+                "name": "PopoverProps"
+              },
+              "required": false,
+              "tags": {
+                "default": "Grow"
+              },
+              "type": {
+                "name": "JSXElementConstructor<TransitionProps & { children: ReactElement<any, any>; }>"
+              }
+            },
+            "transitionDuration": {
+              "defaultValue": {
+                "value": "'auto'"
+              },
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/Menu/Menu.d.ts",
+                  "name": "MenuProps"
+                }
+              ],
+              "description": "The length of the transition in `ms`, or 'auto'",
+              "parent": {
+                "fileName": "ui-temp-10-2026/node_modules/@mui/material/Menu/Menu.d.ts",
+                "name": "MenuProps"
+              },
+              "required": false,
+              "tags": {
+                "default": "'auto'"
+              },
+              "type": {
+                "name": "number | \"auto\" | { appear?: number; enter?: number; exit?: number; } | { appear?: number; enter?: number; exit?: number; }"
+              }
+            },
+            "TransitionProps": {
+              "defaultValue": {
+                "value": "{}"
+              },
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/Menu/Menu.d.ts",
+                  "name": "MenuProps"
+                }
+              ],
+              "description": "Props applied to the transition element.\nBy default, the element is based on this [`Transition`](https://reactcommunity.org/react-transition-group/transition/) component.",
+              "parent": {
+                "fileName": "ui-temp-10-2026/node_modules/@mui/material/Menu/Menu.d.ts",
+                "name": "MenuProps"
+              },
+              "required": false,
+              "tags": {
+                "default": "{}"
+              },
+              "type": {
+                "name": "TransitionProps"
+              }
+            },
             "action": {
               "defaultValue": null,
               "declarations": [
@@ -5759,30 +5852,6 @@
                 "name": "number"
               }
             },
-            "PaperProps": {
-              "defaultValue": {
-                "value": "{}"
-              },
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/Popover/Popover.d.ts",
-                  "name": "PopoverProps"
-                }
-              ],
-              "description": "Props applied to the [`Paper`](/material-ui/api/paper/) element.\n\nThis prop is an alias for `slotProps.paper` and will be overriden by it if both are used.",
-              "parent": {
-                "fileName": "ui-temp-10-2026/node_modules/@mui/material/Popover/Popover.d.ts",
-                "name": "PopoverProps"
-              },
-              "required": false,
-              "tags": {
-                "deprecated": "Use `slotProps.paper` instead.",
-                "default": "{}"
-              },
-              "type": {
-                "name": "Partial<PaperProps<ElementType<any, keyof IntrinsicElements>>>"
-              }
-            },
             "transformOrigin": {
               "defaultValue": {
                 "value": "{\nvertical: 'top',\nhorizontal: 'left',\n}"
@@ -5804,75 +5873,6 @@
               },
               "type": {
                 "name": "PopoverOrigin"
-              }
-            },
-            "TransitionComponent": {
-              "defaultValue": {
-                "value": "Grow"
-              },
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/Popover/Popover.d.ts",
-                  "name": "PopoverProps"
-                }
-              ],
-              "description": "The component used for the transition.\n[Follow this guide](/material-ui/transitions/#transitioncomponent-prop) to learn more about the requirements for this component.",
-              "parent": {
-                "fileName": "ui-temp-10-2026/node_modules/@mui/material/Popover/Popover.d.ts",
-                "name": "PopoverProps"
-              },
-              "required": false,
-              "tags": {
-                "default": "Grow"
-              },
-              "type": {
-                "name": "JSXElementConstructor<TransitionProps & { children: ReactElement<any, any>; }>"
-              }
-            },
-            "transitionDuration": {
-              "defaultValue": {
-                "value": "'auto'"
-              },
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/Menu/Menu.d.ts",
-                  "name": "MenuProps"
-                }
-              ],
-              "description": "The length of the transition in `ms`, or 'auto'",
-              "parent": {
-                "fileName": "ui-temp-10-2026/node_modules/@mui/material/Menu/Menu.d.ts",
-                "name": "MenuProps"
-              },
-              "required": false,
-              "tags": {
-                "default": "'auto'"
-              },
-              "type": {
-                "name": "number | \"auto\" | { appear?: number; enter?: number; exit?: number; } | { appear?: number; enter?: number; exit?: number; }"
-              }
-            },
-            "TransitionProps": {
-              "defaultValue": {
-                "value": "{}"
-              },
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/Menu/Menu.d.ts",
-                  "name": "MenuProps"
-                }
-              ],
-              "description": "Props applied to the transition element.\nBy default, the element is based on this [`Transition`](https://reactcommunity.org/react-transition-group/transition/) component.",
-              "parent": {
-                "fileName": "ui-temp-10-2026/node_modules/@mui/material/Menu/Menu.d.ts",
-                "name": "MenuProps"
-              },
-              "required": false,
-              "tags": {
-                "default": "{}"
-              },
-              "type": {
-                "name": "TransitionProps"
               }
             },
             "disableAutoFocusItem": {
@@ -14985,6 +14985,21 @@
                 "name": "boolean"
               }
             },
+            "isDisabled": {
+              "defaultValue": null,
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/packages/ui/src/components/AsyncAutocomplete/types.ts",
+                  "name": "TypeLiteral"
+                }
+              ],
+              "description": "Если `true`, компонент будет не доступен для взаимодействия",
+              "required": false,
+              "tags": {},
+              "type": {
+                "name": "boolean"
+              }
+            },
             "disablePortal": {
               "defaultValue": {
                 "value": "false"
@@ -15042,21 +15057,6 @@
                 "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
                 "name": "UseAutocompleteProps"
               },
-              "required": false,
-              "tags": {},
-              "type": {
-                "name": "boolean"
-              }
-            },
-            "isDisabled": {
-              "defaultValue": null,
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/packages/ui/src/components/AsyncAutocomplete/types.ts",
-                  "name": "TypeLiteral"
-                }
-              ],
-              "description": "Если `true`, компонент будет не доступен для взаимодействия",
               "required": false,
               "tags": {},
               "type": {
@@ -15305,21 +15305,6 @@
                 "name": "(event: SyntheticEvent<Element, Event>, value: string, reason: AutocompleteInputChangeReason) => void"
               }
             },
-            "isFullWidth": {
-              "defaultValue": null,
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/packages/ui/src/components/AsyncAutocomplete/types.ts",
-                  "name": "TypeLiteral"
-                }
-              ],
-              "description": "Если `true`, компонент растянется на всю ширину",
-              "required": false,
-              "tags": {},
-              "type": {
-                "name": "boolean"
-              }
-            },
             "isSuccess": {
               "defaultValue": null,
               "declarations": [
@@ -15329,6 +15314,21 @@
                 }
               ],
               "description": "Если `true`, компонент будет отображаться в состоянии успеха",
+              "required": false,
+              "tags": {},
+              "type": {
+                "name": "boolean"
+              }
+            },
+            "isFullWidth": {
+              "defaultValue": null,
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/packages/ui/src/components/AsyncAutocomplete/types.ts",
+                  "name": "TypeLiteral"
+                }
+              ],
+              "description": "Если `true`, компонент растянется на всю ширину",
               "required": false,
               "tags": {},
               "type": {
@@ -15848,6 +15848,21 @@
                 "name": "boolean"
               }
             },
+            "isDisabled": {
+              "defaultValue": null,
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/packages/ui/src/components/AsyncAutocomplete/types.ts",
+                  "name": "TypeLiteral"
+                }
+              ],
+              "description": "Если `true`, компонент будет не доступен для взаимодействия",
+              "required": false,
+              "tags": {},
+              "type": {
+                "name": "boolean"
+              }
+            },
             "disablePortal": {
               "defaultValue": {
                 "value": "false"
@@ -15911,6 +15926,29 @@
                 "name": "boolean"
               }
             },
+            "PaperComponent": {
+              "defaultValue": {
+                "value": "Paper"
+              },
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/Autocomplete/Autocomplete.d.ts",
+                  "name": "AutocompleteProps"
+                }
+              ],
+              "description": "The component used to render the body of the popup.",
+              "parent": {
+                "fileName": "ui-temp-10-2026/node_modules/@mui/material/Autocomplete/Autocomplete.d.ts",
+                "name": "AutocompleteProps"
+              },
+              "required": false,
+              "tags": {
+                "default": "Paper"
+              },
+              "type": {
+                "name": "JSXElementConstructor<HTMLAttributes<HTMLElement>>"
+              }
+            },
             "disabledItemsFocusable": {
               "defaultValue": {
                 "value": "false"
@@ -15955,44 +15993,6 @@
               },
               "type": {
                 "name": "boolean"
-              }
-            },
-            "isDisabled": {
-              "defaultValue": null,
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/packages/ui/src/components/AsyncAutocomplete/types.ts",
-                  "name": "TypeLiteral"
-                }
-              ],
-              "description": "Если `true`, компонент будет не доступен для взаимодействия",
-              "required": false,
-              "tags": {},
-              "type": {
-                "name": "boolean"
-              }
-            },
-            "PaperComponent": {
-              "defaultValue": {
-                "value": "Paper"
-              },
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/Autocomplete/Autocomplete.d.ts",
-                  "name": "AutocompleteProps"
-                }
-              ],
-              "description": "The component used to render the body of the popup.",
-              "parent": {
-                "fileName": "ui-temp-10-2026/node_modules/@mui/material/Autocomplete/Autocomplete.d.ts",
-                "name": "AutocompleteProps"
-              },
-              "required": false,
-              "tags": {
-                "default": "Paper"
-              },
-              "type": {
-                "name": "JSXElementConstructor<HTMLAttributes<HTMLElement>>"
               }
             },
             "onOpen": {
@@ -16061,29 +16061,6 @@
               },
               "type": {
                 "name": "JSXElementConstructor<PopperProps>"
-              }
-            },
-            "multiple": {
-              "defaultValue": {
-                "value": "false"
-              },
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
-                  "name": "UseAutocompleteProps"
-                }
-              ],
-              "description": "If `true`, `value` must be an array and the menu will support multiple selections.",
-              "parent": {
-                "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
-                "name": "UseAutocompleteProps"
-              },
-              "required": false,
-              "tags": {
-                "default": "false"
-              },
-              "type": {
-                "name": "boolean"
               }
             },
             "fetchOptions": {
@@ -16156,6 +16133,29 @@
               },
               "type": {
                 "name": "number"
+              }
+            },
+            "multiple": {
+              "defaultValue": {
+                "value": "false"
+              },
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
+                  "name": "UseAutocompleteProps"
+                }
+              ],
+              "description": "If `true`, `value` must be an array and the menu will support multiple selections.",
+              "parent": {
+                "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
+                "name": "UseAutocompleteProps"
+              },
+              "required": false,
+              "tags": {
+                "default": "false"
+              },
+              "type": {
+                "name": "boolean"
               }
             },
             "renderOption": {
@@ -17094,21 +17094,6 @@
                 "name": "string"
               }
             },
-            "isFullWidth": {
-              "defaultValue": null,
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/packages/ui/src/components/AsyncAutocomplete/types.ts",
-                  "name": "TypeLiteral"
-                }
-              ],
-              "description": "Если `true`, компонент растянется на всю ширину",
-              "required": false,
-              "tags": {},
-              "type": {
-                "name": "boolean"
-              }
-            },
             "isSuccess": {
               "defaultValue": null,
               "declarations": [
@@ -17118,6 +17103,21 @@
                 }
               ],
               "description": "Если `true`, компонент будет отображаться в состоянии успеха",
+              "required": false,
+              "tags": {},
+              "type": {
+                "name": "boolean"
+              }
+            },
+            "isFullWidth": {
+              "defaultValue": null,
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/packages/ui/src/components/AsyncAutocomplete/types.ts",
+                  "name": "TypeLiteral"
+                }
+              ],
+              "description": "Если `true`, компонент растянется на всю ширину",
               "required": false,
               "tags": {},
               "type": {
@@ -17709,6 +17709,50 @@
                 "name": "boolean"
               }
             },
+            "options": {
+              "defaultValue": null,
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
+                  "name": "UseAutocompleteProps"
+                }
+              ],
+              "description": "Array of options.",
+              "parent": {
+                "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
+                "name": "UseAutocompleteProps"
+              },
+              "required": true,
+              "tags": {},
+              "type": {
+                "name": "readonly TOption[]"
+              }
+            },
+            "filterOptions": {
+              "defaultValue": {
+                "value": "createFilterOptions()"
+              },
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
+                  "name": "UseAutocompleteProps"
+                }
+              ],
+              "description": "A function that determines the filtered options to be rendered on search.",
+              "parent": {
+                "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
+                "name": "UseAutocompleteProps"
+              },
+              "required": false,
+              "tags": {
+                "default": "createFilterOptions()",
+                "param": "options The options to render.\nstate The state of the component.",
+                "returns": ""
+              },
+              "type": {
+                "name": "(options: TOption[], state: FilterOptionsState<TOption>) => TOption[]"
+              }
+            },
             "disablePortal": {
               "defaultValue": {
                 "value": "false"
@@ -17772,6 +17816,29 @@
                 "name": "boolean"
               }
             },
+            "PaperComponent": {
+              "defaultValue": {
+                "value": "Paper"
+              },
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/Autocomplete/Autocomplete.d.ts",
+                  "name": "AutocompleteProps"
+                }
+              ],
+              "description": "The component used to render the body of the popup.",
+              "parent": {
+                "fileName": "ui-temp-10-2026/node_modules/@mui/material/Autocomplete/Autocomplete.d.ts",
+                "name": "AutocompleteProps"
+              },
+              "required": false,
+              "tags": {
+                "default": "Paper"
+              },
+              "type": {
+                "name": "JSXElementConstructor<HTMLAttributes<HTMLElement>>"
+              }
+            },
             "disabledItemsFocusable": {
               "defaultValue": {
                 "value": "false"
@@ -17816,73 +17883,6 @@
               },
               "type": {
                 "name": "boolean"
-              }
-            },
-            "options": {
-              "defaultValue": null,
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
-                  "name": "UseAutocompleteProps"
-                }
-              ],
-              "description": "Array of options.",
-              "parent": {
-                "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
-                "name": "UseAutocompleteProps"
-              },
-              "required": true,
-              "tags": {},
-              "type": {
-                "name": "readonly TOption[]"
-              }
-            },
-            "filterOptions": {
-              "defaultValue": {
-                "value": "createFilterOptions()"
-              },
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
-                  "name": "UseAutocompleteProps"
-                }
-              ],
-              "description": "A function that determines the filtered options to be rendered on search.",
-              "parent": {
-                "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
-                "name": "UseAutocompleteProps"
-              },
-              "required": false,
-              "tags": {
-                "default": "createFilterOptions()",
-                "param": "options The options to render.\nstate The state of the component.",
-                "returns": ""
-              },
-              "type": {
-                "name": "(options: TOption[], state: FilterOptionsState<TOption>) => TOption[]"
-              }
-            },
-            "PaperComponent": {
-              "defaultValue": {
-                "value": "Paper"
-              },
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/Autocomplete/Autocomplete.d.ts",
-                  "name": "AutocompleteProps"
-                }
-              ],
-              "description": "The component used to render the body of the popup.",
-              "parent": {
-                "fileName": "ui-temp-10-2026/node_modules/@mui/material/Autocomplete/Autocomplete.d.ts",
-                "name": "AutocompleteProps"
-              },
-              "required": false,
-              "tags": {
-                "default": "Paper"
-              },
-              "type": {
-                "name": "JSXElementConstructor<HTMLAttributes<HTMLElement>>"
               }
             },
             "onOpen": {
@@ -17953,29 +17953,6 @@
                 "name": "JSXElementConstructor<PopperProps>"
               }
             },
-            "multiple": {
-              "defaultValue": {
-                "value": "false"
-              },
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
-                  "name": "UseAutocompleteProps"
-                }
-              ],
-              "description": "If `true`, `value` must be an array and the menu will support multiple selections.",
-              "parent": {
-                "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
-                "name": "UseAutocompleteProps"
-              },
-              "required": false,
-              "tags": {
-                "default": "false"
-              },
-              "type": {
-                "name": "boolean"
-              }
-            },
             "loading": {
               "defaultValue": {
                 "value": "false"
@@ -17990,6 +17967,29 @@
               "parent": {
                 "fileName": "ui-temp-10-2026/node_modules/@mui/material/Autocomplete/Autocomplete.d.ts",
                 "name": "AutocompleteProps"
+              },
+              "required": false,
+              "tags": {
+                "default": "false"
+              },
+              "type": {
+                "name": "boolean"
+              }
+            },
+            "multiple": {
+              "defaultValue": {
+                "value": "false"
+              },
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
+                  "name": "UseAutocompleteProps"
+                }
+              ],
+              "description": "If `true`, `value` must be an array and the menu will support multiple selections.",
+              "parent": {
+                "fileName": "ui-temp-10-2026/node_modules/@mui/material/useAutocomplete/useAutocomplete.d.ts",
+                "name": "UseAutocompleteProps"
               },
               "required": false,
               "tags": {
@@ -19120,21 +19120,6 @@
                 "name": "ReactNode"
               }
             },
-            "isHidePersonalData": {
-              "defaultValue": null,
-              "declarations": [
-                {
-                  "fileName": "ui-temp-10-2026/packages/ui/src/components/CodeField/CodeField.tsx",
-                  "name": "TypeLiteral"
-                }
-              ],
-              "description": "Скрытие персональных данных от инструментов мониторинга",
-              "required": false,
-              "tags": {},
-              "type": {
-                "name": "boolean"
-              }
-            },
             "loading": {
               "defaultValue": null,
               "declarations": [
@@ -19144,6 +19129,21 @@
                 }
               ],
               "description": "Если true, показывается анимация загрузки",
+              "required": false,
+              "tags": {},
+              "type": {
+                "name": "boolean"
+              }
+            },
+            "isHidePersonalData": {
+              "defaultValue": null,
+              "declarations": [
+                {
+                  "fileName": "ui-temp-10-2026/packages/ui/src/components/CodeField/CodeField.tsx",
+                  "name": "TypeLiteral"
+                }
+              ],
+              "description": "Скрытие персональных данных от инструментов мониторинга",
               "required": false,
               "tags": {},
               "type": {
