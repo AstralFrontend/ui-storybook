@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime-C0FnF6B9.js";import{Va as t}from"./preview-DJy7jU1i.js";var n,r;function i(){return(i=e((()=>{n=t(),r=e=>{let[t,r]=(0,n.useState)(e);return(0,n.useEffect)(()=>{e&&r(!0)},[e]),{shouldRender:t,handleAnimationEnd:()=>{e||r(!1)}}}})))()}function a(){return(a=e((()=>{i()})))()}export{i as n,r,a as t};
