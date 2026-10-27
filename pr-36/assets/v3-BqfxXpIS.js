@@ -1,0 +1,3 @@
+import{n as e}from"./rolldown-runtime-C0FnF6B9.js";import{aa as t,ea as n,ia as r,ta as i,ya as a}from"./preview-DLwisTAq.js";function o(e){let r={a:`a`,h1:`h1`,p:`p`,...t(),...e.components};return(0,c.jsxs)(c.Fragment,{children:[(0,c.jsx)(n,{title:`Old versions/v3`}),`
+`,(0,c.jsx)(r.h1,{id:`v3`,children:`v3`}),`
+`,(0,c.jsxs)(r.p,{children:[(0,c.jsx)(r.a,{href:`https://v3--61baeff6f06230003a88ef8a.chromatic.com`,rel:`nofollow`,children:`Документация ui-kit v3`}),`.`]})]})}function s(e={}){let{wrapper:n}={...t(),...e.components};return n?(0,c.jsx)(n,{...e,children:(0,c.jsx)(o,{...e})}):o(e)}var c;function l(){return(l=e((()=>{c=a(),r(),i()})))()}l();export{s as default};
