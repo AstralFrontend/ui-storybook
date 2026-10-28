@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime-BCiCTKAo.js";function t(e){let t=e.documentElement.clientWidth;return Math.abs(window.innerWidth-t)}function n(){return(n=e((()=>{})))()}export{n,t};
