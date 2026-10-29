@@ -1,1 +1,0 @@
-import{n as e}from"./rolldown-runtime-BCiCTKAo.js";import{n as t}from"./DataGridMinimalisticPagination-QDc_Ul1l.js";function n(){return(n=e((()=>{t()})))()}export{n as t};

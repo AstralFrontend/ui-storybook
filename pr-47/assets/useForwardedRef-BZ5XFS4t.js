@@ -1,1 +1,0 @@
-import{n as e}from"./rolldown-runtime-BCiCTKAo.js";import{za as t}from"./preview-BnqSH9fx.js";var n,r;function i(){return(i=e((()=>{n=t(),r=e=>{let t=(0,n.useRef)(null);return(0,n.useImperativeHandle)(e,()=>t.current,[e]),t}})))()}function a(){return(a=e((()=>{i()})))()}export{i as n,r,a as t};
