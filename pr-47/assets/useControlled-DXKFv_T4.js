@@ -1,0 +1,1 @@
+import{n as e,o as t}from"./rolldown-runtime-BCiCTKAo.js";import{za as n}from"./preview-BY-1Z8yT.js";function r({controlled:e,default:t,name:n,state:r=`value`}){let{current:a}=i.useRef(e!==void 0),[o,s]=i.useState(t);return[a?e:o,i.useCallback(e=>{a||s(e)},[])]}var i;function a(){return(a=e((()=>{i=t(n())})))()}export{r as n,a as t};

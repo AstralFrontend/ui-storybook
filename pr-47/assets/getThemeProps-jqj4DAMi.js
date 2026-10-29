@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime-BCiCTKAo.js";import{Jr as t,qr as n}from"./preview-BY-1Z8yT.js";function r(e){let{theme:n,name:r,props:i}=e;return!n||!n.components||!n.components[r]||!n.components[r].defaultProps?i:t(n.components[r].defaultProps,i)}function i(){return(i=e((()=>{n()})))()}export{i as n,r as t};
