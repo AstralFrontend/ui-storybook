@@ -1,0 +1,64 @@
+import{n as e}from"./rolldown-runtime-BCiCTKAo.js";import{ct as t,lt as n,ya as r,za as i}from"./preview-BKcIDY9K.js";import{n as a,t as o}from"./Stack-C0XNwpSQ.js";import{n as s,t as c}from"./CheckableTag-BT3XdLWc.js";import{t as l}from"./TagBadge-Dz76cEoB.js";import{t as u}from"./TagBadge-BAeWqaPf.js";var d,f,p;function m(){return(m=e((()=>{a(),d=i(),u(),s(),f=r(),p=()=>{let[e,t]=(0,d.useState)(!1),n={checked:e,onChange:e=>t(e.target.checked),endAddon:e=>(0,f.jsx)(l,{...e,badgeContent:`12`})};return(0,f.jsxs)(o,{direction:`column`,gap:2,children:[(0,f.jsx)(c,{label:`Checkable tag`,color:`error`,...n}),(0,f.jsx)(c,{label:`Checkable tag`,color:`warning`,...n}),(0,f.jsx)(c,{label:`Checkable tag`,color:`primary`,...n}),(0,f.jsx)(c,{label:`Checkable tag`,color:`success`,...n}),(0,f.jsx)(c,{label:`Checkable tag`,...n}),(0,f.jsx)(c,{label:`Checkable tag`,variant:`contained`,color:`error`,...n}),(0,f.jsx)(c,{label:`Checkable tag`,variant:`contained`,color:`warning`,...n}),(0,f.jsx)(c,{label:`Checkable tag`,variant:`contained`,color:`primary`,...n}),(0,f.jsx)(c,{label:`Checkable tag`,variant:`contained`,color:`success`,...n}),(0,f.jsx)(c,{label:`Checkable disabled tag`,variant:`contained`,color:`success`,disabled:!0,...n})]})},p.parameters={...p.parameters,docs:{...p.parameters?.docs,source:{originalSource:`() => {
+  const [checked, setChecked] = useState(false);
+  const handleChecked = (event: ChangeEvent<HTMLInputElement>) => setChecked(event.target.checked);
+  const baseProps = {
+    checked,
+    onChange: handleChecked,
+    endAddon: (props: TagBadgeProps) => <TagBadge {...props} badgeContent="12" />
+  };
+  return <Stack direction="column" gap={2}>
+      <CheckableTag label="Checkable tag" color="error" {...baseProps} />
+      <CheckableTag label="Checkable tag" color="warning" {...baseProps} />
+      <CheckableTag label="Checkable tag" color="primary" {...baseProps} />
+      <CheckableTag label="Checkable tag" color="success" {...baseProps} />
+      <CheckableTag label="Checkable tag" {...baseProps} />
+      <CheckableTag label="Checkable tag" variant="contained" color="error" {...baseProps} />
+      <CheckableTag label="Checkable tag" variant="contained" color="warning" {...baseProps} />
+      <CheckableTag label="Checkable tag" variant="contained" color="primary" {...baseProps} />
+      <CheckableTag label="Checkable tag" variant="contained" color="success" {...baseProps} />
+      <CheckableTag label="Checkable disabled tag" variant="contained" color="success" disabled {...baseProps} />
+    </Stack>;
+}`,...p.parameters?.docs?.source}}}})))()}var h,g,_;function v(){return(v=e((()=>{h=i(),t(),u(),s(),g=r(),_=()=>{let[e,t]=(0,h.useState)(!1),r={checked:e,onChange:e=>t(e.target.checked),endAddon:e=>(0,g.jsx)(l,{...e,badgeContent:`12`})};return(0,g.jsxs)(n,{container:!0,spacing:8,columns:`repeat(3, auto)`,children:[(0,g.jsx)(c,{label:`Primary`,variant:`contained`,color:`primary`,...r}),(0,g.jsx)(c,{label:`Error`,variant:`contained`,color:`error`,...r}),(0,g.jsx)(c,{label:`Success`,variant:`contained`,color:`success`,...r}),(0,g.jsx)(c,{label:`Warning`,variant:`contained`,color:`warning`,...r}),(0,g.jsx)(c,{label:`Grey`,variant:`contained`,color:`grey`,...r}),(0,g.jsx)(c,{label:`Default`,variant:`contained`,color:`default`,...r})]})},_.parameters={..._.parameters,docs:{..._.parameters?.docs,source:{originalSource:`() => {
+  const [checked, setChecked] = useState(false);
+  const handleChecked = (event: ChangeEvent<HTMLInputElement>) => setChecked(event.target.checked);
+  const baseProps = {
+    checked,
+    onChange: handleChecked,
+    endAddon: (props: TagBadgeProps) => <TagBadge {...props} badgeContent="12" />
+  };
+  return <Grid container spacing={8} columns="repeat(3, auto)">
+      <CheckableTag label="Primary" variant="contained" color="primary" {...baseProps} />
+      <CheckableTag label="Error" variant="contained" color="error" {...baseProps} />
+      <CheckableTag label="Success" variant="contained" color="success" {...baseProps} />
+      <CheckableTag label="Warning" variant="contained" color="warning" {...baseProps} />
+      <CheckableTag label="Grey" variant="contained" color="grey" {...baseProps} />
+      <CheckableTag label="Default" variant="contained" color="default" {...baseProps} />
+    </Grid>;
+}`,..._.parameters?.docs?.source}}}})))()}var y;function b(){return(b=e((()=>{y={args:{variant:`light`,color:`success`,label:`Тэг Checkable`},parameters:{docs:{disable:!0}}},y.parameters={...y.parameters,docs:{...y.parameters?.docs,source:{originalSource:`{
+  args: {
+    variant: 'light',
+    color: 'success',
+    label: 'Тэг Checkable'
+  },
+  parameters: {
+    docs: {
+      disable: true
+    }
+  }
+}`,...y.parameters?.docs?.source}}}})))()}var x,S,C;function w(){return(w=e((()=>{x=i(),t(),u(),s(),S=r(),C=()=>{let[e,t]=(0,x.useState)(!1),r={checked:e,onChange:e=>t(e.target.checked),endAddon:e=>(0,S.jsx)(l,{...e,badgeContent:`12`})};return(0,S.jsxs)(n,{container:!0,spacing:8,columns:`repeat(3, auto)`,children:[(0,S.jsx)(c,{label:`Primary`,variant:`light`,color:`primary`,...r}),(0,S.jsx)(c,{label:`Error`,variant:`light`,color:`error`,...r}),(0,S.jsx)(c,{label:`Success`,variant:`light`,color:`success`,...r}),(0,S.jsx)(c,{label:`Warning`,variant:`light`,color:`warning`,...r}),(0,S.jsx)(c,{label:`Grey`,variant:`light`,color:`grey`,...r}),(0,S.jsx)(c,{label:`Default`,variant:`light`,color:`default`,...r})]})},C.parameters={...C.parameters,docs:{...C.parameters?.docs,source:{originalSource:`() => {
+  const [checked, setChecked] = useState(false);
+  const handleChecked = (event: ChangeEvent<HTMLInputElement>) => setChecked(event.target.checked);
+  const baseProps = {
+    checked,
+    onChange: handleChecked,
+    endAddon: (props: TagBadgeProps) => <TagBadge {...props} badgeContent="12" />
+  };
+  return <Grid container spacing={8} columns="repeat(3, auto)">
+      <CheckableTag label="Primary" variant="light" color="primary" {...baseProps} />
+      <CheckableTag label="Error" variant="light" color="error" {...baseProps} />
+      <CheckableTag label="Success" variant="light" color="success" {...baseProps} />
+      <CheckableTag label="Warning" variant="light" color="warning" {...baseProps} />
+      <CheckableTag label="Grey" variant="light" color="grey" {...baseProps} />
+      <CheckableTag label="Default" variant="light" color="default" {...baseProps} />
+    </Grid>;
+}`,...C.parameters?.docs?.source}}}})))()}var T,E;function D(){return(D=e((()=>{s(),m(),v(),b(),w(),T={title:`Tags-and-Badges/CheckableTag`,component:c,parameters:{docs:{description:{component:`### [Figma](https://www.figma.com/design/2gz5yVQ2quSe5KtFbMUrfr/AstralUi-2.0--%D0%B2-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B5-?node-id=785-53191&t=ul4WXgbZ1zkX2wdO-0)`}}}},E=[`Interaction`,`BasicUsage`,`Contained`,`Light`]})))()}D();export{p as BasicUsage,_ as Contained,y as Interaction,C as Light,E as __namedExportsOrder,T as default};
