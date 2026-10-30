@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime-BCiCTKAo.js";import{n as t,r as n}from"./MenuItem-w-vv7TQ9.js";function r(){return(r=e((()=>{t(),n()})))()}export{r as t};
