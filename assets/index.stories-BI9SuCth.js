@@ -1,0 +1,15 @@
+import{n as e}from"./rolldown-runtime-BCiCTKAo.js";import{ya as t}from"./preview-CuWTv55L.js";import{b as n,x as r}from"./date-DflMq7-C.js";import{n as i,t as a}from"./useForm-D4euU--8.js";import{n as o,t as s}from"./FormSubmitButton-DJ36yRoX.js";import{d as c,f as l,n as u,t as d}from"./createGuard-vHCHRbai.js";import{n as f,t as p}from"./object-2y2TfwoJ.js";import{n as m,t as h}from"./compose-BMssb2MV.js";import{n as g,t as _}from"./resetTime-r04d4lG1.js";import{n as v,t as y}from"./FormDateRangePicker-CHDejUV6.js";import{n as b,t as x}from"./docs-DrDTQLP5.js";var S;function C(){return(C=e((()=>{_(),S=(e,t)=>g(e).getTime()<g(t).getTime()})))()}var w,T,E,D,O,k;function A(){return(A=e((()=>{l(),w={code:c(`rangedate-required`),message:`Укажите период`},T={code:c(`rangedate-startRequired`),message:`Укажите дату начала`},E={code:c(`rangedate-endRequired`),message:`Укажите дату окончания`},D={code:c(`rangedate-startInvalid`),message:`Дата начала некорректна`},O={code:c(`rangedate-endInvalid`),message:`Дата окончания некорректна`},k={code:c(`rangedate-endEarlierStart`),message:`Дата окончания раньше даты начала`}})))()}var j;function M(){return(M=e((()=>{n(),m(),u(),C(),A(),j=(...e)=>d((t,n,i)=>{let{required:a,messages:o}=Object.assign(Object.assign({},i||{}),{required:{start:i?.required&&`start`in i?.required?i?.required.start:!0,end:i?.required&&`end`in i?.required?i?.required.end:!0}}),s=t;return a?.start&&a?.end&&!s.start&&!s.end?n.createError({message:w.message,code:w.code}):a?.start&&!s.start?n.createError({message:o?.startRequired||T.message,code:T.code}):a?.end&&!s.end?n.createError({message:o?.endRequired||E.message,code:E.code}):s?.start&&!r(s.start)?n.createError({message:D.message,code:D.code}):s?.end&&!r(s.end)?n.createError({message:O.message,code:O.code}):s.end&&s.start&&S(s.end,s.start)?n.createError({message:o?.endEarlierStart||k.message,code:k.code}):h(...e)(s,n)})})))()}var N,P,F;function I(){return(I=e((()=>{p(),M(),x(),s(),a(),v(),N=t(),P=f({period:j()}),F=()=>{let e=i({validationSchema:P});return(0,N.jsxs)(b,{form:e,children:[(0,N.jsx)(y,{name:`period`,startDateProps:{label:`Дата начала`,required:!0},endDateProps:{label:`Дата окончания`,required:!0},control:e.control}),(0,N.jsx)(o,{children:`Submit`})]})},F.parameters={...F.parameters,docs:{...F.parameters?.docs,source:{originalSource:`() => {
+  const form = useForm<FormValues>({
+    validationSchema
+  });
+  return <FormStoryContainer form={form}>
+      <FormDateRangePicker name="period" startDateProps={{
+      label: 'Дата начала',
+      required: true
+    }} endDateProps={{
+      label: 'Дата окончания',
+      required: true
+    }} control={form.control} />
+      <FormSubmitButton>Submit</FormSubmitButton>
+    </FormStoryContainer>;
+}`,...F.parameters?.docs?.source}}}})))()}var L,R;function z(){return(z=e((()=>{v(),I(),L={title:`React-Hook-Form/FormDateRangePicker`,component:y,parameters:{docs:{description:{component:`Обертка [DateRangePicker](/story/date-pickers-dateRangePicker--docs) для react-hook-form.`}}}},R=[`BasicUsage`]})))()}z();export{F as BasicUsage,R as __namedExportsOrder,L as default};
