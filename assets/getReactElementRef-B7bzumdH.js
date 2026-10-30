@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime-BCiCTKAo.js";import{za as t}from"./preview--MgaEBgF.js";function n(e){var t;return(e==null||(t=e.props)==null?void 0:t.ref)||null}function r(){return(r=e((()=>{t()})))()}export{r as n,n as t};
