@@ -1,1 +1,0 @@
-import{n as e}from"./rolldown-runtime-BCiCTKAo.js";import{za as t}from"./preview-DptgQDDw.js";var n,r;function i(){return(i=e((()=>{n=t(),r=()=>{let[e,t]=(0,n.useState)(null);return{isOpen:!!e,anchor:e,actions:{open:e=>t(e.currentTarget),close:()=>t(null)}}}})))()}function a(){return(a=e((()=>{i()})))()}export{i as n,r,a as t};
