@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime-BCiCTKAo.js";var t,n;function r(){return(r=e((()=>{t=`astralui-redesign-banner`,n={webp:`https://frontend-static.astral.ru/images/UI-kit-v4.webp`,png:`https://frontend-static.astral.ru/images/UI-kit-v4.png`}})))()}export{t as n,r,n as t};
