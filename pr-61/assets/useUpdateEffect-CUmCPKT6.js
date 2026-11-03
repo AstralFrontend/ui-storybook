@@ -1,1 +1,0 @@
-import{n as e}from"./rolldown-runtime-BCiCTKAo.js";import{za as t}from"./preview-CErZtSU3.js";import{n}from"./useFirstMountState-QE6nuXTK.js";import{t as r}from"./useFirstMountState-DJM5NJI2.js";var i,a;function o(){return(o=e((()=>{i=t(),r(),a=(e,t)=>{let r=n();(0,i.useEffect)(()=>{if(!r)return e()},t)}})))()}export{a as n,o as t};
