@@ -1,1 +1,0 @@
-import{n as e}from"./rolldown-runtime-C0FnF6B9.js";var t;function n(){return(n=e((()=>{t=e=>{let t=new Date(e);return t.setHours(0),t.setMinutes(0),t.setSeconds(0),t.setMilliseconds(0),t}})))()}export{t as n,n as t};
