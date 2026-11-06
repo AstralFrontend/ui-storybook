@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime-BCiCTKAo.js";import{n as t}from"./NewPopover-B_ULBzJo.js";function n(){return(n=e((()=>{t()})))()}export{n as t};
