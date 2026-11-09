@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime-BCiCTKAo.js";import{n as t}from"./TreeLikeAsyncAutocomplete-Bn7a8I2-.js";function n(){return(n=e((()=>{t()})))()}export{n as t};
