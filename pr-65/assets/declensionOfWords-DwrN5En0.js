@@ -1,1 +1,0 @@
-import{n as e}from"./rolldown-runtime-BCiCTKAo.js";var t;function n(){return(n=e((()=>{t=e=>t=>{let n=Math.abs(t)%100,r=n%10;return n>10&&n<20?e[2]:r>1&&r<5?e[1]:r===1?e[0]:e[2]}})))()}export{n,t};
