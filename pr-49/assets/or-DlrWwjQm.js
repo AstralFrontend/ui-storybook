@@ -1,1 +1,0 @@
-import{n as e}from"./rolldown-runtime-BCiCTKAo.js";import{a as t,l as n,o as r,u as i}from"./createGuard-vHCHRbai.js";var a;function o(){return(o=e((()=>{i(),r(),a=(...e)=>t((t,r)=>{let i;return e.some(e=>(i=n(e,t,r),!i)),i})})))()}export{a as n,o as t};

@@ -1,1 +1,0 @@
-import{n as e}from"./rolldown-runtime-BCiCTKAo.js";var t;function n(){return(n=e((()=>{t=new URL(`outdated-release-6B4wBxAJ.svg`,import.meta.url).href})))()}export{t as n,n as t};
